@@ -52,6 +52,17 @@ namespace Google.GenAI.Types {
           }
 
     /// <summary>
+    /// List of parts that constitute a function response. Each part may       have a different IANA
+    /// MIME type.
+    /// </summary>
+    [JsonPropertyName("parts")]
+    [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]
+    public List<FunctionResponsePart>
+        ? Parts {
+            get; set;
+          }
+
+    /// <summary>
     /// Optional. The id of the function call this response is for. Populated by the client to match
     /// the corresponding function call `id`.
     /// </summary>

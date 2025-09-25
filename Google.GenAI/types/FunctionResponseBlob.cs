@@ -23,41 +23,39 @@ using Google.GenAI.Serialization;
 
 namespace Google.GenAI.Types {
   /// <summary>
-  /// Tool to support computer use.
+  /// Raw media bytes for function response.    Text should not be sent as raw bytes, use the
+  /// FunctionResponse.response   field.
   /// </summary>
 
-  public record ToolComputerUse {
+  public record FunctionResponseBlob {
     /// <summary>
-    /// The environment being operated.
+    /// The IANA standard MIME type of the source data.
     /// </summary>
-    [JsonPropertyName("environment")]
+    [JsonPropertyName("mimeType")]
     [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]
-    public Environment ? Environment { get; set; }
+    public string ? MimeType { get; set; }
 
     /// <summary>
-    /// By default, predefined functions are included in the final model call.     Some of them can
-    /// be explicitly excluded from being automatically included.     This can serve two purposes:
-    /// 1. Using a more restricted / different action space.       2. Improving the definitions /
-    /// instructions of predefined functions.
+    /// Inline media bytes.
     /// </summary>
-    [JsonPropertyName("excludedPredefinedFunctions")]
+    [JsonPropertyName("data")]
     [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]
-    public List<string>
-        ? ExcludedPredefinedFunctions {
+    public byte[]
+        ? Data {
             get; set;
           }
 
     /// <summary>
-    /// Deserializes a JSON string to a ToolComputerUse object.
+    /// Deserializes a JSON string to a FunctionResponseBlob object.
     /// <param name="jsonString">The JSON string to deserialize.</param>
     /// <param name="options">Optional JsonSerializerOptions.</param>
-    /// <returns>The deserialized ToolComputerUse object, or null if deserialization
+    /// <returns>The deserialized FunctionResponseBlob object, or null if deserialization
     /// fails.</returns>
     /// </summary>
-    public static ToolComputerUse
+    public static FunctionResponseBlob
         ? FromJson(string jsonString, JsonSerializerOptions? options = null) {
       try {
-        return JsonSerializer.Deserialize<ToolComputerUse>(jsonString, options);
+        return JsonSerializer.Deserialize<FunctionResponseBlob>(jsonString, options);
       } catch (JsonException e) {
         Console.Error.WriteLine($"Error deserializing JSON: {e.ToString()}");
         return null;

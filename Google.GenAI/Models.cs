@@ -2646,6 +2646,13 @@ namespace Google.GenAI {
                               Common.GetValueByPath(fromObject, new string[] { "environment" }));
       }
 
+      if (Common.GetValueByPath(fromObject, new string[] { "excludedPredefinedFunctions" }) !=
+          null) {
+        Common.SetValueByPath(
+            toObject, new string[] { "excludedPredefinedFunctions" },
+            Common.GetValueByPath(fromObject, new string[] { "excludedPredefinedFunctions" }));
+      }
+
       return toObject;
     }
 
@@ -2655,6 +2662,13 @@ namespace Google.GenAI {
       if (Common.GetValueByPath(fromObject, new string[] { "environment" }) != null) {
         Common.SetValueByPath(toObject, new string[] { "environment" },
                               Common.GetValueByPath(fromObject, new string[] { "environment" }));
+      }
+
+      if (Common.GetValueByPath(fromObject, new string[] { "excludedPredefinedFunctions" }) !=
+          null) {
+        Common.SetValueByPath(
+            toObject, new string[] { "excludedPredefinedFunctions" },
+            Common.GetValueByPath(fromObject, new string[] { "excludedPredefinedFunctions" }));
       }
 
       return toObject;

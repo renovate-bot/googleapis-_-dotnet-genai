@@ -23,41 +23,38 @@ using Google.GenAI.Serialization;
 
 namespace Google.GenAI.Types {
   /// <summary>
-  /// Tool to support computer use.
+  /// URI based data for function response.
   /// </summary>
 
-  public record ToolComputerUse {
+  public record FunctionResponseFileData {
     /// <summary>
-    /// The environment being operated.
+    /// URI.
     /// </summary>
-    [JsonPropertyName("environment")]
+    [JsonPropertyName("fileUri")]
     [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]
-    public Environment ? Environment { get; set; }
+    public string ? FileUri { get; set; }
 
     /// <summary>
-    /// By default, predefined functions are included in the final model call.     Some of them can
-    /// be explicitly excluded from being automatically included.     This can serve two purposes:
-    /// 1. Using a more restricted / different action space.       2. Improving the definitions /
-    /// instructions of predefined functions.
+    /// The IANA standard MIME type of the source data.
     /// </summary>
-    [JsonPropertyName("excludedPredefinedFunctions")]
+    [JsonPropertyName("mimeType")]
     [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]
-    public List<string>
-        ? ExcludedPredefinedFunctions {
+    public string
+        ? MimeType {
             get; set;
           }
 
     /// <summary>
-    /// Deserializes a JSON string to a ToolComputerUse object.
+    /// Deserializes a JSON string to a FunctionResponseFileData object.
     /// <param name="jsonString">The JSON string to deserialize.</param>
     /// <param name="options">Optional JsonSerializerOptions.</param>
-    /// <returns>The deserialized ToolComputerUse object, or null if deserialization
+    /// <returns>The deserialized FunctionResponseFileData object, or null if deserialization
     /// fails.</returns>
     /// </summary>
-    public static ToolComputerUse
+    public static FunctionResponseFileData
         ? FromJson(string jsonString, JsonSerializerOptions? options = null) {
       try {
-        return JsonSerializer.Deserialize<ToolComputerUse>(jsonString, options);
+        return JsonSerializer.Deserialize<FunctionResponseFileData>(jsonString, options);
       } catch (JsonException e) {
         Console.Error.WriteLine($"Error deserializing JSON: {e.ToString()}");
         return null;

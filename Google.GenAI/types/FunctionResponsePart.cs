@@ -23,41 +23,43 @@ using Google.GenAI.Serialization;
 
 namespace Google.GenAI.Types {
   /// <summary>
-  /// Tool to support computer use.
+  /// A datatype containing media that is part of a `FunctionResponse` message.    A
+  /// `FunctionResponsePart` consists of data which has an associated datatype. A
+  /// `FunctionResponsePart` can only contain one of the accepted types in
+  /// `FunctionResponsePart.data`.    A `FunctionResponsePart` must have a fixed IANA MIME type
+  /// identifying the   type and subtype of the media if the `inline_data` field is filled with raw
+  /// bytes.
   /// </summary>
 
-  public record ToolComputerUse {
+  public record FunctionResponsePart {
     /// <summary>
-    /// The environment being operated.
+    /// Optional. Inline media bytes.
     /// </summary>
-    [JsonPropertyName("environment")]
+    [JsonPropertyName("inlineData")]
     [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]
-    public Environment ? Environment { get; set; }
+    public FunctionResponseBlob ? InlineData { get; set; }
 
     /// <summary>
-    /// By default, predefined functions are included in the final model call.     Some of them can
-    /// be explicitly excluded from being automatically included.     This can serve two purposes:
-    /// 1. Using a more restricted / different action space.       2. Improving the definitions /
-    /// instructions of predefined functions.
+    /// Optional. URI based data.
     /// </summary>
-    [JsonPropertyName("excludedPredefinedFunctions")]
+    [JsonPropertyName("fileData")]
     [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]
-    public List<string>
-        ? ExcludedPredefinedFunctions {
+    public FunctionResponseFileData
+        ? FileData {
             get; set;
           }
 
     /// <summary>
-    /// Deserializes a JSON string to a ToolComputerUse object.
+    /// Deserializes a JSON string to a FunctionResponsePart object.
     /// <param name="jsonString">The JSON string to deserialize.</param>
     /// <param name="options">Optional JsonSerializerOptions.</param>
-    /// <returns>The deserialized ToolComputerUse object, or null if deserialization
+    /// <returns>The deserialized FunctionResponsePart object, or null if deserialization
     /// fails.</returns>
     /// </summary>
-    public static ToolComputerUse
+    public static FunctionResponsePart
         ? FromJson(string jsonString, JsonSerializerOptions? options = null) {
       try {
-        return JsonSerializer.Deserialize<ToolComputerUse>(jsonString, options);
+        return JsonSerializer.Deserialize<FunctionResponsePart>(jsonString, options);
       } catch (JsonException e) {
         Console.Error.WriteLine($"Error deserializing JSON: {e.ToString()}");
         return null;
