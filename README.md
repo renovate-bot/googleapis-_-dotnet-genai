@@ -4,7 +4,12 @@ Google's generative models into their .Net applications. It supports the
 [Vertex AI](https://cloud.google.com/vertex-ai/generative-ai/docs/learn/overview)
 APIs.
 
+## Supported .NET version
+
+This library is built for and requires .NET 8.0 or a later compatible version.
+
 ## Install
+In your dotnet project directory, type the the following command
 
 ```
 dotnet add package Google.GenAI
