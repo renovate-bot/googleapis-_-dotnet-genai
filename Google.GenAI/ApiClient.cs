@@ -28,7 +28,7 @@ namespace Google.GenAI
   /// </summary>
   public abstract class ApiClient : IDisposable, IAsyncDisposable
   {
-    private static readonly string SdkVersion = "0.1.0";
+    private static readonly string SdkVersion = "0.1.0"; // x-release-please-version
 
     protected HttpMessageInvoker HttpClient { get; }
 
