@@ -1,6 +1,6 @@
 {
   "$schema": "https://raw.githubusercontent.com/googleapis/release-please/main/schemas/config.json",
-  "release-type": "simple",
+  "release-type": "dotnet_yoshi",
   "include-component-in-tag": true,
   "include-v-in-tag": true,
   "pull-request-header": "Auto-generated release PR: merge to trigger a release",
@@ -12,6 +12,11 @@
           "type": "xml",
           "path": "Google.GenAI/Google.GenAI.csproj",
           "xpath": "//Project/PropertyGroup/Version"
+        },
+        {
+          "type": "regex",
+          "path": "Google.GenAI/ApiClient.cs",
+          "regex": "private static readonly string SdkVersion = \"[0-9.]+\"; // x-release-please-version"
         }
       ]
     }
