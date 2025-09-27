@@ -1,0 +1,8 @@
+{
+  "apis": [
+    {
+      "id": "Google.GenAI",
+      "path": "Google.GenAI"
+    }
+  ]
+}
