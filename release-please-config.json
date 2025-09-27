@@ -1,6 +1,6 @@
 {
   "$schema": "https://raw.githubusercontent.com/googleapis/release-please/main/schemas/config.json",
-  "release-type": "dotnet_yoshi",
+  "release-type": "dotnet-yoshi",
   "include-component-in-tag": true,
   "include-v-in-tag": true,
   "pull-request-header": "Auto-generated release PR: merge to trigger a release",
