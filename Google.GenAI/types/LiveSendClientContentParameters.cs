@@ -35,8 +35,8 @@ namespace Google.GenAI.Types {
     public List<Content> ? Turns { get; set; }
 
     /// <summary>
-    /// If true, indicates that the server content generation should start with   the currently
-    /// accumulated prompt. Otherwise, the server will await   additional messages before starting
+    /// If true, indicates that the server content generation should start with  the currently
+    /// accumulated prompt. Otherwise, the server will await  additional messages before starting
     /// generation.
     /// </summary>
     [JsonPropertyName("turnComplete")]
@@ -48,11 +48,11 @@ namespace Google.GenAI.Types {
 
     /// <summary>
     /// Deserializes a JSON string to a LiveSendClientContentParameters object.
+    /// </summary>
     /// <param name="jsonString">The JSON string to deserialize.</param>
     /// <param name="options">Optional JsonSerializerOptions.</param>
     /// <returns>The deserialized LiveSendClientContentParameters object, or null if deserialization
     /// fails.</returns>
-    /// </summary>
     public static LiveSendClientContentParameters
         ? FromJson(string jsonString, JsonSerializerOptions? options = null) {
       try {

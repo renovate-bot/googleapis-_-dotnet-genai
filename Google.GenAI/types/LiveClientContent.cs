@@ -23,25 +23,25 @@ using Google.GenAI.Serialization;
 
 namespace Google.GenAI.Types {
   /// <summary>
-  /// Incremental update of the current conversation delivered from the client.    All the content
-  /// here will unconditionally be appended to the conversation   history and used as part of the
-  /// prompt to the model to generate content.    A message here will interrupt any current model
+  /// Incremental update of the current conversation delivered from the client.   All the content
+  /// here will unconditionally be appended to the conversation  history and used as part of the
+  /// prompt to the model to generate content.   A message here will interrupt any current model
   /// generation.
   /// </summary>
 
   public record LiveClientContent {
     /// <summary>
-    /// The content appended to the current conversation with the model.        For single-turn
-    /// queries, this is a single instance. For multi-turn       queries, this is a repeated field
-    /// that contains conversation history and       latest request.
+    /// The content appended to the current conversation with the model.   For single-turn queries,
+    /// this is a single instance. For multi-turn  queries, this is a repeated field that contains
+    /// conversation history and  latest request.
     /// </summary>
     [JsonPropertyName("turns")]
     [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]
     public List<Content> ? Turns { get; set; }
 
     /// <summary>
-    /// If true, indicates that the server content generation should start with   the currently
-    /// accumulated prompt. Otherwise, the server will await   additional messages before starting
+    /// If true, indicates that the server content generation should start with  the currently
+    /// accumulated prompt. Otherwise, the server will await  additional messages before starting
     /// generation.
     /// </summary>
     [JsonPropertyName("turnComplete")]
@@ -53,11 +53,11 @@ namespace Google.GenAI.Types {
 
     /// <summary>
     /// Deserializes a JSON string to a LiveClientContent object.
+    /// </summary>
     /// <param name="jsonString">The JSON string to deserialize.</param>
     /// <param name="options">Optional JsonSerializerOptions.</param>
     /// <returns>The deserialized LiveClientContent object, or null if deserialization
     /// fails.</returns>
-    /// </summary>
     public static LiveClientContent
         ? FromJson(string jsonString, JsonSerializerOptions? options = null) {
       try {

@@ -23,8 +23,8 @@ using Google.GenAI.Serialization;
 
 namespace Google.GenAI.Types {
   /// <summary>
-  /// Defines a function that the model can generate JSON inputs for.    The inputs are based on
-  /// `OpenAPI 3.0 specifications   <https://spec.openapis.org/oas/v3.0.3>`_.
+  /// Defines a function that the model can generate JSON inputs for.   The inputs are based on
+  /// OpenAPI 3.0 specifications (https://spec.openapis.org/oas/v3.0.3).
   /// </summary>
 
   public record FunctionDeclaration {
@@ -113,11 +113,11 @@ namespace Google.GenAI.Types {
 
     /// <summary>
     /// Deserializes a JSON string to a FunctionDeclaration object.
+    /// </summary>
     /// <param name="jsonString">The JSON string to deserialize.</param>
     /// <param name="options">Optional JsonSerializerOptions.</param>
     /// <returns>The deserialized FunctionDeclaration object, or null if deserialization
     /// fails.</returns>
-    /// </summary>
     public static FunctionDeclaration
         ? FromJson(string jsonString, JsonSerializerOptions? options = null) {
       try {

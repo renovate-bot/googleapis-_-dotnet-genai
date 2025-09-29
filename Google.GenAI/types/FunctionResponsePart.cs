@@ -23,11 +23,11 @@ using Google.GenAI.Serialization;
 
 namespace Google.GenAI.Types {
   /// <summary>
-  /// A datatype containing media that is part of a `FunctionResponse` message.    A
+  /// A datatype containing media that is part of a `FunctionResponse` message.   A
   /// `FunctionResponsePart` consists of data which has an associated datatype. A
   /// `FunctionResponsePart` can only contain one of the accepted types in
-  /// `FunctionResponsePart.data`.    A `FunctionResponsePart` must have a fixed IANA MIME type
-  /// identifying the   type and subtype of the media if the `inline_data` field is filled with raw
+  /// `FunctionResponsePart.data`.   A `FunctionResponsePart` must have a fixed IANA MIME type
+  /// identifying the  type and subtype of the media if the `inline_data` field is filled with raw
   /// bytes.
   /// </summary>
 
@@ -51,11 +51,11 @@ namespace Google.GenAI.Types {
 
     /// <summary>
     /// Deserializes a JSON string to a FunctionResponsePart object.
+    /// </summary>
     /// <param name="jsonString">The JSON string to deserialize.</param>
     /// <param name="options">Optional JsonSerializerOptions.</param>
     /// <returns>The deserialized FunctionResponsePart object, or null if deserialization
     /// fails.</returns>
-    /// </summary>
     public static FunctionResponsePart
         ? FromJson(string jsonString, JsonSerializerOptions? options = null) {
       try {

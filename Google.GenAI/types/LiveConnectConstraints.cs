@@ -27,10 +27,10 @@ namespace Google.GenAI.Types {
   /// </summary>
 
   public record LiveConnectConstraints {
-    /// <summary>
-    /// ID of the model to configure in the ephemeral token for Live API.       For a list of
-    /// models, see `Gemini models       <https://ai.google.dev/gemini-api/docs/models>`.
-    /// </summary>
+  /// <summary>
+  /// ID of the model to configure in the ephemeral token for Live API. For a list of models, see
+  /// Gemini models: https://ai.google.dev/gemini-api/docs/models
+  /// </summary>
     [JsonPropertyName("model")]
     [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]
     public string ? Model { get; set; }
@@ -45,13 +45,12 @@ namespace Google.GenAI.Types {
             get; set;
           }
 
-    /// <summary>
-    /// Deserializes a JSON string to a LiveConnectConstraints object.
-    /// <param name="jsonString">The JSON string to deserialize.</param>
-    /// <param name="options">Optional JsonSerializerOptions.</param>
-    /// <returns>The deserialized LiveConnectConstraints object, or null if deserialization
-    /// fails.</returns>
-    /// </summary>
+  /// <summary>
+  /// Deserializes a JSON string to a LiveConnectConstraints object.
+  /// </summary>
+  /// <param name="jsonString">The JSON string to deserialize.</param>
+  /// <param name="options">Optional JsonSerializerOptions.</param>
+  /// <returns>The deserialized LiveConnectConstraints object, or null if deserialization fails.</returns>
     public static LiveConnectConstraints
         ? FromJson(string jsonString, JsonSerializerOptions? options = null) {
       try {

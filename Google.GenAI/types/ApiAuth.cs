@@ -37,10 +37,10 @@ namespace Google.GenAI.Types {
 
     /// <summary>
     /// Deserializes a JSON string to a ApiAuth object.
+    /// </summary>
     /// <param name="jsonString">The JSON string to deserialize.</param>
     /// <param name="options">Optional JsonSerializerOptions.</param>
     /// <returns>The deserialized ApiAuth object, or null if deserialization fails.</returns>
-    /// </summary>
     public static ApiAuth ? FromJson(string jsonString, JsonSerializerOptions? options = null) {
       try {
         return JsonSerializer.Deserialize<ApiAuth>(jsonString, options);

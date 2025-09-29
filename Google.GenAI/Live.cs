@@ -24,7 +24,7 @@ using Google.GenAI.Types;
 
 namespace Google.GenAI
 {
-  /// </summary>/// <summary>
+  /// <summary>
   /// Live class encapsulates the logic for connecting to Google's GenAI Live API.
   /// Use <see cref="Live.ConnectAsync"/> to establish a websocket connection session.
   /// </summary>

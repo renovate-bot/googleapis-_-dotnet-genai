@@ -28,8 +28,8 @@ namespace Google.GenAI.Types {
 
   public record GenerationConfigRoutingConfigManualRoutingMode {
     /// <summary>
-    /// The model name to use. Only the public LLM models are accepted. See [Supported
-    /// models](https://cloud.google.com/vertex-ai/generative-ai/docs/model-reference/inference#supported-models).
+    /// The model name to use. Only the public LLM models are accepted. See Supported models
+    /// (https://cloud.google.com/vertex-ai/generative-ai/docs/model-reference/inference#supported-models).
     /// </summary>
     [JsonPropertyName("modelName")]
     [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]
@@ -37,11 +37,11 @@ namespace Google.GenAI.Types {
 
     /// <summary>
     /// Deserializes a JSON string to a GenerationConfigRoutingConfigManualRoutingMode object.
+    /// </summary>
     /// <param name="jsonString">The JSON string to deserialize.</param>
     /// <param name="options">Optional JsonSerializerOptions.</param>
     /// <returns>The deserialized GenerationConfigRoutingConfigManualRoutingMode object, or null if
     /// deserialization fails.</returns>
-    /// </summary>
     public static GenerationConfigRoutingConfigManualRoutingMode
         ? FromJson(string jsonString, JsonSerializerOptions? options = null) {
       try {

@@ -24,9 +24,9 @@ using Google.GenAI.Serialization;
 namespace Google.GenAI.Types {
   /// <summary>
   /// Notification for the client that a previously issued `ToolCallMessage` with the specified
-  /// `id`s should have been not executed and should be cancelled.    If there were side-effects to
-  /// those tool calls, clients may attempt to undo   the tool calls. This message occurs only in
-  /// cases where the clients interrupt   server turns.
+  /// `id`s should have been not executed and should be cancelled.   If there were side-effects to
+  /// those tool calls, clients may attempt to undo  the tool calls. This message occurs only in
+  /// cases where the clients interrupt  server turns.
   /// </summary>
 
   public record LiveServerToolCallCancellation {
@@ -39,11 +39,11 @@ namespace Google.GenAI.Types {
 
     /// <summary>
     /// Deserializes a JSON string to a LiveServerToolCallCancellation object.
+    /// </summary>
     /// <param name="jsonString">The JSON string to deserialize.</param>
     /// <param name="options">Optional JsonSerializerOptions.</param>
     /// <returns>The deserialized LiveServerToolCallCancellation object, or null if deserialization
     /// fails.</returns>
-    /// </summary>
     public static LiveServerToolCallCancellation
         ? FromJson(string jsonString, JsonSerializerOptions? options = null) {
       try {

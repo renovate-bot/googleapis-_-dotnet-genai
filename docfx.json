@@ -1,0 +1,44 @@
+{
+  "metadata": [
+    {
+      "dest": "api",
+      "src": [
+        {
+          "files": ["Google.GenAI/Google.GenAI.csproj"]
+        }
+      ],
+      "disableGitFeatures": false,
+      "disableDefaultFilter": false,
+      "warningsAsErrors": false,
+      "xref": [ "https://learn.microsoft.com/en-us/dotnet/api/" ]
+    }
+  ],
+  "build": {
+    "content": [
+      {
+        "files": [
+          "api/**/*.yml",
+          "api/index.md"
+        ]
+      },
+      {
+        "files": [
+          "README.md",
+          "index.md",
+          "toc.yml"
+        ]
+      }
+    ],
+    "resource": [
+      { "files": ["images/**"] }
+    ],
+    "output": "_site",
+    "template": [
+      "default",
+      "modern"
+    ],
+    "globalMetadata": {
+      "_appTitle": "Google GenAI .NET SDK"
+    }
+  }
+}

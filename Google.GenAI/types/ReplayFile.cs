@@ -46,10 +46,10 @@ namespace Google.GenAI.Types {
 
     /// <summary>
     /// Deserializes a JSON string to a ReplayFile object.
+    /// </summary>
     /// <param name="jsonString">The JSON string to deserialize.</param>
     /// <param name="options">Optional JsonSerializerOptions.</param>
     /// <returns>The deserialized ReplayFile object, or null if deserialization fails.</returns>
-    /// </summary>
     public static ReplayFile ? FromJson(string jsonString, JsonSerializerOptions? options = null) {
       try {
         return JsonSerializer.Deserialize<ReplayFile>(jsonString, options);

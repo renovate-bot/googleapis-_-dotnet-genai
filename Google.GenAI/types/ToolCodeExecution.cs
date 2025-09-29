@@ -31,11 +31,11 @@ namespace Google.GenAI.Types {
   public record ToolCodeExecution {
     /// <summary>
     /// Deserializes a JSON string to a ToolCodeExecution object.
+    /// </summary>
     /// <param name="jsonString">The JSON string to deserialize.</param>
     /// <param name="options">Optional JsonSerializerOptions.</param>
     /// <returns>The deserialized ToolCodeExecution object, or null if deserialization
     /// fails.</returns>
-    /// </summary>
     public static ToolCodeExecution
         ? FromJson(string jsonString, JsonSerializerOptions? options = null) {
       try {

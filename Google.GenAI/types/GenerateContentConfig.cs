@@ -23,9 +23,9 @@ using Google.GenAI.Serialization;
 
 namespace Google.GenAI.Types {
   /// <summary>
-  /// Optional model configuration parameters.    For more information, see `Content generation
+  /// Optional model configuration parameters.   For more information, see Content generation
   /// parameters
-  /// <https://cloud.google.com/vertex-ai/generative-ai/docs/multimodal/content-generation-parameters>`_.
+  /// (https://cloud.google.com/vertex-ai/generative-ai/docs/multimodal/content-generation-parameters).
   /// </summary>
 
   public record GenerateContentConfig {
@@ -37,8 +37,8 @@ namespace Google.GenAI.Types {
     public HttpOptions ? HttpOptions { get; set; }
 
     /// <summary>
-    /// Instructions for the model to steer it toward better performance.       For example, "Answer
-    /// as concisely as possible" or "Don't use technical       terms in your response".
+    /// Instructions for the model to steer it toward better performance.  For example, "Answer as
+    /// concisely as possible" or "Don't use technical  terms in your response".
     /// </summary>
     [JsonPropertyName("systemInstruction")]
     [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]
@@ -48,9 +48,9 @@ namespace Google.GenAI.Types {
           }
 
     /// <summary>
-    /// Value that controls the degree of randomness in token selection.       Lower temperatures
-    /// are good for prompts that require a less open-ended or       creative response, while higher
-    /// temperatures can lead to more diverse or       creative results.
+    /// Value that controls the degree of randomness in token selection.  Lower temperatures are
+    /// good for prompts that require a less open-ended or  creative response, while higher
+    /// temperatures can lead to more diverse or  creative results.
     /// </summary>
     [JsonPropertyName("temperature")]
     [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]
@@ -60,9 +60,9 @@ namespace Google.GenAI.Types {
           }
 
     /// <summary>
-    /// Tokens are selected from the most to least probable until the sum       of their
-    /// probabilities equals this value. Use a lower value for less       random responses and a
-    /// higher value for more random responses.
+    /// Tokens are selected from the most to least probable until the sum  of their probabilities
+    /// equals this value. Use a lower value for less  random responses and a higher value for more
+    /// random responses.
     /// </summary>
     [JsonPropertyName("topP")]
     [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]
@@ -72,10 +72,10 @@ namespace Google.GenAI.Types {
           }
 
     /// <summary>
-    /// For each token selection step, the ``top_k`` tokens with the       highest probabilities are
-    /// sampled. Then tokens are further filtered based       on ``top_p`` with the final token
-    /// selected using temperature sampling. Use       a lower number for less random responses and
-    /// a higher number for more       random responses.
+    /// For each token selection step, the ``top_k`` tokens with the  highest probabilities are
+    /// sampled. Then tokens are further filtered based  on ``top_p`` with the final token selected
+    /// using temperature sampling. Use  a lower number for less random responses and a higher
+    /// number for more  random responses.
     /// </summary>
     [JsonPropertyName("topK")]
     [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]
@@ -105,7 +105,7 @@ namespace Google.GenAI.Types {
           }
 
     /// <summary>
-    /// List of strings that tells the model to stop generating text if one       of the strings is
+    /// List of strings that tells the model to stop generating text if one  of the strings is
     /// encountered in the response.
     /// </summary>
     [JsonPropertyName("stopSequences")]
@@ -116,8 +116,8 @@ namespace Google.GenAI.Types {
           }
 
     /// <summary>
-    /// Whether to return the log probabilities of the tokens that were       chosen by the model at
-    /// each step.
+    /// Whether to return the log probabilities of the tokens that were  chosen by the model at each
+    /// step.
     /// </summary>
     [JsonPropertyName("responseLogprobs")]
     [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]
@@ -127,8 +127,7 @@ namespace Google.GenAI.Types {
           }
 
     /// <summary>
-    /// Number of top candidate tokens to return the log probabilities for       at each generation
-    /// step.
+    /// Number of top candidate tokens to return the log probabilities for  at each generation step.
     /// </summary>
     [JsonPropertyName("logprobs")]
     [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]
@@ -138,8 +137,8 @@ namespace Google.GenAI.Types {
           }
 
     /// <summary>
-    /// Positive values penalize tokens that already appear in the       generated text, increasing
-    /// the probability of generating more diverse       content.
+    /// Positive values penalize tokens that already appear in the  generated text, increasing the
+    /// probability of generating more diverse  content.
     /// </summary>
     [JsonPropertyName("presencePenalty")]
     [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]
@@ -149,8 +148,8 @@ namespace Google.GenAI.Types {
           }
 
     /// <summary>
-    /// Positive values penalize tokens that repeatedly appear in the       generated text,
-    /// increasing the probability of generating more diverse       content.
+    /// Positive values penalize tokens that repeatedly appear in the  generated text, increasing
+    /// the probability of generating more diverse  content.
     /// </summary>
     [JsonPropertyName("frequencyPenalty")]
     [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]
@@ -160,8 +159,8 @@ namespace Google.GenAI.Types {
           }
 
     /// <summary>
-    /// When ``seed`` is fixed to a specific number, the model makes a best       effort to provide
-    /// the same response for repeated requests. By default, a       random number is used.
+    /// When ``seed`` is fixed to a specific number, the model makes a best  effort to provide the
+    /// same response for repeated requests. By default, a  random number is used.
     /// </summary>
     [JsonPropertyName("seed")]
     [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]
@@ -171,10 +170,10 @@ namespace Google.GenAI.Types {
           }
 
     /// <summary>
-    /// Output response mimetype of the generated candidate text.       Supported mimetype: -
-    /// `text/plain`: (default) Text output.         - `application/json`: JSON response in the
-    /// candidates.       The model needs to be prompted to output the appropriate response type,
-    /// otherwise the behavior is undefined.       This is a preview feature.
+    /// Output response mimetype of the generated candidate text.  Supported mimetype:  -
+    /// `text/plain`: (default) Text output.  - `application/json`: JSON response in the candidates.
+    /// The model needs to be prompted to output the appropriate response type,  otherwise the
+    /// behavior is undefined.  This is a preview feature.
     /// </summary>
     [JsonPropertyName("responseMimeType")]
     [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]
@@ -184,11 +183,11 @@ namespace Google.GenAI.Types {
           }
 
     /// <summary>
-    /// The `Schema` object allows the definition of input and output data types.       These types
-    /// can be objects, but also primitives and arrays.       Represents a select subset of an
-    /// [OpenAPI 3.0 schema       object](https://spec.openapis.org/oas/v3.0.3#schema).       If
-    /// set, a compatible response_mime_type must also be set.       Compatible mimetypes:
-    /// `application/json`: Schema for JSON response.
+    /// The `Schema` object allows the definition of input and output data types.  These types can
+    /// be objects, but also primitives and arrays.  Represents a select subset of an OpenAPI 3.0
+    /// schema  object (https://spec.openapis.org/oas/v3.0.3#schema).  If set, a compatible
+    /// response_mime_type must also be set.  Compatible mimetypes: `application/json`: Schema for
+    /// JSON response.
     /// </summary>
     [JsonPropertyName("responseSchema")]
     [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]
@@ -198,18 +197,18 @@ namespace Google.GenAI.Types {
           }
 
     /// <summary>
-    /// Optional. Output schema of the generated response.       This is an alternative to
-    /// `response_schema` that accepts [JSON       Schema](https://json-schema.org/). If set,
-    /// `response_schema` must be       omitted, but `response_mime_type` is required. While the
-    /// full JSON Schema       may be sent, not all features are supported. Specifically, only the
-    /// following properties are supported: - `$id` - `$defs` - `$ref` - `$anchor`       - `type` -
-    /// `format` - `title` - `description` - `enum` (for strings and       numbers) - `items` -
-    /// `prefixItems` - `minItems` - `maxItems` - `minimum` -       `maximum` - `anyOf` - `oneOf`
-    /// (interpreted the same as `anyOf`) -       `properties` - `additionalProperties` - `required`
-    /// The non-standard       `propertyOrdering` property may also be set. Cyclic references are
-    /// unrolled to a limited degree and, as such, may only be used within       non-required
-    /// properties. (Nullable properties are not sufficient.) If       `$ref` is set on a
-    /// sub-schema, no other properties, except for than those       starting as a `$`, may be set.
+    /// Optional. Output schema of the generated response.  This is an alternative to
+    /// `response_schema` that accepts JSON  Schema (https://json-schema.org/). If set,
+    /// `response_schema` must be  omitted, but `response_mime_type` is required. While the full
+    /// JSON Schema  may be sent, not all features are supported. Specifically, only the  following
+    /// properties are supported: - `$id` - `$defs` - `$ref` - `$anchor`  - `type` - `format` -
+    /// `title` - `description` - `enum` (for strings and  numbers) - `items` - `prefixItems` -
+    /// `minItems` - `maxItems` - `minimum` -  `maximum` - `anyOf` - `oneOf` (interpreted the same
+    /// as `anyOf`) -  `properties` - `additionalProperties` - `required` The non-standard
+    /// `propertyOrdering` property may also be set. Cyclic references are  unrolled to a limited
+    /// degree and, as such, may only be used within  non-required properties. (Nullable properties
+    /// are not sufficient.) If  `$ref` is set on a sub-schema, no other properties, except for than
+    /// those  starting as a `$`, may be set.
     /// </summary>
     [JsonPropertyName("responseJsonSchema")]
     [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]
@@ -239,7 +238,7 @@ namespace Google.GenAI.Types {
           }
 
     /// <summary>
-    /// Safety settings in the request to block unsafe content in the       response.
+    /// Safety settings in the request to block unsafe content in the  response.
     /// </summary>
     [JsonPropertyName("safetySettings")]
     [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]
@@ -249,8 +248,8 @@ namespace Google.GenAI.Types {
           }
 
     /// <summary>
-    /// Code that enables the system to interact with external systems to       perform an action
-    /// outside of the knowledge and scope of the model.
+    /// Code that enables the system to interact with external systems to  perform an action outside
+    /// of the knowledge and scope of the model.
     /// </summary>
     [JsonPropertyName("tools")]
     [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]
@@ -280,7 +279,7 @@ namespace Google.GenAI.Types {
           }
 
     /// <summary>
-    /// Resource name of a context cache that can be used in subsequent       requests.
+    /// Resource name of a context cache that can be used in subsequent  requests.
     /// </summary>
     [JsonPropertyName("cachedContent")]
     [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]
@@ -290,8 +289,8 @@ namespace Google.GenAI.Types {
           }
 
     /// <summary>
-    /// The requested modalities of the response. Represents the set of       modalities that the
-    /// model can return.
+    /// The requested modalities of the response. Represents the set of  modalities that the model
+    /// can return.
     /// </summary>
     [JsonPropertyName("responseModalities")]
     [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]
@@ -321,7 +320,7 @@ namespace Google.GenAI.Types {
           }
 
     /// <summary>
-    /// If enabled, audio timestamp will be included in the request to the        model.
+    /// If enabled, audio timestamp will be included in the request to the  model.
     /// </summary>
     [JsonPropertyName("audioTimestamp")]
     [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]
@@ -342,11 +341,11 @@ namespace Google.GenAI.Types {
 
     /// <summary>
     /// Deserializes a JSON string to a GenerateContentConfig object.
+    /// </summary>
     /// <param name="jsonString">The JSON string to deserialize.</param>
     /// <param name="options">Optional JsonSerializerOptions.</param>
     /// <returns>The deserialized GenerateContentConfig object, or null if deserialization
     /// fails.</returns>
-    /// </summary>
     public static GenerateContentConfig
         ? FromJson(string jsonString, JsonSerializerOptions? options = null) {
       try {

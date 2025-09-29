@@ -28,17 +28,17 @@ namespace Google.GenAI.Types {
 
   public record Content {
     /// <summary>
-    /// List of parts that constitute a single message. Each part may have       a different IANA
-    /// MIME type.
+    /// List of parts that constitute a single message. Each part may have  a different IANA MIME
+    /// type.
     /// </summary>
     [JsonPropertyName("parts")]
     [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]
     public List<Part> ? Parts { get; set; }
 
     /// <summary>
-    /// Optional. The producer of the content. Must be either 'user' or       'model'. Useful to set
-    /// for multi-turn conversations, otherwise can be       empty. If role is not specified, SDK
-    /// will determine the role.
+    /// Optional. The producer of the content. Must be either 'user' or  'model'. Useful to set for
+    /// multi-turn conversations, otherwise can be  empty. If role is not specified, SDK will
+    /// determine the role.
     /// </summary>
     [JsonPropertyName("role")]
     [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]
@@ -49,10 +49,10 @@ namespace Google.GenAI.Types {
 
     /// <summary>
     /// Deserializes a JSON string to a Content object.
+    /// </summary>
     /// <param name="jsonString">The JSON string to deserialize.</param>
     /// <param name="options">Optional JsonSerializerOptions.</param>
     /// <returns>The deserialized Content object, or null if deserialization fails.</returns>
-    /// </summary>
     public static Content ? FromJson(string jsonString, JsonSerializerOptions? options = null) {
       try {
         return JsonSerializer.Deserialize<Content>(jsonString, options);

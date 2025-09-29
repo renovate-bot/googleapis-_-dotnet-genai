@@ -35,7 +35,7 @@ namespace Google.GenAI.Types {
     public Image ? Image { get; set; }
 
     /// <summary>
-    /// Responsible AI filter reason if the image is filtered out of the       response.
+    /// Responsible AI filter reason if the image is filtered out of the  response.
     /// </summary>
     [JsonPropertyName("raiFilteredReason")]
     [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]
@@ -45,8 +45,7 @@ namespace Google.GenAI.Types {
           }
 
     /// <summary>
-    /// Safety attributes of the image. Lists of RAI categories and their       scores of each
-    /// content.
+    /// Safety attributes of the image. Lists of RAI categories and their  scores of each content.
     /// </summary>
     [JsonPropertyName("safetyAttributes")]
     [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]
@@ -56,7 +55,7 @@ namespace Google.GenAI.Types {
           }
 
     /// <summary>
-    /// The rewritten prompt used for the image generation if the prompt       enhancer is enabled.
+    /// The rewritten prompt used for the image generation if the prompt  enhancer is enabled.
     /// </summary>
     [JsonPropertyName("enhancedPrompt")]
     [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]
@@ -67,10 +66,10 @@ namespace Google.GenAI.Types {
 
     /// <summary>
     /// Deserializes a JSON string to a GeneratedImage object.
+    /// </summary>
     /// <param name="jsonString">The JSON string to deserialize.</param>
     /// <param name="options">Optional JsonSerializerOptions.</param>
     /// <returns>The deserialized GeneratedImage object, or null if deserialization fails.</returns>
-    /// </summary>
     public static GeneratedImage
         ? FromJson(string jsonString, JsonSerializerOptions? options = null) {
       try {

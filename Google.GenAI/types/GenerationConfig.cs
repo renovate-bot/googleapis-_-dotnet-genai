@@ -116,7 +116,7 @@ namespace Google.GenAI.Types {
 
     /// <summary>
     /// Optional. Output schema of the generated response. This is an alternative to
-    /// `response_schema` that accepts [JSON Schema](https://json-schema.org/). If set,
+    /// `response_schema` that accepts JSON Schema (https://json-schema.org/). If set,
     /// `response_schema` must be omitted, but `response_mime_type` is required. While the full JSON
     /// Schema may be sent, not all features are supported. Specifically, only the following
     /// properties are supported: - `$id` - `$defs` - `$ref` - `$anchor` - `type` - `format` -
@@ -171,7 +171,7 @@ namespace Google.GenAI.Types {
     /// <summary>
     /// Optional. The `Schema` object allows the definition of input and output data types. These
     /// types can be objects, but also primitives and arrays. Represents a select subset of an
-    /// [OpenAPI 3.0 schema object](https://spec.openapis.org/oas/v3.0.3#schema). If set, a
+    /// OpenAPI 3.0 schema object (https://spec.openapis.org/oas/v3.0.3#schema). If set, a
     /// compatible response_mime_type must also be set. Compatible mimetypes: `application/json`:
     /// Schema for JSON response.
     /// </summary>
@@ -265,11 +265,11 @@ namespace Google.GenAI.Types {
 
     /// <summary>
     /// Deserializes a JSON string to a GenerationConfig object.
+    /// </summary>
     /// <param name="jsonString">The JSON string to deserialize.</param>
     /// <param name="options">Optional JsonSerializerOptions.</param>
     /// <returns>The deserialized GenerationConfig object, or null if deserialization
     /// fails.</returns>
-    /// </summary>
     public static GenerationConfig
         ? FromJson(string jsonString, JsonSerializerOptions? options = null) {
       try {

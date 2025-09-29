@@ -36,10 +36,10 @@ namespace Google.GenAI.Types {
 
     /// <summary>
     /// Deserializes a JSON string to a GoogleMaps object.
+    /// </summary>
     /// <param name="jsonString">The JSON string to deserialize.</param>
     /// <param name="options">Optional JsonSerializerOptions.</param>
     /// <returns>The deserialized GoogleMaps object, or null if deserialization fails.</returns>
-    /// </summary>
     public static GoogleMaps ? FromJson(string jsonString, JsonSerializerOptions? options = null) {
       try {
         return JsonSerializer.Deserialize<GoogleMaps>(jsonString, options);

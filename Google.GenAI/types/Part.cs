@@ -23,9 +23,9 @@ using Google.GenAI.Serialization;
 
 namespace Google.GenAI.Types {
   /// <summary>
-  /// A datatype containing media content.    Exactly one field within a Part should be set,
-  /// representing the specific type   of content being conveyed. Using multiple fields within the
-  /// same `Part`   instance is considered invalid.
+  /// A datatype containing media content.   Exactly one field within a Part should be set,
+  /// representing the specific type  of content being conveyed. Using multiple fields within the
+  /// same `Part`  instance is considered invalid.
   /// </summary>
 
   public record Part {
@@ -77,9 +77,9 @@ namespace Google.GenAI.Types {
           }
 
     /// <summary>
-    /// A predicted [FunctionCall] returned from the model that contains a string       representing
-    /// the [FunctionDeclaration.name] and a structured JSON object       containing the parameters
-    /// and their values.
+    /// A predicted [FunctionCall] returned from the model that contains a string  representing the
+    /// [FunctionDeclaration.name] and a structured JSON object  containing the parameters and their
+    /// values.
     /// </summary>
     [JsonPropertyName("functionCall")]
     [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]
@@ -132,10 +132,10 @@ namespace Google.GenAI.Types {
 
     /// <summary>
     /// Deserializes a JSON string to a Part object.
+    /// </summary>
     /// <param name="jsonString">The JSON string to deserialize.</param>
     /// <param name="options">Optional JsonSerializerOptions.</param>
     /// <returns>The deserialized Part object, or null if deserialization fails.</returns>
-    /// </summary>
     public static Part ? FromJson(string jsonString, JsonSerializerOptions? options = null) {
       try {
         return JsonSerializer.Deserialize<Part>(jsonString, options);

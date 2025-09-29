@@ -35,8 +35,8 @@ namespace Google.GenAI.Types {
     public List<GeneratedImage> ? GeneratedImages { get; set; }
 
     /// <summary>
-    /// Safety attributes of the positive prompt. Only populated if ``include_safety_attributes`` is
-    /// set to True.
+    /// Safety attributes of the positive prompt. Only populated if  ``include_safety_attributes``
+    /// is set to True.
     /// </summary>
     [JsonPropertyName("positivePromptSafetyAttributes")]
     [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]
@@ -47,11 +47,11 @@ namespace Google.GenAI.Types {
 
     /// <summary>
     /// Deserializes a JSON string to a GenerateImagesResponse object.
+    /// </summary>
     /// <param name="jsonString">The JSON string to deserialize.</param>
     /// <param name="options">Optional JsonSerializerOptions.</param>
     /// <returns>The deserialized GenerateImagesResponse object, or null if deserialization
     /// fails.</returns>
-    /// </summary>
     public static GenerateImagesResponse
         ? FromJson(string jsonString, JsonSerializerOptions? options = null) {
       try {

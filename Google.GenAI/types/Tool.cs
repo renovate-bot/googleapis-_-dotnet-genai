@@ -47,8 +47,8 @@ namespace Google.GenAI.Types {
           }
 
     /// <summary>
-    /// Optional. Google Search tool type. Specialized retrieval tool       that is powered by
-    /// Google Search.
+    /// Optional. Google Search tool type. Specialized retrieval tool  that is powered by Google
+    /// Search.
     /// </summary>
     [JsonPropertyName("googleSearch")]
     [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]
@@ -69,8 +69,8 @@ namespace Google.GenAI.Types {
           }
 
     /// <summary>
-    /// Optional. Enterprise web search tool type. Specialized retrieval       tool that is powered
-    /// by Vertex AI Search and Sec4 compliance.
+    /// Optional. Enterprise web search tool type. Specialized retrieval  tool that is powered by
+    /// Vertex AI Search and Sec4 compliance.
     /// </summary>
     [JsonPropertyName("enterpriseWebSearch")]
     [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]
@@ -80,8 +80,7 @@ namespace Google.GenAI.Types {
           }
 
     /// <summary>
-    /// Optional. Google Maps tool type. Specialized retrieval tool       that is powered by Google
-    /// Maps.
+    /// Optional. Google Maps tool type. Specialized retrieval tool  that is powered by Google Maps.
     /// </summary>
     [JsonPropertyName("googleMaps")]
     [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]
@@ -101,8 +100,8 @@ namespace Google.GenAI.Types {
           }
 
     /// <summary>
-    /// Optional. Tool to support the model interacting directly with the       computer. If
-    /// enabled, it automatically populates computer-use specific       Function Declarations.
+    /// Optional. Tool to support the model interacting directly with the  computer. If enabled, it
+    /// automatically populates computer-use specific  Function Declarations.
     /// </summary>
     [JsonPropertyName("computerUse")]
     [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]
@@ -123,10 +122,10 @@ namespace Google.GenAI.Types {
 
     /// <summary>
     /// Deserializes a JSON string to a Tool object.
+    /// </summary>
     /// <param name="jsonString">The JSON string to deserialize.</param>
     /// <param name="options">Optional JsonSerializerOptions.</param>
     /// <returns>The deserialized Tool object, or null if deserialization fails.</returns>
-    /// </summary>
     public static Tool ? FromJson(string jsonString, JsonSerializerOptions? options = null) {
       try {
         return JsonSerializer.Deserialize<Tool>(jsonString, options);

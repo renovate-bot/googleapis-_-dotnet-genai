@@ -28,16 +28,16 @@ namespace Google.GenAI.Types {
 
   public record Image {
     /// <summary>
-    /// The Cloud Storage URI of the image. ``Image`` can contain a value       for this field or
-    /// the ``image_bytes`` field but not both.
+    /// The Cloud Storage URI of the image. ``Image`` can contain a value  for this field or the
+    /// ``image_bytes`` field but not both.
     /// </summary>
     [JsonPropertyName("gcsUri")]
     [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]
     public string ? GcsUri { get; set; }
 
     /// <summary>
-    /// The image bytes data. ``Image`` can contain a value for this field       or the ``gcs_uri``
-    /// field but not both.
+    /// The image bytes data. ``Image`` can contain a value for this field  or the ``gcs_uri`` field
+    /// but not both.
     /// </summary>
     [JsonPropertyName("imageBytes")]
     [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]
@@ -58,10 +58,10 @@ namespace Google.GenAI.Types {
 
     /// <summary>
     /// Deserializes a JSON string to a Image object.
+    /// </summary>
     /// <param name="jsonString">The JSON string to deserialize.</param>
     /// <param name="options">Optional JsonSerializerOptions.</param>
     /// <returns>The deserialized Image object, or null if deserialization fails.</returns>
-    /// </summary>
     public static Image ? FromJson(string jsonString, JsonSerializerOptions? options = null) {
       try {
         return JsonSerializer.Deserialize<Image>(jsonString, options);

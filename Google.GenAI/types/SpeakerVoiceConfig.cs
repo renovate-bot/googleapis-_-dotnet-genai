@@ -28,7 +28,7 @@ namespace Google.GenAI.Types {
 
   public record SpeakerVoiceConfig {
     /// <summary>
-    /// The name of the speaker to use. Should be the same as in the           prompt.
+    /// The name of the speaker to use. Should be the same as in the  prompt.
     /// </summary>
     [JsonPropertyName("speaker")]
     [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]
@@ -46,11 +46,11 @@ namespace Google.GenAI.Types {
 
     /// <summary>
     /// Deserializes a JSON string to a SpeakerVoiceConfig object.
+    /// </summary>
     /// <param name="jsonString">The JSON string to deserialize.</param>
     /// <param name="options">Optional JsonSerializerOptions.</param>
     /// <returns>The deserialized SpeakerVoiceConfig object, or null if deserialization
     /// fails.</returns>
-    /// </summary>
     public static SpeakerVoiceConfig
         ? FromJson(string jsonString, JsonSerializerOptions? options = null) {
       try {

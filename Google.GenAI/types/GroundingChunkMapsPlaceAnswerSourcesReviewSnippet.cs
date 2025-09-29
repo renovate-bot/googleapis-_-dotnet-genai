@@ -78,11 +78,11 @@ namespace Google.GenAI.Types {
 
     /// <summary>
     /// Deserializes a JSON string to a GroundingChunkMapsPlaceAnswerSourcesReviewSnippet object.
+    /// </summary>
     /// <param name="jsonString">The JSON string to deserialize.</param>
     /// <param name="options">Optional JsonSerializerOptions.</param>
     /// <returns>The deserialized GroundingChunkMapsPlaceAnswerSourcesReviewSnippet object, or null
     /// if deserialization fails.</returns>
-    /// </summary>
     public static GroundingChunkMapsPlaceAnswerSourcesReviewSnippet
         ? FromJson(string jsonString, JsonSerializerOptions? options = null) {
       try {

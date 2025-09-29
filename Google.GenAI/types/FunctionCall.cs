@@ -28,7 +28,7 @@ namespace Google.GenAI.Types {
 
   public record FunctionCall {
     /// <summary>
-    /// The unique id of the function call. If populated, the client to execute the `function_call`
+    /// The unique id of the function call. If populated, the client to execute the  `function_call`
     /// and return the response with the matching `id`.
     /// </summary>
     [JsonPropertyName("id")]
@@ -58,10 +58,10 @@ namespace Google.GenAI.Types {
 
     /// <summary>
     /// Deserializes a JSON string to a FunctionCall object.
+    /// </summary>
     /// <param name="jsonString">The JSON string to deserialize.</param>
     /// <param name="options">Optional JsonSerializerOptions.</param>
     /// <returns>The deserialized FunctionCall object, or null if deserialization fails.</returns>
-    /// </summary>
     public static FunctionCall
         ? FromJson(string jsonString, JsonSerializerOptions? options = null) {
       try {

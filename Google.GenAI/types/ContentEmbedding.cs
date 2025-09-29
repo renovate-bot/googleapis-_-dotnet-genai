@@ -35,7 +35,7 @@ namespace Google.GenAI.Types {
     public List<double> ? Values { get; set; }
 
     /// <summary>
-    /// Vertex API only. Statistics of the input text associated with this       embedding.
+    /// Vertex API only. Statistics of the input text associated with this  embedding.
     /// </summary>
     [JsonPropertyName("statistics")]
     [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]
@@ -46,11 +46,11 @@ namespace Google.GenAI.Types {
 
     /// <summary>
     /// Deserializes a JSON string to a ContentEmbedding object.
+    /// </summary>
     /// <param name="jsonString">The JSON string to deserialize.</param>
     /// <param name="options">Optional JsonSerializerOptions.</param>
     /// <returns>The deserialized ContentEmbedding object, or null if deserialization
     /// fails.</returns>
-    /// </summary>
     public static ContentEmbedding
         ? FromJson(string jsonString, JsonSerializerOptions? options = null) {
       try {

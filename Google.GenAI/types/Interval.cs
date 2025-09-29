@@ -24,8 +24,8 @@ using Google.GenAI.Serialization;
 namespace Google.GenAI.Types {
   /// <summary>
   /// Represents a time interval, encoded as a start time (inclusive) and an end time (exclusive).
-  /// The start time must be less than or equal to the end time.   When the start equals the end
-  /// time, the interval is an empty interval.   (matches no time)   When both start and end are
+  /// The start time must be less than or equal to the end time.  When the start equals the end
+  /// time, the interval is an empty interval.  (matches no time)  When both start and end are
   /// unspecified, the interval matches any time.
   /// </summary>
 
@@ -49,10 +49,10 @@ namespace Google.GenAI.Types {
 
     /// <summary>
     /// Deserializes a JSON string to a Interval object.
+    /// </summary>
     /// <param name="jsonString">The JSON string to deserialize.</param>
     /// <param name="options">Optional JsonSerializerOptions.</param>
     /// <returns>The deserialized Interval object, or null if deserialization fails.</returns>
-    /// </summary>
     public static Interval ? FromJson(string jsonString, JsonSerializerOptions? options = null) {
       try {
         return JsonSerializer.Deserialize<Interval>(jsonString, options);

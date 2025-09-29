@@ -28,16 +28,16 @@ namespace Google.GenAI.Types {
 
   public record GoogleSearch {
     /// <summary>
-    /// Optional. Filter search results to a specific time range.       If customers set a start
-    /// time, they must set an end time (and vice versa).
+    /// Optional. Filter search results to a specific time range.  If customers set a start time,
+    /// they must set an end time (and vice versa).
     /// </summary>
     [JsonPropertyName("timeRangeFilter")]
     [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]
     public Interval ? TimeRangeFilter { get; set; }
 
     /// <summary>
-    /// Optional. List of domains to be excluded from the search results.       The default limit is
-    /// 2000 domains.
+    /// Optional. List of domains to be excluded from the search results.  The default limit is 2000
+    /// domains.
     /// </summary>
     [JsonPropertyName("excludeDomains")]
     [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]
@@ -48,10 +48,10 @@ namespace Google.GenAI.Types {
 
     /// <summary>
     /// Deserializes a JSON string to a GoogleSearch object.
+    /// </summary>
     /// <param name="jsonString">The JSON string to deserialize.</param>
     /// <param name="options">Optional JsonSerializerOptions.</param>
     /// <returns>The deserialized GoogleSearch object, or null if deserialization fails.</returns>
-    /// </summary>
     public static GoogleSearch
         ? FromJson(string jsonString, JsonSerializerOptions? options = null) {
       try {

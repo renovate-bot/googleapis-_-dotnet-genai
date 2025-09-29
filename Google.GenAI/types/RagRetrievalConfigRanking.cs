@@ -46,11 +46,11 @@ namespace Google.GenAI.Types {
 
     /// <summary>
     /// Deserializes a JSON string to a RagRetrievalConfigRanking object.
+    /// </summary>
     /// <param name="jsonString">The JSON string to deserialize.</param>
     /// <param name="options">Optional JsonSerializerOptions.</param>
     /// <returns>The deserialized RagRetrievalConfigRanking object, or null if deserialization
     /// fails.</returns>
-    /// </summary>
     public static RagRetrievalConfigRanking
         ? FromJson(string jsonString, JsonSerializerOptions? options = null) {
       try {

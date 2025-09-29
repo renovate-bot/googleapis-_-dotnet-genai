@@ -23,15 +23,14 @@ using Google.GenAI.Serialization;
 
 namespace Google.GenAI.Types {
   /// <summary>
-  /// User input that is sent in real time.    This is different from `LiveClientContent` in a few
-  /// ways:      - Can be sent continuously without interruption to model generation.     - If there
-  /// is a need to mix data interleaved across the       `LiveClientContent` and the
-  /// `LiveClientRealtimeInput`, server attempts to       optimize for best response, but there are
-  /// no guarantees.     - End of turn is not explicitly specified, but is rather derived from user
-  /// activity (for example, end of speech).     - Even before the end of turn, the data is
-  /// processed incrementally       to optimize for a fast start of the response from the model. -
-  /// Is always assumed to be the user's input (cannot be used to populate       conversation
-  /// history).
+  /// User input that is sent in real time.   This is different from `LiveClientContent` in a few
+  /// ways:   - Can be sent continuously without interruption to model generation.  - If there is a
+  /// need to mix data interleaved across the  `LiveClientContent` and the
+  /// `LiveClientRealtimeInput`, server attempts to  optimize for best response, but there are no
+  /// guarantees.  - End of turn is not explicitly specified, but is rather derived from user
+  /// activity (for example, end of speech).  - Even before the end of turn, the data is processed
+  /// incrementally  to optimize for a fast start of the response from the model.  - Is always
+  /// assumed to be the user's input (cannot be used to populate  conversation history).
   /// </summary>
 
   public record LiveClientRealtimeInput {
@@ -106,11 +105,11 @@ namespace Google.GenAI.Types {
 
     /// <summary>
     /// Deserializes a JSON string to a LiveClientRealtimeInput object.
+    /// </summary>
     /// <param name="jsonString">The JSON string to deserialize.</param>
     /// <param name="options">Optional JsonSerializerOptions.</param>
     /// <returns>The deserialized LiveClientRealtimeInput object, or null if deserialization
     /// fails.</returns>
-    /// </summary>
     public static LiveClientRealtimeInput
         ? FromJson(string jsonString, JsonSerializerOptions? options = null) {
       try {

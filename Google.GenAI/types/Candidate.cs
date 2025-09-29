@@ -65,8 +65,8 @@ namespace Google.GenAI.Types {
           }
 
     /// <summary>
-    /// The reason why the model stopped generating tokens.       If empty, the model has not
-    /// stopped generating the tokens.
+    /// The reason why the model stopped generating tokens.  If empty, the model has not stopped
+    /// generating the tokens.
     /// </summary>
     [JsonPropertyName("finishReason")]
     [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]
@@ -138,10 +138,10 @@ namespace Google.GenAI.Types {
 
     /// <summary>
     /// Deserializes a JSON string to a Candidate object.
+    /// </summary>
     /// <param name="jsonString">The JSON string to deserialize.</param>
     /// <param name="options">Optional JsonSerializerOptions.</param>
     /// <returns>The deserialized Candidate object, or null if deserialization fails.</returns>
-    /// </summary>
     public static Candidate ? FromJson(string jsonString, JsonSerializerOptions? options = null) {
       try {
         return JsonSerializer.Deserialize<Candidate>(jsonString, options);

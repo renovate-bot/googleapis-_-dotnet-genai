@@ -28,8 +28,8 @@ namespace Google.GenAI.Types {
 
   public record ContentEmbeddingStatistics {
     /// <summary>
-    /// Vertex API only. If the input text was truncated due to having       a length longer than
-    /// the allowed maximum input.
+    /// Vertex API only. If the input text was truncated due to having  a length longer than the
+    /// allowed maximum input.
     /// </summary>
     [JsonPropertyName("truncated")]
     [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]
@@ -47,11 +47,11 @@ namespace Google.GenAI.Types {
 
     /// <summary>
     /// Deserializes a JSON string to a ContentEmbeddingStatistics object.
+    /// </summary>
     /// <param name="jsonString">The JSON string to deserialize.</param>
     /// <param name="options">Optional JsonSerializerOptions.</param>
     /// <returns>The deserialized ContentEmbeddingStatistics object, or null if deserialization
     /// fails.</returns>
-    /// </summary>
     public static ContentEmbeddingStatistics
         ? FromJson(string jsonString, JsonSerializerOptions? options = null) {
       try {

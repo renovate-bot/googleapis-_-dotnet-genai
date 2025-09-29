@@ -23,11 +23,11 @@ using Google.GenAI.Serialization;
 
 namespace Google.GenAI.Types {
   /// <summary>
-  /// Client generated response to a `ToolCall` received from the server.    Individual
-  /// `FunctionResponse` objects are matched to the respective   `FunctionCall` objects by the `id`
-  /// field.    Note that in the unary and server-streaming GenerateContent APIs function   calling
-  /// happens by exchanging the `Content` parts, while in the bidi   GenerateContent APIs function
-  /// calling happens over this dedicated set of   messages.
+  /// Client generated response to a `ToolCall` received from the server.   Individual
+  /// `FunctionResponse` objects are matched to the respective  `FunctionCall` objects by the `id`
+  /// field.   Note that in the unary and server-streaming GenerateContent APIs function  calling
+  /// happens by exchanging the `Content` parts, while in the bidi  GenerateContent APIs function
+  /// calling happens over this dedicated set of  messages.
   /// </summary>
 
   public record LiveClientToolResponse {
@@ -40,11 +40,11 @@ namespace Google.GenAI.Types {
 
     /// <summary>
     /// Deserializes a JSON string to a LiveClientToolResponse object.
+    /// </summary>
     /// <param name="jsonString">The JSON string to deserialize.</param>
     /// <param name="options">Optional JsonSerializerOptions.</param>
     /// <returns>The deserialized LiveClientToolResponse object, or null if deserialization
     /// fails.</returns>
-    /// </summary>
     public static LiveClientToolResponse
         ? FromJson(string jsonString, JsonSerializerOptions? options = null) {
       try {

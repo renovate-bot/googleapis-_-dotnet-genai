@@ -52,8 +52,8 @@ namespace Google.GenAI.Types {
           }
 
     /// <summary>
-    /// List of parts that constitute a function response. Each part may       have a different IANA
-    /// MIME type.
+    /// List of parts that constitute a function response. Each part may  have a different IANA MIME
+    /// type.
     /// </summary>
     [JsonPropertyName("parts")]
     [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]
@@ -98,11 +98,11 @@ namespace Google.GenAI.Types {
 
     /// <summary>
     /// Deserializes a JSON string to a FunctionResponse object.
+    /// </summary>
     /// <param name="jsonString">The JSON string to deserialize.</param>
     /// <param name="options">Optional JsonSerializerOptions.</param>
     /// <returns>The deserialized FunctionResponse object, or null if deserialization
     /// fails.</returns>
-    /// </summary>
     public static FunctionResponse
         ? FromJson(string jsonString, JsonSerializerOptions? options = null) {
       try {

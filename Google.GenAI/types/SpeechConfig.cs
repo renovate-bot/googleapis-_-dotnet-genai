@@ -35,7 +35,7 @@ namespace Google.GenAI.Types {
     public VoiceConfig ? VoiceConfig { get; set; }
 
     /// <summary>
-    /// The configuration for the multi-speaker setup.           It is mutually exclusive with the
+    /// The configuration for the multi-speaker setup.  It is mutually exclusive with the
     /// voice_config field.
     /// </summary>
     [JsonPropertyName("multiSpeakerVoiceConfig")]
@@ -46,8 +46,8 @@ namespace Google.GenAI.Types {
           }
 
     /// <summary>
-    /// Language code (ISO 639. e.g. en-US) for the speech synthesization.       Only available for
-    /// Live API.
+    /// Language code (ISO 639. e.g. en-US) for the speech synthesization.  Only available for Live
+    /// API.
     /// </summary>
     [JsonPropertyName("languageCode")]
     [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]
@@ -58,10 +58,10 @@ namespace Google.GenAI.Types {
 
     /// <summary>
     /// Deserializes a JSON string to a SpeechConfig object.
+    /// </summary>
     /// <param name="jsonString">The JSON string to deserialize.</param>
     /// <param name="options">Optional JsonSerializerOptions.</param>
     /// <returns>The deserialized SpeechConfig object, or null if deserialization fails.</returns>
-    /// </summary>
     public static SpeechConfig
         ? FromJson(string jsonString, JsonSerializerOptions? options = null) {
       try {

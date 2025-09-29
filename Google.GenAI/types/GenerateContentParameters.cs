@@ -28,8 +28,8 @@ namespace Google.GenAI.Types {
 
   internal record GenerateContentParameters {
     /// <summary>
-    /// ID of the model to use. For a list of models, see `Google models
-    /// <https://cloud.google.com/vertex-ai/generative-ai/docs/learn/models>`_.
+    /// ID of the model to use. For a list of models, see Google models
+    /// (https://cloud.google.com/vertex-ai/generative-ai/docs/learn/models).
     /// </summary>
     [JsonPropertyName("model")]
     [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]
@@ -57,11 +57,11 @@ namespace Google.GenAI.Types {
 
     /// <summary>
     /// Deserializes a JSON string to a GenerateContentParameters object.
+    /// </summary>
     /// <param name="jsonString">The JSON string to deserialize.</param>
     /// <param name="options">Optional JsonSerializerOptions.</param>
     /// <returns>The deserialized GenerateContentParameters object, or null if deserialization
     /// fails.</returns>
-    /// </summary>
     public static GenerateContentParameters
         ? FromJson(string jsonString, JsonSerializerOptions? options = null) {
       try {

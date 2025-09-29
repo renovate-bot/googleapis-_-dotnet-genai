@@ -72,7 +72,7 @@ namespace Google.GenAI.Types {
           }
 
     /// <summary>
-    /// True if the parameters contain an unsupported union type. This test  will be skipped for
+    /// True if the parameters contain an unsupported union type. This test will be skipped for
     /// languages that do not support the union type.
     /// </summary>
     [JsonPropertyName("hasUnion")]
@@ -106,10 +106,10 @@ namespace Google.GenAI.Types {
 
     /// <summary>
     /// Deserializes a JSON string to a TestTableItem object.
+    /// </summary>
     /// <param name="jsonString">The JSON string to deserialize.</param>
     /// <param name="options">Optional JsonSerializerOptions.</param>
     /// <returns>The deserialized TestTableItem object, or null if deserialization fails.</returns>
-    /// </summary>
     public static TestTableItem
         ? FromJson(string jsonString, JsonSerializerOptions? options = null) {
       try {

@@ -1,0 +1,36 @@
+name: Build and Deploy Docs
+
+on:
+  push:
+    branches:
+      - main # Or your default branch
+
+permissions:
+  contents: write
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout 🛎️
+        uses: actions/checkout@v4
+
+      - name: Setup .NET ⚙️
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: '8.0.x' # Use the .NET version your project uses
+
+      - name: Install DocFX 🛠️
+        run: dotnet tool update -g docfx
+
+      - name: Generate DocFx metadata
+        run: docfx metadata docfx.json
+
+      - name: Build Documentation 📖
+        run: docfx build docfx.json
+
+      - name: Deploy 🚀
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./_site

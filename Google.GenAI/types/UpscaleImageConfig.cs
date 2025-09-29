@@ -23,9 +23,9 @@ using Google.GenAI.Serialization;
 
 namespace Google.GenAI.Types {
   /// <summary>
-  /// Configuration for upscaling an image.    For more information on this configuration, refer to
-  /// the `Imagen API reference documentation
-  /// <https://cloud.google.com/vertex-ai/generative-ai/docs/model-reference/imagen-api>`_.
+  /// Configuration for upscaling an image.   For more information on this configuration, refer to
+  /// the Imagen API reference documentation
+  /// (https://cloud.google.com/vertex-ai/generative-ai/docs/model-reference/imagen-api).
   /// </summary>
 
   public record UpscaleImageConfig {
@@ -47,7 +47,7 @@ namespace Google.GenAI.Types {
           }
 
     /// <summary>
-    /// Whether to include a reason for filtered-out images in the       response.
+    /// Whether to include a reason for filtered-out images in the  response.
     /// </summary>
     [JsonPropertyName("includeRaiReason")]
     [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]
@@ -67,8 +67,7 @@ namespace Google.GenAI.Types {
           }
 
     /// <summary>
-    /// The level of compression. Only applicable if the       ``output_mime_type`` is
-    /// ``image/jpeg``.
+    /// The level of compression. Only applicable if the  ``output_mime_type`` is ``image/jpeg``.
     /// </summary>
     [JsonPropertyName("outputCompressionQuality")]
     [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]
@@ -78,8 +77,8 @@ namespace Google.GenAI.Types {
           }
 
     /// <summary>
-    /// Whether to add an image enhancing step before upscaling.       It is expected to suppress
-    /// the noise and JPEG compression artifacts       from the input image.
+    /// Whether to add an image enhancing step before upscaling.  It is expected to suppress the
+    /// noise and JPEG compression artifacts  from the input image.
     /// </summary>
     [JsonPropertyName("enhanceInputImage")]
     [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]
@@ -89,9 +88,9 @@ namespace Google.GenAI.Types {
           }
 
     /// <summary>
-    /// With a higher image preservation factor, the original image       pixels are more respected.
-    /// With a lower image preservation factor, the       output image will have be more different
-    /// from the input image, but       with finer details and less noise.
+    /// With a higher image preservation factor, the original image  pixels are more respected. With
+    /// a lower image preservation factor, the  output image will have be more different from the
+    /// input image, but  with finer details and less noise.
     /// </summary>
     [JsonPropertyName("imagePreservationFactor")]
     [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]
@@ -102,11 +101,11 @@ namespace Google.GenAI.Types {
 
     /// <summary>
     /// Deserializes a JSON string to a UpscaleImageConfig object.
+    /// </summary>
     /// <param name="jsonString">The JSON string to deserialize.</param>
     /// <param name="options">Optional JsonSerializerOptions.</param>
     /// <returns>The deserialized UpscaleImageConfig object, or null if deserialization
     /// fails.</returns>
-    /// </summary>
     public static UpscaleImageConfig
         ? FromJson(string jsonString, JsonSerializerOptions? options = null) {
       try {

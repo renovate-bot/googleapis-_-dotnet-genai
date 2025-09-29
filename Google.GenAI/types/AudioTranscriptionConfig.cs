@@ -29,11 +29,11 @@ namespace Google.GenAI.Types {
   public record AudioTranscriptionConfig {
     /// <summary>
     /// Deserializes a JSON string to a AudioTranscriptionConfig object.
+    /// </summary>
     /// <param name="jsonString">The JSON string to deserialize.</param>
     /// <param name="options">Optional JsonSerializerOptions.</param>
     /// <returns>The deserialized AudioTranscriptionConfig object, or null if deserialization
     /// fails.</returns>
-    /// </summary>
     public static AudioTranscriptionConfig
         ? FromJson(string jsonString, JsonSerializerOptions? options = null) {
       try {

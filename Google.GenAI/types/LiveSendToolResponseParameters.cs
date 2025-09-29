@@ -36,11 +36,11 @@ namespace Google.GenAI.Types {
 
     /// <summary>
     /// Deserializes a JSON string to a LiveSendToolResponseParameters object.
+    /// </summary>
     /// <param name="jsonString">The JSON string to deserialize.</param>
     /// <param name="options">Optional JsonSerializerOptions.</param>
     /// <returns>The deserialized LiveSendToolResponseParameters object, or null if deserialization
     /// fails.</returns>
-    /// </summary>
     public static LiveSendToolResponseParameters
         ? FromJson(string jsonString, JsonSerializerOptions? options = null) {
       try {

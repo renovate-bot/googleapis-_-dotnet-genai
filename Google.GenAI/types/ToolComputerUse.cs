@@ -35,9 +35,9 @@ namespace Google.GenAI.Types {
     public Environment ? Environment { get; set; }
 
     /// <summary>
-    /// By default, predefined functions are included in the final model call.     Some of them can
-    /// be explicitly excluded from being automatically included.     This can serve two purposes:
-    /// 1. Using a more restricted / different action space.       2. Improving the definitions /
+    /// By default, predefined functions are included in the final model call.  Some of them can be
+    /// explicitly excluded from being automatically included.  This can serve two purposes:  1.
+    /// Using a more restricted / different action space.  2. Improving the definitions /
     /// instructions of predefined functions.
     /// </summary>
     [JsonPropertyName("excludedPredefinedFunctions")]
@@ -49,11 +49,11 @@ namespace Google.GenAI.Types {
 
     /// <summary>
     /// Deserializes a JSON string to a ToolComputerUse object.
+    /// </summary>
     /// <param name="jsonString">The JSON string to deserialize.</param>
     /// <param name="options">Optional JsonSerializerOptions.</param>
     /// <returns>The deserialized ToolComputerUse object, or null if deserialization
     /// fails.</returns>
-    /// </summary>
     public static ToolComputerUse
         ? FromJson(string jsonString, JsonSerializerOptions? options = null) {
       try {

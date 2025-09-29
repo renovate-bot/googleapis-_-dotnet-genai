@@ -30,7 +30,7 @@ namespace Google.GenAI.Types {
     [JsonPropertyName("LANGUAGE_UNSPECIFIED")] LANGUAGE_UNSPECIFIED,
 
     /// <summary>
-    /// Python >= 3.10, with numpy and simpy available.
+    /// Python greater than or equal to 3.10, with numpy and simpy available.
     /// </summary>
     [JsonPropertyName("PYTHON")] PYTHON
   }

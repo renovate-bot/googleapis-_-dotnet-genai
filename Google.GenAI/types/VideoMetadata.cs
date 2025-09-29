@@ -28,8 +28,8 @@ namespace Google.GenAI.Types {
 
   public record VideoMetadata {
     /// <summary>
-    /// The frame rate of the video sent to the model. If not specified, the         default value
-    /// will be 1.0. The fps range is (0.0, 24.0].
+    /// The frame rate of the video sent to the model. If not specified, the  default value will
+    /// be 1.0. The fps range is (0.0, 24.0].
     /// </summary>
     [JsonPropertyName("fps")]
     [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]
@@ -57,10 +57,10 @@ namespace Google.GenAI.Types {
 
     /// <summary>
     /// Deserializes a JSON string to a VideoMetadata object.
+    /// </summary>
     /// <param name="jsonString">The JSON string to deserialize.</param>
     /// <param name="options">Optional JsonSerializerOptions.</param>
     /// <returns>The deserialized VideoMetadata object, or null if deserialization fails.</returns>
-    /// </summary>
     public static VideoMetadata
         ? FromJson(string jsonString, JsonSerializerOptions? options = null) {
       try {

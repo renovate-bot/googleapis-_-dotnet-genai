@@ -23,8 +23,8 @@ using Google.GenAI.Serialization;
 
 namespace Google.GenAI.Types {
   /// <summary>
-  /// Raw media bytes for function response.    Text should not be sent as raw bytes, use the
-  /// FunctionResponse.response   field.
+  /// Raw media bytes for function response.   Text should not be sent as raw bytes, use the
+  /// FunctionResponse.response  field.
   /// </summary>
 
   public record FunctionResponseBlob {
@@ -47,11 +47,11 @@ namespace Google.GenAI.Types {
 
     /// <summary>
     /// Deserializes a JSON string to a FunctionResponseBlob object.
+    /// </summary>
     /// <param name="jsonString">The JSON string to deserialize.</param>
     /// <param name="options">Optional JsonSerializerOptions.</param>
     /// <returns>The deserialized FunctionResponseBlob object, or null if deserialization
     /// fails.</returns>
-    /// </summary>
     public static FunctionResponseBlob
         ? FromJson(string jsonString, JsonSerializerOptions? options = null) {
       try {

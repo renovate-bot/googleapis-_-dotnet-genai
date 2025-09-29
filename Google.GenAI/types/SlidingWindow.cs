@@ -23,17 +23,17 @@ using Google.GenAI.Serialization;
 
 namespace Google.GenAI.Types {
   /// <summary>
-  /// Context window will be truncated by keeping only suffix of it.    Context window will always
-  /// be cut at start of USER role turn. System   instructions and
-  /// `BidiGenerateContentSetup.prefix_turns` will not be   subject to the sliding window mechanism,
-  /// they will always stay at the   beginning of context window.
+  /// Context window will be truncated by keeping only suffix of it.   Context window will always be
+  /// cut at start of USER role turn. System  instructions and
+  /// `BidiGenerateContentSetup.prefix_turns` will not be  subject to the sliding window mechanism,
+  /// they will always stay at the  beginning of context window.
   /// </summary>
 
   public record SlidingWindow {
     /// <summary>
     /// Session reduction target -- how many tokens we should keep. Window shortening operation has
-    /// some latency costs, so we should avoid running it on every turn. Should be < trigger_tokens.
-    /// If not set, trigger_tokens/2 is assumed.
+    /// some latency costs, so we should avoid running it on every turn. Should be less than
+    /// trigger_tokens. If not set, trigger_tokens/2 is assumed.
     /// </summary>
     [JsonPropertyName("targetTokens")]
     [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]
@@ -42,10 +42,10 @@ namespace Google.GenAI.Types {
 
     /// <summary>
     /// Deserializes a JSON string to a SlidingWindow object.
+    /// </summary>
     /// <param name="jsonString">The JSON string to deserialize.</param>
     /// <param name="options">Optional JsonSerializerOptions.</param>
     /// <returns>The deserialized SlidingWindow object, or null if deserialization fails.</returns>
-    /// </summary>
     public static SlidingWindow
         ? FromJson(string jsonString, JsonSerializerOptions? options = null) {
       try {

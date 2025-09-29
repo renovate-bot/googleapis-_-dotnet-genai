@@ -23,8 +23,8 @@ using Google.GenAI.Serialization;
 
 namespace Google.GenAI.Types {
   /// <summary>
-  /// Marks the end of user activity.    This can only be sent if automatic (i.e. server-side)
-  /// activity detection is   disabled.
+  /// Marks the end of user activity.   This can only be sent if automatic (i.e. server-side)
+  /// activity detection is  disabled.
   /// </summary>
 
   public record RealtimeInputConfig {
@@ -58,11 +58,11 @@ namespace Google.GenAI.Types {
 
     /// <summary>
     /// Deserializes a JSON string to a RealtimeInputConfig object.
+    /// </summary>
     /// <param name="jsonString">The JSON string to deserialize.</param>
     /// <param name="options">Optional JsonSerializerOptions.</param>
     /// <returns>The deserialized RealtimeInputConfig object, or null if deserialization
     /// fails.</returns>
-    /// </summary>
     public static RealtimeInputConfig
         ? FromJson(string jsonString, JsonSerializerOptions? options = null) {
       try {

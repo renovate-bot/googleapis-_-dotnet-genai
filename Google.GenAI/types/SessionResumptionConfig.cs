@@ -23,8 +23,8 @@ using Google.GenAI.Serialization;
 
 namespace Google.GenAI.Types {
   /// <summary>
-  /// Configuration of session resumption mechanism.    Included in
-  /// `LiveConnectConfig.session_resumption`. If included server   will send
+  /// Configuration of session resumption mechanism.   Included in
+  /// `LiveConnectConfig.session_resumption`. If included server  will send
   /// `LiveServerSessionResumptionUpdate` messages.
   /// </summary>
 
@@ -50,11 +50,11 @@ namespace Google.GenAI.Types {
 
     /// <summary>
     /// Deserializes a JSON string to a SessionResumptionConfig object.
+    /// </summary>
     /// <param name="jsonString">The JSON string to deserialize.</param>
     /// <param name="options">Optional JsonSerializerOptions.</param>
     /// <returns>The deserialized SessionResumptionConfig object, or null if deserialization
     /// fails.</returns>
-    /// </summary>
     public static SessionResumptionConfig
         ? FromJson(string jsonString, JsonSerializerOptions? options = null) {
       try {

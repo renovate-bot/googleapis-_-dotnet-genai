@@ -23,7 +23,7 @@ using Google.GenAI.Serialization;
 
 namespace Google.GenAI.Types {
   /// <summary>
-  /// Tool config.    This config is shared for all tools provided in the request.
+  /// Tool config.   This config is shared for all tools provided in the request.
   /// </summary>
 
   public record ToolConfig {
@@ -46,10 +46,10 @@ namespace Google.GenAI.Types {
 
     /// <summary>
     /// Deserializes a JSON string to a ToolConfig object.
+    /// </summary>
     /// <param name="jsonString">The JSON string to deserialize.</param>
     /// <param name="options">Optional JsonSerializerOptions.</param>
     /// <returns>The deserialized ToolConfig object, or null if deserialization fails.</returns>
-    /// </summary>
     public static ToolConfig ? FromJson(string jsonString, JsonSerializerOptions? options = null) {
       try {
         return JsonSerializer.Deserialize<ToolConfig>(jsonString, options);

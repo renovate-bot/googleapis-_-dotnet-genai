@@ -47,11 +47,11 @@ namespace Google.GenAI.Types {
 
     /// <summary>
     /// Deserializes a JSON string to a DynamicRetrievalConfig object.
+    /// </summary>
     /// <param name="jsonString">The JSON string to deserialize.</param>
     /// <param name="options">Optional JsonSerializerOptions.</param>
     /// <returns>The deserialized DynamicRetrievalConfig object, or null if deserialization
     /// fails.</returns>
-    /// </summary>
     public static DynamicRetrievalConfig
         ? FromJson(string jsonString, JsonSerializerOptions? options = null) {
       try {

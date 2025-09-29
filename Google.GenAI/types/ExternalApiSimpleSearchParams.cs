@@ -29,11 +29,11 @@ namespace Google.GenAI.Types {
   public record ExternalApiSimpleSearchParams {
     /// <summary>
     /// Deserializes a JSON string to a ExternalApiSimpleSearchParams object.
+    /// </summary>
     /// <param name="jsonString">The JSON string to deserialize.</param>
     /// <param name="options">Optional JsonSerializerOptions.</param>
     /// <returns>The deserialized ExternalApiSimpleSearchParams object, or null if deserialization
     /// fails.</returns>
-    /// </summary>
     public static ExternalApiSimpleSearchParams
         ? FromJson(string jsonString, JsonSerializerOptions? options = null) {
       try {

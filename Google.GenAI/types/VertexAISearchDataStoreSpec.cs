@@ -39,8 +39,8 @@ namespace Google.GenAI.Types {
 
     /// <summary>
     /// Optional. Filter specification to filter documents in the data store specified by data_store
-    /// field. For more information on filtering, see
-    /// [Filtering](https://cloud.google.com/generative-ai-app-builder/docs/filter-search-metadata)
+    /// field. For more information on filtering, see Filtering
+    /// (https://cloud.google.com/generative-ai-app-builder/docs/filter-search-metadata)
     /// </summary>
     [JsonPropertyName("filter")]
     [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]
@@ -51,11 +51,11 @@ namespace Google.GenAI.Types {
 
     /// <summary>
     /// Deserializes a JSON string to a VertexAISearchDataStoreSpec object.
+    /// </summary>
     /// <param name="jsonString">The JSON string to deserialize.</param>
     /// <param name="options">Optional JsonSerializerOptions.</param>
     /// <returns>The deserialized VertexAISearchDataStoreSpec object, or null if deserialization
     /// fails.</returns>
-    /// </summary>
     public static VertexAISearchDataStoreSpec
         ? FromJson(string jsonString, JsonSerializerOptions? options = null) {
       try {

@@ -36,11 +36,11 @@ namespace Google.GenAI.Types {
 
     /// <summary>
     /// Deserializes a JSON string to a ModelSelectionConfig object.
+    /// </summary>
     /// <param name="jsonString">The JSON string to deserialize.</param>
     /// <param name="options">Optional JsonSerializerOptions.</param>
     /// <returns>The deserialized ModelSelectionConfig object, or null if deserialization
     /// fails.</returns>
-    /// </summary>
     public static ModelSelectionConfig
         ? FromJson(string jsonString, JsonSerializerOptions? options = null) {
       try {

@@ -47,11 +47,11 @@ namespace Google.GenAI.Types {
 
     /// <summary>
     /// Deserializes a JSON string to a VertexRagStoreRagResource object.
+    /// </summary>
     /// <param name="jsonString">The JSON string to deserialize.</param>
     /// <param name="options">Optional JsonSerializerOptions.</param>
     /// <returns>The deserialized VertexRagStoreRagResource object, or null if deserialization
     /// fails.</returns>
-    /// </summary>
     public static VertexRagStoreRagResource
         ? FromJson(string jsonString, JsonSerializerOptions? options = null) {
       try {

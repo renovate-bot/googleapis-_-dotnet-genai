@@ -28,8 +28,8 @@ namespace Google.GenAI.Types {
 
   public record CitationMetadata {
     /// <summary>
-    /// Contains citation information when the model directly quotes, at       length, from another
-    /// source. Can include traditional websites and code       repositories.
+    /// Contains citation information when the model directly quotes, at  length, from another
+    /// source. Can include traditional websites and code  repositories.
     /// </summary>
     [JsonPropertyName("citations")]
     [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]
@@ -37,11 +37,11 @@ namespace Google.GenAI.Types {
 
     /// <summary>
     /// Deserializes a JSON string to a CitationMetadata object.
+    /// </summary>
     /// <param name="jsonString">The JSON string to deserialize.</param>
     /// <param name="options">Optional JsonSerializerOptions.</param>
     /// <returns>The deserialized CitationMetadata object, or null if deserialization
     /// fails.</returns>
-    /// </summary>
     public static CitationMetadata
         ? FromJson(string jsonString, JsonSerializerOptions? options = null) {
       try {

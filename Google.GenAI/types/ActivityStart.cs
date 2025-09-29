@@ -23,17 +23,17 @@ using Google.GenAI.Serialization;
 
 namespace Google.GenAI.Types {
   /// <summary>
-  /// Marks the start of user activity.    This can only be sent if automatic (i.e. server-side)
-  /// activity detection is   disabled.
+  /// Marks the start of user activity.   This can only be sent if automatic (i.e. server-side)
+  /// activity detection is  disabled.
   /// </summary>
 
   public record ActivityStart {
     /// <summary>
     /// Deserializes a JSON string to a ActivityStart object.
+    /// </summary>
     /// <param name="jsonString">The JSON string to deserialize.</param>
     /// <param name="options">Optional JsonSerializerOptions.</param>
     /// <returns>The deserialized ActivityStart object, or null if deserialization fails.</returns>
-    /// </summary>
     public static ActivityStart
         ? FromJson(string jsonString, JsonSerializerOptions? options = null) {
       try {

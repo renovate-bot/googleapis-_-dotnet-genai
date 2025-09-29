@@ -20,8 +20,8 @@ using System.Text.Json.Serialization;
 
 namespace Google.GenAI.Types {
   /// <summary>
-  /// Output only. The reason why the model stopped generating tokens.    If empty, the model has
-  /// not stopped generating the tokens.
+  /// Output only. The reason why the model stopped generating tokens.   If empty, the model has not
+  /// stopped generating the tokens.
   /// </summary>
   [JsonConverter(typeof(JsonStringEnumConverter<FinishReason>))]
   public enum FinishReason {

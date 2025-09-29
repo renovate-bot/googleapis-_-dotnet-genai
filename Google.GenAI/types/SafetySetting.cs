@@ -28,8 +28,7 @@ namespace Google.GenAI.Types {
 
   public record SafetySetting {
     /// <summary>
-    /// Determines if the harm block method uses probability or probability       and severity
-    /// scores.
+    /// Determines if the harm block method uses probability or probability  and severity scores.
     /// </summary>
     [JsonPropertyName("method")]
     [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]
@@ -57,10 +56,10 @@ namespace Google.GenAI.Types {
 
     /// <summary>
     /// Deserializes a JSON string to a SafetySetting object.
+    /// </summary>
     /// <param name="jsonString">The JSON string to deserialize.</param>
     /// <param name="options">Optional JsonSerializerOptions.</param>
     /// <returns>The deserialized SafetySetting object, or null if deserialization fails.</returns>
-    /// </summary>
     public static SafetySetting
         ? FromJson(string jsonString, JsonSerializerOptions? options = null) {
       try {

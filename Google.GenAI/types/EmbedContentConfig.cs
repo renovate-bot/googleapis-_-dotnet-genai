@@ -45,7 +45,7 @@ namespace Google.GenAI.Types {
           }
 
     /// <summary>
-    /// Title for the text. Only applicable when TaskType is       `RETRIEVAL_DOCUMENT`.
+    /// Title for the text. Only applicable when TaskType is  `RETRIEVAL_DOCUMENT`.
     /// </summary>
     [JsonPropertyName("title")]
     [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]
@@ -55,9 +55,9 @@ namespace Google.GenAI.Types {
           }
 
     /// <summary>
-    /// Reduced dimension for the output embedding. If set,       excessive values in the output
-    /// embedding are truncated from the end.       Supported by newer models since 2024 only. You
-    /// cannot set this value if       using the earlier model (`models/embedding-001`).
+    /// Reduced dimension for the output embedding. If set,  excessive values in the output
+    /// embedding are truncated from the end.  Supported by newer models since 2024 only. You cannot
+    /// set this value if  using the earlier model (`models/embedding-001`).
     /// </summary>
     [JsonPropertyName("outputDimensionality")]
     [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]
@@ -77,9 +77,9 @@ namespace Google.GenAI.Types {
           }
 
     /// <summary>
-    /// Vertex API only. Whether to silently truncate inputs longer than       the max sequence
-    /// length. If this option is set to false, oversized inputs       will lead to an
-    /// INVALID_ARGUMENT error, similar to other text APIs.
+    /// Vertex API only. Whether to silently truncate inputs longer than  the max sequence length.
+    /// If this option is set to false, oversized inputs  will lead to an INVALID_ARGUMENT error,
+    /// similar to other text APIs.
     /// </summary>
     [JsonPropertyName("autoTruncate")]
     [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]
@@ -90,11 +90,11 @@ namespace Google.GenAI.Types {
 
     /// <summary>
     /// Deserializes a JSON string to a EmbedContentConfig object.
+    /// </summary>
     /// <param name="jsonString">The JSON string to deserialize.</param>
     /// <param name="options">Optional JsonSerializerOptions.</param>
     /// <returns>The deserialized EmbedContentConfig object, or null if deserialization
     /// fails.</returns>
-    /// </summary>
     public static EmbedContentConfig
         ? FromJson(string jsonString, JsonSerializerOptions? options = null) {
       try {
