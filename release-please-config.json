@@ -7,7 +7,8 @@
   "packages": {
     "Google.GenAI": {
       "component": "Google.GenAI",
-      "extra-files": [ "Google.GenAI/ApiClient.cs" ]
+      "extra-files": [ "Google.GenAI/ApiClient.cs" ],
+      "changelog-path": "CHANGELOG.md"
     }
   }
 }
