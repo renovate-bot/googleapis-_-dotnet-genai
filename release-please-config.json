@@ -7,18 +7,7 @@
   "packages": {
     "Google.GenAI": {
       "component": "Google.GenAI",
-      "extra-files": [
-        {
-          "type": "xml",
-          "path": "Google.GenAI/Google.GenAI.csproj",
-          "xpath": "//Project/PropertyGroup/Version"
-        },
-        {
-          "type": "regex",
-          "path": "Google.GenAI/ApiClient.cs",
-          "regex": "private static readonly string SdkVersion = \"[0-9.]+\"; // x-release-please-version"
-        }
-      ]
+      "extra-files": [ "Google.GenAI/ApiClient.cs" ]
     }
   }
 }
