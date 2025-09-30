@@ -105,7 +105,7 @@ namespace Google.GenAI.Types {
     /// </summary>
     [JsonPropertyName("computerUse")]
     [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]
-    public ToolComputerUse
+    public ComputerUse
         ? ComputerUse {
             get; set;
           }

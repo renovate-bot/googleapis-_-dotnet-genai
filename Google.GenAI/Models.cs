@@ -319,6 +319,42 @@ namespace Google.GenAI {
       return toObject;
     }
 
+    internal JsonNode ComputerUseToMldev(JsonNode fromObject, JsonObject parentObject) {
+      JsonObject toObject = new JsonObject();
+
+      if (Common.GetValueByPath(fromObject, new string[] { "environment" }) != null) {
+        Common.SetValueByPath(toObject, new string[] { "environment" },
+                              Common.GetValueByPath(fromObject, new string[] { "environment" }));
+      }
+
+      if (Common.GetValueByPath(fromObject, new string[] { "excludedPredefinedFunctions" }) !=
+          null) {
+        Common.SetValueByPath(
+            toObject, new string[] { "excludedPredefinedFunctions" },
+            Common.GetValueByPath(fromObject, new string[] { "excludedPredefinedFunctions" }));
+      }
+
+      return toObject;
+    }
+
+    internal JsonNode ComputerUseToVertex(JsonNode fromObject, JsonObject parentObject) {
+      JsonObject toObject = new JsonObject();
+
+      if (Common.GetValueByPath(fromObject, new string[] { "environment" }) != null) {
+        Common.SetValueByPath(toObject, new string[] { "environment" },
+                              Common.GetValueByPath(fromObject, new string[] { "environment" }));
+      }
+
+      if (Common.GetValueByPath(fromObject, new string[] { "excludedPredefinedFunctions" }) !=
+          null) {
+        Common.SetValueByPath(
+            toObject, new string[] { "excludedPredefinedFunctions" },
+            Common.GetValueByPath(fromObject, new string[] { "excludedPredefinedFunctions" }));
+      }
+
+      return toObject;
+    }
+
     internal JsonNode ContentFromMldev(JsonNode fromObject, JsonObject parentObject) {
       JsonObject toObject = new JsonObject();
 
@@ -2638,42 +2674,6 @@ namespace Google.GenAI {
       return toObject;
     }
 
-    internal JsonNode ToolComputerUseToMldev(JsonNode fromObject, JsonObject parentObject) {
-      JsonObject toObject = new JsonObject();
-
-      if (Common.GetValueByPath(fromObject, new string[] { "environment" }) != null) {
-        Common.SetValueByPath(toObject, new string[] { "environment" },
-                              Common.GetValueByPath(fromObject, new string[] { "environment" }));
-      }
-
-      if (Common.GetValueByPath(fromObject, new string[] { "excludedPredefinedFunctions" }) !=
-          null) {
-        Common.SetValueByPath(
-            toObject, new string[] { "excludedPredefinedFunctions" },
-            Common.GetValueByPath(fromObject, new string[] { "excludedPredefinedFunctions" }));
-      }
-
-      return toObject;
-    }
-
-    internal JsonNode ToolComputerUseToVertex(JsonNode fromObject, JsonObject parentObject) {
-      JsonObject toObject = new JsonObject();
-
-      if (Common.GetValueByPath(fromObject, new string[] { "environment" }) != null) {
-        Common.SetValueByPath(toObject, new string[] { "environment" },
-                              Common.GetValueByPath(fromObject, new string[] { "environment" }));
-      }
-
-      if (Common.GetValueByPath(fromObject, new string[] { "excludedPredefinedFunctions" }) !=
-          null) {
-        Common.SetValueByPath(
-            toObject, new string[] { "excludedPredefinedFunctions" },
-            Common.GetValueByPath(fromObject, new string[] { "excludedPredefinedFunctions" }));
-      }
-
-      return toObject;
-    }
-
     internal JsonNode ToolConfigToMldev(JsonNode fromObject, JsonObject parentObject) {
       JsonObject toObject = new JsonObject();
 
@@ -2774,9 +2774,9 @@ namespace Google.GenAI {
       if (Common.GetValueByPath(fromObject, new string[] { "computerUse" }) != null) {
         Common.SetValueByPath(
             toObject, new string[] { "computerUse" },
-            ToolComputerUseToMldev(JsonNode.Parse(JsonSerializer.Serialize(Common.GetValueByPath(
-                                       fromObject, new string[] { "computerUse" }))),
-                                   toObject));
+            ComputerUseToMldev(JsonNode.Parse(JsonSerializer.Serialize(Common.GetValueByPath(
+                                   fromObject, new string[] { "computerUse" }))),
+                               toObject));
       }
 
       if (Common.GetValueByPath(fromObject, new string[] { "codeExecution" }) != null) {
@@ -2850,9 +2850,9 @@ namespace Google.GenAI {
       if (Common.GetValueByPath(fromObject, new string[] { "computerUse" }) != null) {
         Common.SetValueByPath(
             toObject, new string[] { "computerUse" },
-            ToolComputerUseToVertex(JsonNode.Parse(JsonSerializer.Serialize(Common.GetValueByPath(
-                                        fromObject, new string[] { "computerUse" }))),
-                                    toObject));
+            ComputerUseToVertex(JsonNode.Parse(JsonSerializer.Serialize(Common.GetValueByPath(
+                                    fromObject, new string[] { "computerUse" }))),
+                                toObject));
       }
 
       if (Common.GetValueByPath(fromObject, new string[] { "codeExecution" }) != null) {
