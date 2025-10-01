@@ -84,7 +84,7 @@ app.Map("/ws", async (HttpContext context) => {
           if (clientMsg?.Media?.Data != null) {
             var mediaDataBytes = Convert.FromBase64String(clientMsg.Media.Data);
             realtimeInput =
-                new LiveSendRealtimeInputParameters { Media = new Blob { Data = mediaDataBytes,
+                new LiveSendRealtimeInputParameters { Audio = new Blob { Data = mediaDataBytes,
                                                                          MimeType = mimeType } };
           } else if (clientMsg?.ClientContent?.TurnComplete == true) {
             realtimeInput =
