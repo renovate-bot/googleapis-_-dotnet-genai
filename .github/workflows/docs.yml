@@ -15,19 +15,85 @@ jobs:
       - name: Checkout 🛎️
         uses: actions/checkout@v4
 
+      - name: Debug - Initial state
+        run: |
+          echo "=== Current directory ==="
+          pwd
+          echo ""
+          echo "=== Workspace contents ==="
+          ls -la
+          echo ""
+          echo "=== Required files check ==="
+          ls -la docfx.json README.md toc.yml api/index.md
+
       - name: Setup .NET ⚙️
         uses: actions/setup-dotnet@v4
         with:
           dotnet-version: '8.0.x' # Use the .NET version your project uses
 
+      - name: Debug - .NET version
+        run: |
+          echo "=== .NET SDK version ==="
+          dotnet --version
+          echo ""
+          echo "=== .NET runtimes ==="
+          dotnet --list-runtimes
+
       - name: Install DocFX 🛠️
         run: dotnet tool update -g docfx
+
+      - name: Debug - DocFX version
+        run: |
+          echo "=== DocFX version ==="
+          docfx --version
+          echo ""
+          echo "=== DocFX location ==="
+          which docfx
 
       - name: Generate DocFx metadata
         run: docfx metadata docfx.json
 
+      - name: Debug - After metadata
+        run: |
+          echo "=== api/ directory ==="
+          ls -la api/
+          echo ""
+          echo "=== Count of .yml files in api/ ==="
+          find api -name "*.yml" -type f | wc -l
+
       - name: Build Documentation 📖
         run: docfx build docfx.json
+
+      - name: Debug - After build (CRITICAL)
+        run: |
+          echo "=== Current directory ==="
+          pwd
+          echo ""
+          echo "=== Workspace after build ==="
+          ls -la
+          echo ""
+          echo "=== Does _site exist? ==="
+          if [ -d "_site" ]; then
+            echo "YES - _site directory EXISTS"
+            echo ""
+            echo "=== _site contents ==="
+            ls -la _site/
+            echo ""
+            echo "=== Number of files in _site ==="
+            find _site -type f | wc -l
+            echo ""
+            echo "=== _site size ==="
+            du -sh _site/
+            echo ""
+            echo "=== First 30 files in _site ==="
+            find _site -type f | head -30
+          else
+            echo "NO - _site directory DOES NOT EXIST!"
+            echo "Build may have failed silently or output to wrong location"
+            echo ""
+            echo "=== Searching for HTML files anywhere ==="
+            find . -name "*.html" -type f | head -20
+          fi
 
       - name: Deploy 🚀
         uses: peaceiris/actions-gh-pages@v4
