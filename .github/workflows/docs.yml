@@ -23,9 +23,6 @@ jobs:
       - name: Install DocFX 🛠️
         run: dotnet tool update -g docfx
 
-      - name: Ensure _site Directory
-        run: mkdir -p /home/runner/work/dotnet-genai/dotnet-genai/_site
-
       - name: Generate DocFx metadata
         run: docfx metadata docfx.json
 
