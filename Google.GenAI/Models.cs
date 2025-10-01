@@ -944,6 +944,14 @@ namespace Google.GenAI {
                                   toObject));
       }
 
+      if (Common.GetValueByPath(fromObject, new string[] { "imageConfig" }) != null) {
+        Common.SetValueByPath(
+            toObject, new string[] { "imageConfig" },
+            ImageConfigToMldev(JsonNode.Parse(JsonSerializer.Serialize(Common.GetValueByPath(
+                                   fromObject, new string[] { "imageConfig" }))),
+                               toObject));
+      }
+
       return toObject;
     }
 
@@ -1129,6 +1137,14 @@ namespace Google.GenAI {
             ThinkingConfigToVertex(JsonNode.Parse(JsonSerializer.Serialize(Common.GetValueByPath(
                                        fromObject, new string[] { "thinkingConfig" }))),
                                    toObject));
+      }
+
+      if (Common.GetValueByPath(fromObject, new string[] { "imageConfig" }) != null) {
+        Common.SetValueByPath(
+            toObject, new string[] { "imageConfig" },
+            ImageConfigToVertex(JsonNode.Parse(JsonSerializer.Serialize(Common.GetValueByPath(
+                                    fromObject, new string[] { "imageConfig" }))),
+                                toObject));
       }
 
       return toObject;
@@ -1709,6 +1725,28 @@ namespace Google.GenAI {
       if (Common.GetValueByPath(fromObject, new string[] { "excludeDomains" }) != null) {
         Common.SetValueByPath(toObject, new string[] { "excludeDomains" },
                               Common.GetValueByPath(fromObject, new string[] { "excludeDomains" }));
+      }
+
+      return toObject;
+    }
+
+    internal JsonNode ImageConfigToMldev(JsonNode fromObject, JsonObject parentObject) {
+      JsonObject toObject = new JsonObject();
+
+      if (Common.GetValueByPath(fromObject, new string[] { "aspectRatio" }) != null) {
+        Common.SetValueByPath(toObject, new string[] { "aspectRatio" },
+                              Common.GetValueByPath(fromObject, new string[] { "aspectRatio" }));
+      }
+
+      return toObject;
+    }
+
+    internal JsonNode ImageConfigToVertex(JsonNode fromObject, JsonObject parentObject) {
+      JsonObject toObject = new JsonObject();
+
+      if (Common.GetValueByPath(fromObject, new string[] { "aspectRatio" }) != null) {
+        Common.SetValueByPath(toObject, new string[] { "aspectRatio" },
+                              Common.GetValueByPath(fromObject, new string[] { "aspectRatio" }));
       }
 
       return toObject;

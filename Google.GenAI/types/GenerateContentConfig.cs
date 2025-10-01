@@ -340,6 +340,16 @@ namespace Google.GenAI.Types {
           }
 
     /// <summary>
+    /// The image generation configuration.
+    /// </summary>
+    [JsonPropertyName("imageConfig")]
+    [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]
+    public ImageConfig
+        ? ImageConfig {
+            get; set;
+          }
+
+    /// <summary>
     /// Deserializes a JSON string to a GenerateContentConfig object.
     /// </summary>
     /// <param name="jsonString">The JSON string to deserialize.</param>
