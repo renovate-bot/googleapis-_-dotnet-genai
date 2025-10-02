@@ -1,5 +1,6 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
+  <Import Project="../ReleaseVersion.xml" />
   <PropertyGroup>
     <OutputType>Library</OutputType>
     <TargetFramework>net8.0</TargetFramework>
@@ -8,7 +9,6 @@
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
     <PackageId>Google.GenAI</PackageId>
-    <Version>0.1.0</Version>
     <Authors>Google LLC</Authors>
     <Description>Google GenAI SDK for .NET</Description>
     <RestorePackagesWithLockFile>true</RestorePackagesWithLockFile>

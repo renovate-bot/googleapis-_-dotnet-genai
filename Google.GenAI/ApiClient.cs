@@ -15,6 +15,7 @@
  */
 
 using System.Collections.Immutable;
+using System.Reflection;
 using System.Runtime.CompilerServices;
 using System.Threading;
 
@@ -28,7 +29,7 @@ namespace Google.GenAI
   /// </summary>
   public abstract class ApiClient : IDisposable, IAsyncDisposable
   {
-    private static readonly string SdkVersion = "0.1.0"; // x-release-please-version
+    private static readonly string SdkVersion = GetSdkVersion();
 
     protected HttpMessageInvoker HttpClient { get; }
 
@@ -290,6 +291,18 @@ namespace Google.GenAI
     {
         Dispose();
         return ValueTask.CompletedTask;
+    }
+
+    private static string GetSdkVersion()
+    {
+        // This reads AssemblyInformationalVersionAttribute from the assembly,
+        // which is generated during build from the <Version> property.
+        // Google.GenAI.csproj imports ReleaseVersion.xml to set <Version>,
+        // so this effectively reads the version from ReleaseVersion.xml.
+        return typeof(ApiClient)
+            .Assembly
+            .GetCustomAttribute<AssemblyInformationalVersionAttribute>()
+            ?.InformationalVersion ?? "";
     }
   }
 }

@@ -1,0 +1,9 @@
+<Project>
+  <!--
+    - Single place to put the release version number. This is imported
+    - in all projects.
+    -->
+  <PropertyGroup>
+    <Version>0.1.0</Version>
+  </PropertyGroup>
+</Project>

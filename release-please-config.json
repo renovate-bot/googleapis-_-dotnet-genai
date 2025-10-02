@@ -7,7 +7,13 @@
   "packages": {
     "Google.GenAI": {
       "component": "Google.GenAI",
-      "extra-files": [ "Google.GenAI/ApiClient.cs" ],
+      "extra-files": [
+        {
+          "type": "xml",
+          "path": "ReleaseVersion.xml",
+          "xpath": "//Project/PropertyGroup/Version"
+        }
+      ],
       "changelog-path": "CHANGELOG.md"
     }
   }
