@@ -95,6 +95,11 @@ namespace Google.GenAI.Types {
     /// <summary>
     /// Image generation stopped because the generated images have prohibited content.
     /// </summary>
-    [JsonPropertyName("IMAGE_PROHIBITED_CONTENT")] IMAGE_PROHIBITED_CONTENT
+    [JsonPropertyName("IMAGE_PROHIBITED_CONTENT")] IMAGE_PROHIBITED_CONTENT,
+
+    /// <summary>
+    /// The model was expected to generate an image, but none was generated.
+    /// </summary>
+    [JsonPropertyName("NO_IMAGE")] NO_IMAGE
   }
 }
