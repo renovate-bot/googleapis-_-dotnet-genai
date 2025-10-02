@@ -1518,6 +1518,14 @@ namespace Google.GenAI {
                 toObject));
       }
 
+      if (Common.GetValueByPath(fromObject, new string[] { "thinkingConfig" }) != null) {
+        Common.SetValueByPath(
+            parentObject, new string[] { "setup", "generationConfig", "thinkingConfig" },
+            ThinkingConfigToMldev(JsonNode.Parse(JsonSerializer.Serialize(Common.GetValueByPath(
+                                      fromObject, new string[] { "thinkingConfig" }))),
+                                  toObject));
+      }
+
       if (Common.GetValueByPath(fromObject, new string[] { "enableAffectiveDialog" }) != null) {
         Common.SetValueByPath(
             parentObject, new string[] { "setup", "generationConfig", "enableAffectiveDialog" },
@@ -1650,6 +1658,14 @@ namespace Google.GenAI {
                 JsonNode.Parse(JsonSerializer.Serialize(Transformers.TLiveSpeechConfig(
                     Common.GetValueByPath(fromObject, new string[] { "speechConfig" })))),
                 toObject));
+      }
+
+      if (Common.GetValueByPath(fromObject, new string[] { "thinkingConfig" }) != null) {
+        Common.SetValueByPath(
+            parentObject, new string[] { "setup", "generationConfig", "thinkingConfig" },
+            ThinkingConfigToVertex(JsonNode.Parse(JsonSerializer.Serialize(Common.GetValueByPath(
+                                       fromObject, new string[] { "thinkingConfig" }))),
+                                   toObject));
       }
 
       if (Common.GetValueByPath(fromObject, new string[] { "enableAffectiveDialog" }) != null) {
@@ -2842,6 +2858,40 @@ namespace Google.GenAI {
       if (Common.GetValueByPath(fromObject, new string[] { "languageCode" }) != null) {
         Common.SetValueByPath(toObject, new string[] { "languageCode" },
                               Common.GetValueByPath(fromObject, new string[] { "languageCode" }));
+      }
+
+      return toObject;
+    }
+
+    internal JsonNode ThinkingConfigToMldev(JsonNode fromObject, JsonObject parentObject) {
+      JsonObject toObject = new JsonObject();
+
+      if (Common.GetValueByPath(fromObject, new string[] { "includeThoughts" }) != null) {
+        Common.SetValueByPath(
+            toObject, new string[] { "includeThoughts" },
+            Common.GetValueByPath(fromObject, new string[] { "includeThoughts" }));
+      }
+
+      if (Common.GetValueByPath(fromObject, new string[] { "thinkingBudget" }) != null) {
+        Common.SetValueByPath(toObject, new string[] { "thinkingBudget" },
+                              Common.GetValueByPath(fromObject, new string[] { "thinkingBudget" }));
+      }
+
+      return toObject;
+    }
+
+    internal JsonNode ThinkingConfigToVertex(JsonNode fromObject, JsonObject parentObject) {
+      JsonObject toObject = new JsonObject();
+
+      if (Common.GetValueByPath(fromObject, new string[] { "includeThoughts" }) != null) {
+        Common.SetValueByPath(
+            toObject, new string[] { "includeThoughts" },
+            Common.GetValueByPath(fromObject, new string[] { "includeThoughts" }));
+      }
+
+      if (Common.GetValueByPath(fromObject, new string[] { "thinkingBudget" }) != null) {
+        Common.SetValueByPath(toObject, new string[] { "thinkingBudget" },
+                              Common.GetValueByPath(fromObject, new string[] { "thinkingBudget" }));
       }
 
       return toObject;

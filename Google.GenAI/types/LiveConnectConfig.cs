@@ -134,6 +134,17 @@ namespace Google.GenAI.Types {
           }
 
     /// <summary>
+    /// Config for thinking features.  An error will be returned if this field is set for models
+    /// that don't  support thinking.
+    /// </summary>
+    [JsonPropertyName("thinkingConfig")]
+    [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]
+    public ThinkingConfig
+        ? ThinkingConfig {
+            get; set;
+          }
+
+    /// <summary>
     /// If enabled, the model will detect emotions and adapt its responses accordingly.
     /// </summary>
     [JsonPropertyName("enableAffectiveDialog")]
