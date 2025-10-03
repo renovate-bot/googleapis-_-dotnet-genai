@@ -84,6 +84,7 @@ public class GenerateContentToolsTest {
         System.Environment.GetEnvironmentVariable("GOOGLE_CLOUD_LOCATION") ?? "us-central1";
     string apiKey = System.Environment.GetEnvironmentVariable("GOOGLE_API_KEY");
     vertexClient = new Client(project: project, location: location, vertexAI: true,
+                              credential: TestServer.GetCredentialForTestMode(),
                               httpOptions: vertexClientHttpOptions);
     geminiClient =
         new Client(apiKey: apiKey, vertexAI: false, httpOptions: geminiClientHttpOptions);

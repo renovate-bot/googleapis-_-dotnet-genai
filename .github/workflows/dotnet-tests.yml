@@ -1,0 +1,43 @@
+name: .NET Tests PR Check
+
+on:
+  pull_request:
+    branches:
+      - main
+      - master
+      - '*'
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    env:
+      TEST_MODE: replay
+      GOOGLE_API_KEY: test-key
+      GOOGLE_CLOUD_PROJECT: test-project
+      GOOGLE_CLOUD_LOCATION: us-central1
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+
+    - name: Setup .NET
+      uses: actions/setup-dotnet@v4
+      with:
+        dotnet-version: '8.0.x'  # Change if your project uses a different .NET version
+
+    - name: Fake Google ADC
+      run: |
+        gcloud_config_path="${HOME}/.config/gcloud"
+        mkdir -p "${gcloud_config_path}"
+        cat > "${gcloud_config_path}/application_default_credentials.json" <<EOF
+        { "client_id": "none", "client_secret": "none", "refresh_token": "none", "type": "authorized_user" }
+        EOF
+
+    - name: Show .NET version
+      run: dotnet --version
+
+    - name: Run Unit Tests
+      run: dotnet test ./Google.GenAI.Tests
+
+    - name: Run E2E Tests
+      run: dotnet test ./Google.GenAI.E2E.Tests

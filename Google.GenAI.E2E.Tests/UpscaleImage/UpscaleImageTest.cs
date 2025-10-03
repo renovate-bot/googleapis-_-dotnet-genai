@@ -65,6 +65,7 @@ public class UpscaleImageTest {
     Client.setDefaultBaseUrl(vertexBaseUrl: "http://localhost:1454",
                              geminiBaseUrl: "http://localhost:1453");
     vertexClient = new Client(project: project, location: location, vertexAI: true,
+                              credential: TestServer.GetCredentialForTestMode(),
                               httpOptions: vertexClientHttpOptions);
     geminiClient =
         new Client(apiKey: apiKey, vertexAI: false, httpOptions: geminiClientHttpOptions);

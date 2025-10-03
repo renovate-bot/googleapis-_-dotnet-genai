@@ -16,6 +16,7 @@
 
 using System.IO;
 
+using Google.Apis.Auth.OAuth2;
 using TestServerSdk;
 
 public class TestServer {
@@ -40,5 +41,15 @@ public class TestServer {
       server.StopAsync().GetAwaiter().GetResult();
     }
     server = null;
+  }
+
+  /// <summary>
+  /// Returns a mock credential for replay mode, or null for record mode.
+  /// In replay mode, returns a MockCredential that provides a fake access token without network calls.
+  /// In record mode, returns null so the Client will use real credentials (ADC or GCE metadata).
+  /// </summary>
+  public static ICredential? GetCredentialForTestMode() {
+    string testMode = System.Environment.GetEnvironmentVariable("TEST_MODE") ?? "replay";
+    return testMode == "replay" ? new MockCredential() : null;
   }
 }
