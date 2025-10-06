@@ -8,7 +8,7 @@ on:
       - '*'
 
 jobs:
-  test:
+  unit-e2e-tests:
     runs-on: ubuntu-latest
     env:
       TEST_MODE: replay
