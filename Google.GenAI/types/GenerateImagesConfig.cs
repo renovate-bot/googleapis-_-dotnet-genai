@@ -180,6 +180,16 @@ namespace Google.GenAI.Types {
           }
 
     /// <summary>
+    /// User specified labels to track billing usage.
+    /// </summary>
+    [JsonPropertyName("labels")]
+    [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]
+    public Dictionary<string, string>
+        ? Labels {
+            get; set;
+          }
+
+    /// <summary>
     /// The size of the largest dimension of the generated image.  Supported sizes are 1K and 2K
     /// (not supported for Imagen 3 models).
     /// </summary>

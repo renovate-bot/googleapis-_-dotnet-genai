@@ -99,6 +99,16 @@ namespace Google.GenAI.Types {
           }
 
     /// <summary>
+    /// User specified labels to track billing usage.
+    /// </summary>
+    [JsonPropertyName("labels")]
+    [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]
+    public Dictionary<string, string>
+        ? Labels {
+            get; set;
+          }
+
+    /// <summary>
     ///
     /// </summary>
     [JsonPropertyName("numberOfImages")]

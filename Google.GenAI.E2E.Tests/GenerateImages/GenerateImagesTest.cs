@@ -112,6 +112,7 @@ public class GenerateImagesTest {
       Seed = 1337,
       Language = ImagePromptLanguage.en,
       EnhancePrompt = true,
+      Labels = new Dictionary<string, string> { ["imagen_label_key"] = "upscale_image" },
     };
 
     var vertexResponse = await vertexClient.Models.GenerateImagesAsync(

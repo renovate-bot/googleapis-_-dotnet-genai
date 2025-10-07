@@ -769,6 +769,10 @@ namespace Google.GenAI {
         throw new NotSupportedException("addWatermark parameter is not supported in Gemini API.");
       }
 
+      if (!Common.IsZero(Common.GetValueByPath(fromObject, new string[] { "labels" }))) {
+        throw new NotSupportedException("labels parameter is not supported in Gemini API.");
+      }
+
       if (Common.GetValueByPath(fromObject, new string[] { "imageSize" }) != null) {
         Common.SetValueByPath(parentObject, new string[] { "parameters", "sampleImageSize" },
                               Common.GetValueByPath(fromObject, new string[] { "imageSize" }));
@@ -858,6 +862,11 @@ namespace Google.GenAI {
       if (Common.GetValueByPath(fromObject, new string[] { "addWatermark" }) != null) {
         Common.SetValueByPath(parentObject, new string[] { "parameters", "addWatermark" },
                               Common.GetValueByPath(fromObject, new string[] { "addWatermark" }));
+      }
+
+      if (Common.GetValueByPath(fromObject, new string[] { "labels" }) != null) {
+        Common.SetValueByPath(parentObject, new string[] { "labels" },
+                              Common.GetValueByPath(fromObject, new string[] { "labels" }));
       }
 
       if (Common.GetValueByPath(fromObject, new string[] { "imageSize" }) != null) {
@@ -1431,6 +1440,11 @@ namespace Google.GenAI {
             Common.GetValueByPath(fromObject, new string[] { "imagePreservationFactor" }));
       }
 
+      if (Common.GetValueByPath(fromObject, new string[] { "labels" }) != null) {
+        Common.SetValueByPath(parentObject, new string[] { "labels" },
+                              Common.GetValueByPath(fromObject, new string[] { "labels" }));
+      }
+
       if (Common.GetValueByPath(fromObject, new string[] { "numberOfImages" }) != null) {
         Common.SetValueByPath(parentObject, new string[] { "parameters", "sampleCount" },
                               Common.GetValueByPath(fromObject, new string[] { "numberOfImages" }));
@@ -1871,6 +1885,7 @@ namespace Google.GenAI {
         apiConfig.IncludeRaiReason = config.IncludeRaiReason;
         apiConfig.EnhanceInputImage = config.EnhanceInputImage;
         apiConfig.ImagePreservationFactor = config.ImagePreservationFactor;
+        apiConfig.Labels = config.Labels;
       }
 
       return await PrivateUpscaleImageAsync(model, image, upscaleFactor, apiConfig);

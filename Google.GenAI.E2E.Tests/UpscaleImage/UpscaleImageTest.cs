@@ -96,7 +96,9 @@ public class UpscaleImageTest {
   public async Task UpscaleImageAllConfigParamsVertexTest() {
     // Generate an image first.
     var vertexResponse = await vertexClient.Models.GenerateImagesAsync(
-        model: modelName, prompt: "Red skateboard", config: null);
+        model: modelName, prompt: "Red skateboard", config: new GenerateImagesConfig {
+          NumberOfImages = 1,
+        });
 
     Assert.IsNotNull(vertexResponse.GeneratedImages);
     Assert.IsNotNull(vertexResponse.GeneratedImages.First().Image.ImageBytes);
@@ -105,6 +107,7 @@ public class UpscaleImageTest {
     var upscaleImageConfig = new UpscaleImageConfig {
       IncludeRaiReason = true,  OutputMimeType = "image/jpeg", OutputCompressionQuality = 80,
       EnhanceInputImage = true, ImagePreservationFactor = 0.6,
+      Labels = new Dictionary<string, string> { ["imagen_label_key"] = "upscale_image" },
     };
     var upscaleImageResponse = await vertexClient.Models.UpscaleImageAsync(
         model: modelName, image: vertexResponse.GeneratedImages.First().Image, upscaleFactor: "x2",
