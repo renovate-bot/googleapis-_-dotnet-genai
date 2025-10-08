@@ -35,8 +35,8 @@ namespace Google.GenAI.Types {
     public List<Content> ? Turns { get; set; }
 
     /// <summary>
-    /// If true, indicates that the server content generation should start with  the currently
-    /// accumulated prompt. Otherwise, the server will await  additional messages before starting
+    /// If true, indicates that the server content generation should start with the currently
+    /// accumulated prompt. Otherwise, the server will await additional messages before starting
     /// generation.
     /// </summary>
     [JsonPropertyName("turnComplete")]

@@ -28,7 +28,7 @@ namespace Google.GenAI.Types {
 
   public record Image {
     /// <summary>
-    /// The Cloud Storage URI of the image. ``Image`` can contain a value  for this field or the
+    /// The Cloud Storage URI of the image. ``Image`` can contain a value for this field or the
     /// ``image_bytes`` field but not both.
     /// </summary>
     [JsonPropertyName("gcsUri")]
@@ -36,7 +36,7 @@ namespace Google.GenAI.Types {
     public string ? GcsUri { get; set; }
 
     /// <summary>
-    /// The image bytes data. ``Image`` can contain a value for this field  or the ``gcs_uri`` field
+    /// The image bytes data. ``Image`` can contain a value for this field or the ``gcs_uri`` field
     /// but not both.
     /// </summary>
     [JsonPropertyName("imageBytes")]

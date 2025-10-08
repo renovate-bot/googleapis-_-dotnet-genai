@@ -28,14 +28,14 @@ namespace Google.GenAI.Types {
 
   public record LiveClientSetup {
     /// <summary>
-    /// The fully qualified name of the publisher model or tuned model endpoint to  use.
+    /// The fully qualified name of the publisher model or tuned model endpoint to use.
     /// </summary>
     [JsonPropertyName("model")]
     [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]
     public string ? Model { get; set; }
 
     /// <summary>
-    /// The generation configuration for the session.  Note: only a subset of fields are supported.
+    /// The generation configuration for the session. Note: only a subset of fields are supported.
     /// </summary>
     [JsonPropertyName("generationConfig")]
     [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]
@@ -45,8 +45,8 @@ namespace Google.GenAI.Types {
           }
 
     /// <summary>
-    /// The user provided system instructions for the model.  Note: only text should be used in
-    /// parts and content in each part will be  in a separate paragraph.
+    /// The user provided system instructions for the model. Note: only text should be used in parts
+    /// and content in each part will be in a separate paragraph.
     /// </summary>
     [JsonPropertyName("systemInstruction")]
     [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]
@@ -56,9 +56,9 @@ namespace Google.GenAI.Types {
           }
 
     /// <summary>
-    /// A list of `Tools` the model may use to generate the next response.   A `Tool` is a piece of
-    /// code that enables the system to interact with  external systems to perform an action, or set
-    /// of actions, outside of  knowledge and scope of the model.
+    /// A list of `Tools` the model may use to generate the next response.  A `Tool` is a piece of
+    /// code that enables the system to interact with external systems to perform an action, or set
+    /// of actions, outside of knowledge and scope of the model.
     /// </summary>
     [JsonPropertyName("tools")]
     [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]
@@ -78,7 +78,7 @@ namespace Google.GenAI.Types {
           }
 
     /// <summary>
-    /// Configures session resumption mechanism.   If included server will send
+    /// Configures session resumption mechanism.  If included server will send
     /// SessionResumptionUpdate messages.
     /// </summary>
     [JsonPropertyName("sessionResumption")]
@@ -89,7 +89,7 @@ namespace Google.GenAI.Types {
           }
 
     /// <summary>
-    /// Configures context window compression mechanism.   If included, server will compress context
+    /// Configures context window compression mechanism.  If included, server will compress context
     /// window to fit into given length.
     /// </summary>
     [JsonPropertyName("contextWindowCompression")]
@@ -110,7 +110,7 @@ namespace Google.GenAI.Types {
           }
 
     /// <summary>
-    /// The transcription of the output aligns with the language code  specified for the output
+    /// The transcription of the output aligns with the language code specified for the output
     /// audio.
     /// </summary>
     [JsonPropertyName("outputAudioTranscription")]

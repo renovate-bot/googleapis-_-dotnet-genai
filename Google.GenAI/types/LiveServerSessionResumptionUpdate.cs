@@ -23,7 +23,7 @@ using Google.GenAI.Serialization;
 
 namespace Google.GenAI.Types {
   /// <summary>
-  /// Update of the session resumption state.   Only sent if `session_resumption` was set in the
+  /// Update of the session resumption state.  Only sent if `session_resumption` was set in the
   /// connection config.
   /// </summary>
 

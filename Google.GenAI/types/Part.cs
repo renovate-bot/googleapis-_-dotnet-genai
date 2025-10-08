@@ -23,9 +23,9 @@ using Google.GenAI.Serialization;
 
 namespace Google.GenAI.Types {
   /// <summary>
-  /// A datatype containing media content.   Exactly one field within a Part should be set,
-  /// representing the specific type  of content being conveyed. Using multiple fields within the
-  /// same `Part`  instance is considered invalid.
+  /// A datatype containing media content.  Exactly one field within a Part should be set,
+  /// representing the specific type of content being conveyed. Using multiple fields within the
+  /// same `Part` instance is considered invalid.
   /// </summary>
 
   public record Part {
@@ -77,8 +77,8 @@ namespace Google.GenAI.Types {
           }
 
     /// <summary>
-    /// A predicted [FunctionCall] returned from the model that contains a string  representing the
-    /// [FunctionDeclaration.name] and a structured JSON object  containing the parameters and their
+    /// A predicted [FunctionCall] returned from the model that contains a string representing the
+    /// [FunctionDeclaration.name] and a structured JSON object containing the parameters and their
     /// values.
     /// </summary>
     [JsonPropertyName("functionCall")]

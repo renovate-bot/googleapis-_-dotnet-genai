@@ -23,7 +23,7 @@ using Google.GenAI.Serialization;
 
 namespace Google.GenAI.Types {
   /// <summary>
-  /// Tool config.   This config is shared for all tools provided in the request.
+  /// Tool config.  This config is shared for all tools provided in the request.
   /// </summary>
 
   public record ToolConfig {

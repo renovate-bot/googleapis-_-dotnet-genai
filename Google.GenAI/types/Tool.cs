@@ -47,7 +47,7 @@ namespace Google.GenAI.Types {
           }
 
     /// <summary>
-    /// Optional. Google Search tool type. Specialized retrieval tool  that is powered by Google
+    /// Optional. Google Search tool type. Specialized retrieval tool that is powered by Google
     /// Search.
     /// </summary>
     [JsonPropertyName("googleSearch")]
@@ -69,7 +69,7 @@ namespace Google.GenAI.Types {
           }
 
     /// <summary>
-    /// Optional. Enterprise web search tool type. Specialized retrieval  tool that is powered by
+    /// Optional. Enterprise web search tool type. Specialized retrieval tool that is powered by
     /// Vertex AI Search and Sec4 compliance.
     /// </summary>
     [JsonPropertyName("enterpriseWebSearch")]
@@ -80,7 +80,7 @@ namespace Google.GenAI.Types {
           }
 
     /// <summary>
-    /// Optional. Google Maps tool type. Specialized retrieval tool  that is powered by Google Maps.
+    /// Optional. Google Maps tool type. Specialized retrieval tool that is powered by Google Maps.
     /// </summary>
     [JsonPropertyName("googleMaps")]
     [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]
@@ -100,8 +100,8 @@ namespace Google.GenAI.Types {
           }
 
     /// <summary>
-    /// Optional. Tool to support the model interacting directly with the  computer. If enabled, it
-    /// automatically populates computer-use specific  Function Declarations.
+    /// Optional. Tool to support the model interacting directly with the computer. If enabled, it
+    /// automatically populates computer-use specific Function Declarations.
     /// </summary>
     [JsonPropertyName("computerUse")]
     [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]

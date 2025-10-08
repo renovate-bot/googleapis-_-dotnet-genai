@@ -23,10 +23,10 @@ using Google.GenAI.Serialization;
 
 namespace Google.GenAI.Types {
   /// <summary>
-  /// An object that represents a latitude/longitude pair.   This is expressed as a pair of doubles
-  /// to represent degrees latitude and  degrees longitude. Unless specified otherwise, this object
-  /// must conform to the  &lt;a
-  /// href="https://en.wikipedia.org/wiki/World_Geodetic_System#1984_version"&gt;  WGS84
+  /// An object that represents a latitude/longitude pair.  This is expressed as a pair of doubles
+  /// to represent degrees latitude and degrees longitude. Unless specified otherwise, this object
+  /// must conform to the &lt;a
+  /// href="https://en.wikipedia.org/wiki/World_Geodetic_System#1984_version"&gt; WGS84
   /// standard&lt;/a&gt;. Values must be within normalized ranges.
   /// </summary>
 

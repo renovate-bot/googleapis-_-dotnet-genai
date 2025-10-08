@@ -23,7 +23,7 @@ using Google.GenAI.Serialization;
 
 namespace Google.GenAI.Types {
   /// <summary>
-  /// Defines a function that the model can generate JSON inputs for.   The inputs are based on
+  /// Defines a function that the model can generate JSON inputs for.  The inputs are based on
   /// OpenAPI 3.0 specifications (https://spec.openapis.org/oas/v3.0.3).
   /// </summary>
 

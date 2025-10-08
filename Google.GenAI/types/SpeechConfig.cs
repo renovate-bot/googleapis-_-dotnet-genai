@@ -35,7 +35,7 @@ namespace Google.GenAI.Types {
     public VoiceConfig ? VoiceConfig { get; set; }
 
     /// <summary>
-    /// The configuration for the multi-speaker setup.  It is mutually exclusive with the
+    /// The configuration for the multi-speaker setup. It is mutually exclusive with the
     /// voice_config field.
     /// </summary>
     [JsonPropertyName("multiSpeakerVoiceConfig")]
@@ -46,7 +46,7 @@ namespace Google.GenAI.Types {
           }
 
     /// <summary>
-    /// Language code (ISO 639. e.g. en-US) for the speech synthesization.  Only available for Live
+    /// Language code (ISO 639. e.g. en-US) for the speech synthesization. Only available for Live
     /// API.
     /// </summary>
     [JsonPropertyName("languageCode")]

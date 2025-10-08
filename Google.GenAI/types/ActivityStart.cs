@@ -23,8 +23,8 @@ using Google.GenAI.Serialization;
 
 namespace Google.GenAI.Types {
   /// <summary>
-  /// Marks the start of user activity.   This can only be sent if automatic (i.e. server-side)
-  /// activity detection is  disabled.
+  /// Marks the start of user activity.  This can only be sent if automatic (i.e. server-side)
+  /// activity detection is disabled.
   /// </summary>
 
   public record ActivityStart {

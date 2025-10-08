@@ -52,7 +52,7 @@ namespace Google.GenAI.Types {
           }
 
     /// <summary>
-    /// List of parts that constitute a function response. Each part may  have a different IANA MIME
+    /// List of parts that constitute a function response. Each part may have a different IANA MIME
     /// type.
     /// </summary>
     [JsonPropertyName("parts")]

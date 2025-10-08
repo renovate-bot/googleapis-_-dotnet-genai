@@ -23,8 +23,8 @@ using Google.GenAI.Serialization;
 
 namespace Google.GenAI.Types {
   /// <summary>
-  /// Configuration of session resumption mechanism.   Included in
-  /// `LiveConnectConfig.session_resumption`. If included server  will send
+  /// Configuration of session resumption mechanism.  Included in
+  /// `LiveConnectConfig.session_resumption`. If included server will send
   /// `LiveServerSessionResumptionUpdate` messages.
   /// </summary>
 

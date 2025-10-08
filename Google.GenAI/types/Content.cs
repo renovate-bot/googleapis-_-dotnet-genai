@@ -28,7 +28,7 @@ namespace Google.GenAI.Types {
 
   public record Content {
     /// <summary>
-    /// List of parts that constitute a single message. Each part may have  a different IANA MIME
+    /// List of parts that constitute a single message. Each part may have a different IANA MIME
     /// type.
     /// </summary>
     [JsonPropertyName("parts")]
@@ -36,8 +36,8 @@ namespace Google.GenAI.Types {
     public List<Part> ? Parts { get; set; }
 
     /// <summary>
-    /// Optional. The producer of the content. Must be either 'user' or  'model'. Useful to set for
-    /// multi-turn conversations, otherwise can be  empty. If role is not specified, SDK will
+    /// Optional. The producer of the content. Must be either 'user' or 'model'. Useful to set for
+    /// multi-turn conversations, otherwise can be empty. If role is not specified, SDK will
     /// determine the role.
     /// </summary>
     [JsonPropertyName("role")]

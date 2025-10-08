@@ -28,7 +28,7 @@ namespace Google.GenAI.Types {
 
   public record SafetySetting {
     /// <summary>
-    /// Determines if the harm block method uses probability or probability  and severity scores.
+    /// Determines if the harm block method uses probability or probability and severity scores.
     /// </summary>
     [JsonPropertyName("method")]
     [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]

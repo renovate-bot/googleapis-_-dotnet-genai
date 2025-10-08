@@ -23,7 +23,7 @@ using Google.GenAI.Serialization;
 
 namespace Google.GenAI.Types {
   /// <summary>
-  /// User input that is sent in real time.   This is different from `LiveClientContent` in a few
+  /// User input that is sent in real time.  This is different from `LiveClientContent` in a few
   /// ways:   - Can be sent continuously without interruption to model generation.  - If there is a
   /// need to mix data interleaved across the  `LiveClientContent` and the
   /// `LiveClientRealtimeInput`, server attempts to  optimize for best response, but there are no

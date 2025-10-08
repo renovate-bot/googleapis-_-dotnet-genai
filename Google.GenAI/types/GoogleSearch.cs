@@ -28,7 +28,7 @@ namespace Google.GenAI.Types {
 
   public record GoogleSearch {
     /// <summary>
-    /// Optional. Filter search results to a specific time range.  If customers set a start time,
+    /// Optional. Filter search results to a specific time range. If customers set a start time,
     /// they must set an end time (and vice versa).
     /// </summary>
     [JsonPropertyName("timeRangeFilter")]
@@ -36,7 +36,7 @@ namespace Google.GenAI.Types {
     public Interval ? TimeRangeFilter { get; set; }
 
     /// <summary>
-    /// Optional. List of domains to be excluded from the search results.  The default limit is 2000
+    /// Optional. List of domains to be excluded from the search results. The default limit is 2000
     /// domains.
     /// </summary>
     [JsonPropertyName("excludeDomains")]

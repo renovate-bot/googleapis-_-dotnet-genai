@@ -24,9 +24,9 @@ using Google.GenAI.Serialization;
 namespace Google.GenAI.Types {
   /// <summary>
   /// Notification for the client that a previously issued `ToolCallMessage` with the specified
-  /// `id`s should have been not executed and should be cancelled.   If there were side-effects to
-  /// those tool calls, clients may attempt to undo  the tool calls. This message occurs only in
-  /// cases where the clients interrupt  server turns.
+  /// `id`s should have been not executed and should be cancelled.  If there were side-effects to
+  /// those tool calls, clients may attempt to undo the tool calls. This message occurs only in
+  /// cases where the clients interrupt server turns.
   /// </summary>
 
   public record LiveServerToolCallCancellation {

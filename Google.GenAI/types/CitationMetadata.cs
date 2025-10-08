@@ -28,8 +28,8 @@ namespace Google.GenAI.Types {
 
   public record CitationMetadata {
     /// <summary>
-    /// Contains citation information when the model directly quotes, at  length, from another
-    /// source. Can include traditional websites and code  repositories.
+    /// Contains citation information when the model directly quotes, at length, from another
+    /// source. Can include traditional websites and code repositories.
     /// </summary>
     [JsonPropertyName("citations")]
     [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]

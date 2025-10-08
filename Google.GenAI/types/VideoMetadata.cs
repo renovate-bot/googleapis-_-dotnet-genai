@@ -28,7 +28,7 @@ namespace Google.GenAI.Types {
 
   public record VideoMetadata {
     /// <summary>
-    /// The frame rate of the video sent to the model. If not specified, the  default value will
+    /// The frame rate of the video sent to the model. If not specified, the default value will
     /// be 1.0. The fps range is (0.0, 24.0].
     /// </summary>
     [JsonPropertyName("fps")]

@@ -28,7 +28,7 @@ namespace Google.GenAI.Types {
 
   public record FunctionCall {
     /// <summary>
-    /// The unique id of the function call. If populated, the client to execute the  `function_call`
+    /// The unique id of the function call. If populated, the client to execute the `function_call`
     /// and return the response with the matching `id`.
     /// </summary>
     [JsonPropertyName("id")]

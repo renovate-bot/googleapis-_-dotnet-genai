@@ -23,11 +23,11 @@ using Google.GenAI.Serialization;
 
 namespace Google.GenAI.Types {
   /// <summary>
-  /// Client generated response to a `ToolCall` received from the server.   Individual
-  /// `FunctionResponse` objects are matched to the respective  `FunctionCall` objects by the `id`
-  /// field.   Note that in the unary and server-streaming GenerateContent APIs function  calling
-  /// happens by exchanging the `Content` parts, while in the bidi  GenerateContent APIs function
-  /// calling happens over this dedicated set of  messages.
+  /// Client generated response to a `ToolCall` received from the server.  Individual
+  /// `FunctionResponse` objects are matched to the respective `FunctionCall` objects by the `id`
+  /// field.  Note that in the unary and server-streaming GenerateContent APIs function calling
+  /// happens by exchanging the `Content` parts, while in the bidi GenerateContent APIs function
+  /// calling happens over this dedicated set of messages.
   /// </summary>
 
   public record LiveClientToolResponse {

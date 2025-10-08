@@ -28,7 +28,7 @@ namespace Google.GenAI.Types {
 
   public record SpeakerVoiceConfig {
     /// <summary>
-    /// The name of the speaker to use. Should be the same as in the  prompt.
+    /// The name of the speaker to use. Should be the same as in the prompt.
     /// </summary>
     [JsonPropertyName("speaker")]
     [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]

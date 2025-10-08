@@ -23,8 +23,8 @@ using Google.GenAI.Serialization;
 
 namespace Google.GenAI.Types {
   /// <summary>
-  /// Raw media bytes for function response.   Text should not be sent as raw bytes, use the
-  /// FunctionResponse.response  field.
+  /// Raw media bytes for function response.  Text should not be sent as raw bytes, use the
+  /// FunctionResponse.response field.
   /// </summary>
 
   public record FunctionResponseBlob {

@@ -28,7 +28,7 @@ namespace Google.GenAI.Types {
 
   public record ImageConfig {
     /// <summary>
-    /// Aspect ratio of the generated images. Supported values are  "1:1", "2:3", "3:2", "3:4",
+    /// Aspect ratio of the generated images. Supported values are "1:1", "2:3", "3:2", "3:4",
     /// "4:3", "9:16", "16:9", and "21:9".
     /// </summary>
     [JsonPropertyName("aspectRatio")]

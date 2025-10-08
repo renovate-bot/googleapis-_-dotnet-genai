@@ -35,8 +35,8 @@ namespace Google.GenAI.Types {
     public List<GeneratedImage> ? GeneratedImages { get; set; }
 
     /// <summary>
-    /// Safety attributes of the positive prompt. Only populated if  ``include_safety_attributes``
-    /// is set to True.
+    /// Safety attributes of the positive prompt. Only populated if ``include_safety_attributes`` is
+    /// set to True.
     /// </summary>
     [JsonPropertyName("positivePromptSafetyAttributes")]
     [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]

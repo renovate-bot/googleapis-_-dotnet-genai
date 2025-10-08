@@ -23,10 +23,10 @@ using Google.GenAI.Serialization;
 
 namespace Google.GenAI.Types {
   /// <summary>
-  /// Context window will be truncated by keeping only suffix of it.   Context window will always be
-  /// cut at start of USER role turn. System  instructions and
-  /// `BidiGenerateContentSetup.prefix_turns` will not be  subject to the sliding window mechanism,
-  /// they will always stay at the  beginning of context window.
+  /// Context window will be truncated by keeping only suffix of it.  Context window will always be
+  /// cut at start of USER role turn. System instructions and
+  /// `BidiGenerateContentSetup.prefix_turns` will not be subject to the sliding window mechanism,
+  /// they will always stay at the beginning of context window.
   /// </summary>
 
   public record SlidingWindow {

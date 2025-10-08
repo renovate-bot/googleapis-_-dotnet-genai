@@ -126,7 +126,7 @@ namespace Google.GenAI.Types {
           }
 
     /// <summary>
-    /// Traffic type. This shows whether a request consumes Pay-As-You-Go  or Provisioned Throughput
+    /// Traffic type. This shows whether a request consumes Pay-As-You-Go or Provisioned Throughput
     /// quota.
     /// </summary>
     [JsonPropertyName("trafficType")]

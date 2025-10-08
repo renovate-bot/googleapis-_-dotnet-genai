@@ -65,7 +65,7 @@ namespace Google.GenAI.Types {
           }
 
     /// <summary>
-    /// The reason why the model stopped generating tokens.  If empty, the model has not stopped
+    /// The reason why the model stopped generating tokens. If empty, the model has not stopped
     /// generating the tokens.
     /// </summary>
     [JsonPropertyName("finishReason")]

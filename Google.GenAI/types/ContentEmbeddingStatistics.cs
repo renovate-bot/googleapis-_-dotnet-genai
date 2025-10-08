@@ -28,7 +28,7 @@ namespace Google.GenAI.Types {
 
   public record ContentEmbeddingStatistics {
     /// <summary>
-    /// Vertex API only. If the input text was truncated due to having  a length longer than the
+    /// Vertex API only. If the input text was truncated due to having a length longer than the
     /// allowed maximum input.
     /// </summary>
     [JsonPropertyName("truncated")]

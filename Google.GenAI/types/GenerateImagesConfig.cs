@@ -65,7 +65,7 @@ namespace Google.GenAI.Types {
           }
 
     /// <summary>
-    /// Aspect ratio of the generated images. Supported values are  "1:1", "3:4", "4:3", "9:16", and
+    /// Aspect ratio of the generated images. Supported values are "1:1", "3:4", "4:3", "9:16", and
     /// "16:9".
     /// </summary>
     [JsonPropertyName("aspectRatio")]
@@ -76,8 +76,8 @@ namespace Google.GenAI.Types {
           }
 
     /// <summary>
-    /// Controls how much the model adheres to the text prompt. Large  values increase output and
-    /// prompt alignment, but may compromise image  quality.
+    /// Controls how much the model adheres to the text prompt. Large values increase output and
+    /// prompt alignment, but may compromise image quality.
     /// </summary>
     [JsonPropertyName("guidanceScale")]
     [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]
@@ -87,7 +87,7 @@ namespace Google.GenAI.Types {
           }
 
     /// <summary>
-    /// Random seed for image generation. This is not available when  ``add_watermark`` is set to
+    /// Random seed for image generation. This is not available when ``add_watermark`` is set to
     /// true.
     /// </summary>
     [JsonPropertyName("seed")]
@@ -118,7 +118,7 @@ namespace Google.GenAI.Types {
           }
 
     /// <summary>
-    /// Whether to report the safety scores of each generated image and  the positive prompt in the
+    /// Whether to report the safety scores of each generated image and the positive prompt in the
     /// response.
     /// </summary>
     [JsonPropertyName("includeSafetyAttributes")]
@@ -129,7 +129,7 @@ namespace Google.GenAI.Types {
           }
 
     /// <summary>
-    /// Whether to include the Responsible AI filter reason if the image  is filtered out of the
+    /// Whether to include the Responsible AI filter reason if the image is filtered out of the
     /// response.
     /// </summary>
     [JsonPropertyName("includeRaiReason")]
@@ -160,7 +160,7 @@ namespace Google.GenAI.Types {
           }
 
     /// <summary>
-    /// Compression quality of the generated image (for ``image/jpeg``  only).
+    /// Compression quality of the generated image (for ``image/jpeg`` only).
     /// </summary>
     [JsonPropertyName("outputCompressionQuality")]
     [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]
@@ -190,8 +190,8 @@ namespace Google.GenAI.Types {
           }
 
     /// <summary>
-    /// The size of the largest dimension of the generated image.  Supported sizes are 1K and 2K
-    /// (not supported for Imagen 3 models).
+    /// The size of the largest dimension of the generated image. Supported sizes are 1K and 2K (not
+    /// supported for Imagen 3 models).
     /// </summary>
     [JsonPropertyName("imageSize")]
     [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]

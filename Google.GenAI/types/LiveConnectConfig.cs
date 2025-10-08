@@ -45,7 +45,7 @@ namespace Google.GenAI.Types {
           }
 
     /// <summary>
-    /// The requested modalities of the response. Represents the set of  modalities that the model
+    /// The requested modalities of the response. Represents the set of modalities that the model
     /// can return. Defaults to AUDIO if not specified.
     /// </summary>
     [JsonPropertyName("responseModalities")]
@@ -56,9 +56,9 @@ namespace Google.GenAI.Types {
           }
 
     /// <summary>
-    /// Value that controls the degree of randomness in token selection.  Lower temperatures are
-    /// good for prompts that require a less open-ended or  creative response, while higher
-    /// temperatures can lead to more diverse or  creative results.
+    /// Value that controls the degree of randomness in token selection. Lower temperatures are good
+    /// for prompts that require a less open-ended or creative response, while higher temperatures
+    /// can lead to more diverse or creative results.
     /// </summary>
     [JsonPropertyName("temperature")]
     [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]
@@ -68,8 +68,8 @@ namespace Google.GenAI.Types {
           }
 
     /// <summary>
-    /// Tokens are selected from the most to least probable until the sum  of their probabilities
-    /// equals this value. Use a lower value for less  random responses and a higher value for more
+    /// Tokens are selected from the most to least probable until the sum of their probabilities
+    /// equals this value. Use a lower value for less random responses and a higher value for more
     /// random responses.
     /// </summary>
     [JsonPropertyName("topP")]
@@ -80,10 +80,10 @@ namespace Google.GenAI.Types {
           }
 
     /// <summary>
-    /// For each token selection step, the ``top_k`` tokens with the  highest probabilities are
-    /// sampled. Then tokens are further filtered based  on ``top_p`` with the final token selected
-    /// using temperature sampling. Use  a lower number for less random responses and a higher
-    /// number for more  random responses.
+    /// For each token selection step, the ``top_k`` tokens with the highest probabilities are
+    /// sampled. Then tokens are further filtered based on ``top_p`` with the final token selected
+    /// using temperature sampling. Use a lower number for less random responses and a higher number
+    /// for more random responses.
     /// </summary>
     [JsonPropertyName("topK")]
     [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]
@@ -113,8 +113,8 @@ namespace Google.GenAI.Types {
           }
 
     /// <summary>
-    /// When ``seed`` is fixed to a specific number, the model makes a best  effort to provide the
-    /// same response for repeated requests. By default, a  random number is used.
+    /// When ``seed`` is fixed to a specific number, the model makes a best effort to provide the
+    /// same response for repeated requests. By default, a random number is used.
     /// </summary>
     [JsonPropertyName("seed")]
     [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]
@@ -134,8 +134,8 @@ namespace Google.GenAI.Types {
           }
 
     /// <summary>
-    /// Config for thinking features.  An error will be returned if this field is set for models
-    /// that don't  support thinking.
+    /// Config for thinking features. An error will be returned if this field is set for models that
+    /// don't support thinking.
     /// </summary>
     [JsonPropertyName("thinkingConfig")]
     [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]
@@ -155,8 +155,8 @@ namespace Google.GenAI.Types {
           }
 
     /// <summary>
-    /// The user provided system instructions for the model.  Note: only text should be used in
-    /// parts and content in each part will be  in a separate paragraph.
+    /// The user provided system instructions for the model. Note: only text should be used in parts
+    /// and content in each part will be in a separate paragraph.
     /// </summary>
     [JsonPropertyName("systemInstruction")]
     [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]
@@ -166,9 +166,9 @@ namespace Google.GenAI.Types {
           }
 
     /// <summary>
-    /// A list of `Tools` the model may use to generate the next response.   A `Tool` is a piece of
-    /// code that enables the system to interact with  external systems to perform an action, or set
-    /// of actions, outside of  knowledge and scope of the model.
+    /// A list of `Tools` the model may use to generate the next response.  A `Tool` is a piece of
+    /// code that enables the system to interact with external systems to perform an action, or set
+    /// of actions, outside of knowledge and scope of the model.
     /// </summary>
     [JsonPropertyName("tools")]
     [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]
@@ -199,7 +199,7 @@ namespace Google.GenAI.Types {
           }
 
     /// <summary>
-    /// The transcription of the output aligns with the language code  specified for the output
+    /// The transcription of the output aligns with the language code specified for the output
     /// audio.
     /// </summary>
     [JsonPropertyName("outputAudioTranscription")]
@@ -220,7 +220,7 @@ namespace Google.GenAI.Types {
           }
 
     /// <summary>
-    /// Configures context window compression mechanism.   If included, server will compress context
+    /// Configures context window compression mechanism.  If included, server will compress context
     /// window to fit into given length.
     /// </summary>
     [JsonPropertyName("contextWindowCompression")]
