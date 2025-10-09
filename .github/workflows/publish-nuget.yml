@@ -1,0 +1,30 @@
+name: Publish NuGet Package
+
+on:
+  push:
+    tags:
+      - 'Google.GenAI-v*'
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: '8.x'
+
+      - name: Restore dependencies
+        run: dotnet restore Google.GenAI/Google.GenAI.csproj
+
+      - name: Build
+        run: dotnet build Google.GenAI/Google.GenAI.csproj --configuration Release --no-restore
+
+      - name: Pack NuGet package
+        run: dotnet pack Google.GenAI/Google.GenAI.csproj --configuration Release --no-build --output ./nuget
+
+      - name: Publish to NuGet
+        run: dotnet nuget push "./nuget/Google.GenAI.*.nupkg" --api-key ${{ secrets.NUGET_API_KEY }} --source https://api.nuget.org/v3/index.json
