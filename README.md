@@ -87,6 +87,7 @@ section above to initialize a client.
 #### With simple text content
 
 ```csharp
+using System.Threading.Tasks;
 using Google.GenAI;
 using Google.GenAI.Types;
 
@@ -112,6 +113,7 @@ each model is shown in the
 and [Gemini API docs](https://ai.google.dev/gemini-api/docs/models) respectively.
 
 ```csharp
+using System.Threading.Tasks;
 using Google.GenAI;
 using Google.GenAI.Types;
 
@@ -144,6 +146,7 @@ public class GenerateContentWithConfig {
 #### Safety Settings
 
 ```csharp
+using System.Threading.Tasks;
 using Google.GenAI;
 using Googel.GenAI.Types;
 
@@ -179,6 +182,7 @@ including by giving examples of expected JSON output. If you do, the generated
 output might be lower in quality.
 
 ```csharp
+using System.Threading.Tasks;
 using Goolge.GenAI;
 using Google.GenAI.Types;
 
@@ -235,6 +239,7 @@ public class GenerateContentWithJsonSchema {
 The usage of GenerateContentStreamAsync is similar to GenerateContentAsync, this section shows one simple example to showcase the nuance in the usage.
 
 ```csharp
+using System.Threading.Tasks;
 using Google.GenAI;
 using Google.GenAI.Types;
 
@@ -257,6 +262,7 @@ class GenerateContentStreamSimpleText {
 ### Generate Images
 
 ```csharp
+using System.Threading.Tasks;
 using Google.GenAI;
 using Google.GenAI.Types;
 
@@ -290,6 +296,7 @@ public class GenerateImagesSimple {
 Upscaling an image is only supported on the Vertex AI client.
 
 ```csharp
+using System.Threading.Tasks;
 using Google.GenAI;
 using Google.GenAI.Types;
 
