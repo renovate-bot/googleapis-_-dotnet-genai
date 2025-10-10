@@ -1060,6 +1060,11 @@ namespace Google.GenAI {
         throw new NotSupportedException("authConfig parameter is not supported in Gemini API.");
       }
 
+      if (Common.GetValueByPath(fromObject, new string[] { "enableWidget" }) != null) {
+        Common.SetValueByPath(toObject, new string[] { "enableWidget" },
+                              Common.GetValueByPath(fromObject, new string[] { "enableWidget" }));
+      }
+
       return toObject;
     }
 

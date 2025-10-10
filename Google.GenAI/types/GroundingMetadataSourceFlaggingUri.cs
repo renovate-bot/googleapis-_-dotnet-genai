@@ -23,36 +23,39 @@ using Google.GenAI.Serialization;
 
 namespace Google.GenAI.Types {
   /// <summary>
-  /// Tool to support Google Maps in Model.
+  /// Source content flagging uri for a place or review. This is currently populated only for Google
+  /// Maps grounding.
   /// </summary>
 
-  public record GoogleMaps {
+  public record GroundingMetadataSourceFlaggingUri {
     /// <summary>
-    /// Optional. Auth config for the Google Maps tool.
+    /// A link where users can flag a problem with the source (place or review).
     /// </summary>
-    [JsonPropertyName("authConfig")]
+    [JsonPropertyName("flagContentUri")]
     [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]
-    public AuthConfig ? AuthConfig { get; set; }
+    public string ? FlagContentUri { get; set; }
 
     /// <summary>
-    /// Optional. If true, include the widget context token in the response.
+    /// Id of the place or review.
     /// </summary>
-    [JsonPropertyName("enableWidget")]
+    [JsonPropertyName("sourceId")]
     [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]
-    public bool
-        ? EnableWidget {
+    public string
+        ? SourceId {
             get; set;
           }
 
     /// <summary>
-    /// Deserializes a JSON string to a GoogleMaps object.
+    /// Deserializes a JSON string to a GroundingMetadataSourceFlaggingUri object.
     /// </summary>
     /// <param name="jsonString">The JSON string to deserialize.</param>
     /// <param name="options">Optional JsonSerializerOptions.</param>
-    /// <returns>The deserialized GoogleMaps object, or null if deserialization fails.</returns>
-    public static GoogleMaps ? FromJson(string jsonString, JsonSerializerOptions? options = null) {
+    /// <returns>The deserialized GroundingMetadataSourceFlaggingUri object, or null if
+    /// deserialization fails.</returns>
+    public static GroundingMetadataSourceFlaggingUri
+        ? FromJson(string jsonString, JsonSerializerOptions? options = null) {
       try {
-        return JsonSerializer.Deserialize<GoogleMaps>(jsonString, options);
+        return JsonSerializer.Deserialize<GroundingMetadataSourceFlaggingUri>(jsonString, options);
       } catch (JsonException e) {
         Console.Error.WriteLine($"Error deserializing JSON: {e.ToString()}");
         return null;

@@ -87,6 +87,17 @@ namespace Google.GenAI.Types {
           }
 
     /// <summary>
+    /// Optional. Output only. List of source flagging uris. This is currently populated only for
+    /// Google Maps grounding.
+    /// </summary>
+    [JsonPropertyName("sourceFlaggingUris")]
+    [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]
+    public List<GroundingMetadataSourceFlaggingUri>
+        ? SourceFlaggingUris {
+            get; set;
+          }
+
+    /// <summary>
     /// Optional. Web search queries for the following-up web search.
     /// </summary>
     [JsonPropertyName("webSearchQueries")]

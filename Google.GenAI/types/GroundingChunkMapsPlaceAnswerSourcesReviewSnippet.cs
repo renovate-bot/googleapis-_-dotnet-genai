@@ -77,6 +77,26 @@ namespace Google.GenAI.Types {
           }
 
     /// <summary>
+    /// Id of the review referencing the place.
+    /// </summary>
+    [JsonPropertyName("reviewId")]
+    [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]
+    public string
+        ? ReviewId {
+            get; set;
+          }
+
+    /// <summary>
+    /// Title of the review.
+    /// </summary>
+    [JsonPropertyName("title")]
+    [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]
+    public string
+        ? Title {
+            get; set;
+          }
+
+    /// <summary>
     /// Deserializes a JSON string to a GroundingChunkMapsPlaceAnswerSourcesReviewSnippet object.
     /// </summary>
     /// <param name="jsonString">The JSON string to deserialize.</param>
