@@ -10,7 +10,7 @@ This library is built for and requires .NET 8.0 or a later compatible version.
 
 ## Full API Reference
 
-The full API reference is hosted in the [dedicated GitHub Page for this repo](https://googleapis.github.io/dotnet-genai/api/index.html)
+The full API reference is hosted in the [dedicated GitHub Page](https://googleapis.github.io/dotnet-genai/api/index.html)
 
 ## Install
 In your dotnet project directory, type the the following command
