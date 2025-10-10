@@ -263,6 +263,16 @@ namespace Google.GenAI {
       return toObject;
     }
 
+    internal JsonNode GoogleMapsToMldev(JsonNode fromObject, JsonObject parentObject) {
+      JsonObject toObject = new JsonObject();
+
+      if (!Common.IsZero(Common.GetValueByPath(fromObject, new string[] { "authConfig" }))) {
+        throw new NotSupportedException("authConfig parameter is not supported in Gemini API.");
+      }
+
+      return toObject;
+    }
+
     internal JsonNode GoogleSearchToMldev(JsonNode fromObject, JsonObject parentObject) {
       JsonObject toObject = new JsonObject();
 
@@ -1198,8 +1208,12 @@ namespace Google.GenAI {
             "enterpriseWebSearch parameter is not supported in Gemini API.");
       }
 
-      if (!Common.IsZero(Common.GetValueByPath(fromObject, new string[] { "googleMaps" }))) {
-        throw new NotSupportedException("googleMaps parameter is not supported in Gemini API.");
+      if (Common.GetValueByPath(fromObject, new string[] { "googleMaps" }) != null) {
+        Common.SetValueByPath(
+            toObject, new string[] { "googleMaps" },
+            GoogleMapsToMldev(JsonNode.Parse(JsonSerializer.Serialize(Common.GetValueByPath(
+                                  fromObject, new string[] { "googleMaps" }))),
+                              toObject));
       }
 
       if (Common.GetValueByPath(fromObject, new string[] { "urlContext" }) != null) {
