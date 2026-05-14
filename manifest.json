@@ -658,6 +658,20 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Google.GenAI.Types.BatchJobOutputInfo.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Google.GenAI.Types.BatchJobOutputInfo.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Google.GenAI.Types.BatchJobOutputInfo",
+      "Summary": "<p sourcefile=\"api/Google.GenAI.Types.BatchJobOutputInfo.yml\" sourcestartlinenumber=\"1\">Represents the <code sourcefile=\"api/Google.GenAI.Types.BatchJobOutputInfo.yml\" sourcestartlinenumber=\"1\">output_info</code> field in batch jobs.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Google.GenAI.Types.BatchJobSource.yml",
       "output": {
         ".html": {
@@ -1620,7 +1634,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Google.GenAI.Types.EmbedContentMetadata",
-      "Summary": "<p sourcefile=\"api/Google.GenAI.Types.EmbedContentMetadata.yml\" sourcestartlinenumber=\"1\">Request-level metadata for the Vertex Embed Content API.</p>\n"
+      "Summary": "<p sourcefile=\"api/Google.GenAI.Types.EmbedContentMetadata.yml\" sourcestartlinenumber=\"1\">Request-level metadata for the Gemini Enterprise Agent Platform Embed Content API.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -1648,7 +1662,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Google.GenAI.Types.EmbeddingApiType",
-      "Summary": "<p sourcefile=\"api/Google.GenAI.Types.EmbeddingApiType.yml\" sourcestartlinenumber=\"1\">Enum representing the Vertex embedding API to use.</p>\n"
+      "Summary": "<p sourcefile=\"api/Google.GenAI.Types.EmbeddingApiType.yml\" sourcestartlinenumber=\"1\">Enum representing the Gemini Enterprise Agent Platform embedding API to use.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -3174,6 +3188,34 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Google.GenAI.Types.ImagePromptLanguageConverter",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Google.GenAI.Types.ImageResizeMode.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Google.GenAI.Types.ImageResizeMode.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Google.GenAI.Types.ImageResizeMode",
+      "Summary": "<p sourcefile=\"api/Google.GenAI.Types.ImageResizeMode.yml\" sourcestartlinenumber=\"1\">Resize mode for the image input for video generation.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Google.GenAI.Types.ImageResizeModeConverter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Google.GenAI.Types.ImageResizeModeConverter.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Google.GenAI.Types.ImageResizeModeConverter",
       "Summary": null
     },
     {
@@ -6146,6 +6188,20 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Google.GenAI.Types.VertexMultimodalDatasetDestination.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Google.GenAI.Types.VertexMultimodalDatasetDestination.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Google.GenAI.Types.VertexMultimodalDatasetDestination",
+      "Summary": "<p sourcefile=\"api/Google.GenAI.Types.VertexMultimodalDatasetDestination.yml\" sourcestartlinenumber=\"1\">This class is experimental and may change in future versions.  The specification for an output\nVertex AI multimodal dataset.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Google.GenAI.Types.VertexRagStore.yml",
       "output": {
         ".html": {
@@ -6480,11 +6536,11 @@
       "type": "Toc",
       "source_relative_path": "api/toc.yml",
       "output": {
-        ".json": {
-          "relative_path": "api/toc.json"
-        },
         ".html": {
           "relative_path": "api/toc.html"
+        },
+        ".json": {
+          "relative_path": "api/toc.json"
         }
       },
       "version": ""
@@ -6503,11 +6559,11 @@
       "type": "Toc",
       "source_relative_path": "toc.yml",
       "output": {
-        ".json": {
-          "relative_path": "toc.json"
-        },
         ".html": {
           "relative_path": "toc.html"
+        },
+        ".json": {
+          "relative_path": "toc.json"
         }
       },
       "version": ""

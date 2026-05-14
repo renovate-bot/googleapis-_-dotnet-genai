@@ -13,15 +13,15 @@ references:
   commentId: T:Google.GenAI.ApiClient
   fullName: Google.GenAI.ApiClient
   nameWithType: ApiClient
-- uid: Google.GenAI.ApiClient.#ctor(System.Nullable{System.Boolean},System.String,System.String,System.String,Google.Apis.Auth.OAuth2.ICredential,Google.GenAI.Types.HttpOptions,Google.GenAI.Types.ClientOptions)
-  name: ApiClient(bool?, string?, string?, string?, ICredential?, HttpOptions?, ClientOptions?)
-  href: api/Google.GenAI.ApiClient.html#Google_GenAI_ApiClient__ctor_System_Nullable_System_Boolean__System_String_System_String_System_String_Google_Apis_Auth_OAuth2_ICredential_Google_GenAI_Types_HttpOptions_Google_GenAI_Types_ClientOptions_
-  commentId: M:Google.GenAI.ApiClient.#ctor(System.Nullable{System.Boolean},System.String,System.String,System.String,Google.Apis.Auth.OAuth2.ICredential,Google.GenAI.Types.HttpOptions,Google.GenAI.Types.ClientOptions)
-  name.vb: New(Boolean?, String, String, String, ICredential, HttpOptions, ClientOptions)
-  fullName: Google.GenAI.ApiClient.ApiClient(bool?, string?, string?, string?, Google.Apis.Auth.OAuth2.ICredential?, Google.GenAI.Types.HttpOptions?, Google.GenAI.Types.ClientOptions?)
-  fullName.vb: Google.GenAI.ApiClient.New(Boolean?, String, String, String, Google.Apis.Auth.OAuth2.ICredential, Google.GenAI.Types.HttpOptions, Google.GenAI.Types.ClientOptions)
-  nameWithType: ApiClient.ApiClient(bool?, string?, string?, string?, ICredential?, HttpOptions?, ClientOptions?)
-  nameWithType.vb: ApiClient.New(Boolean?, String, String, String, ICredential, HttpOptions, ClientOptions)
+- uid: Google.GenAI.ApiClient.#ctor(System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.String,System.String,System.String,Google.Apis.Auth.OAuth2.ICredential,Google.GenAI.Types.HttpOptions,Google.GenAI.Types.ClientOptions)
+  name: ApiClient(bool?, bool?, string?, string?, string?, ICredential?, HttpOptions?, ClientOptions?)
+  href: api/Google.GenAI.ApiClient.html#Google_GenAI_ApiClient__ctor_System_Nullable_System_Boolean__System_Nullable_System_Boolean__System_String_System_String_System_String_Google_Apis_Auth_OAuth2_ICredential_Google_GenAI_Types_HttpOptions_Google_GenAI_Types_ClientOptions_
+  commentId: M:Google.GenAI.ApiClient.#ctor(System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.String,System.String,System.String,Google.Apis.Auth.OAuth2.ICredential,Google.GenAI.Types.HttpOptions,Google.GenAI.Types.ClientOptions)
+  name.vb: New(Boolean?, Boolean?, String, String, String, ICredential, HttpOptions, ClientOptions)
+  fullName: Google.GenAI.ApiClient.ApiClient(bool?, bool?, string?, string?, string?, Google.Apis.Auth.OAuth2.ICredential?, Google.GenAI.Types.HttpOptions?, Google.GenAI.Types.ClientOptions?)
+  fullName.vb: Google.GenAI.ApiClient.New(Boolean?, Boolean?, String, String, String, Google.Apis.Auth.OAuth2.ICredential, Google.GenAI.Types.HttpOptions, Google.GenAI.Types.ClientOptions)
+  nameWithType: ApiClient.ApiClient(bool?, bool?, string?, string?, string?, ICredential?, HttpOptions?, ClientOptions?)
+  nameWithType.vb: ApiClient.New(Boolean?, Boolean?, String, String, String, ICredential, HttpOptions, ClientOptions)
 - uid: Google.GenAI.ApiClient.#ctor*
   name: ApiClient
   href: api/Google.GenAI.ApiClient.html#Google_GenAI_ApiClient__ctor_
@@ -647,15 +647,15 @@ references:
   commentId: T:Google.GenAI.Client
   fullName: Google.GenAI.Client
   nameWithType: Client
-- uid: Google.GenAI.Client.#ctor(System.Nullable{System.Boolean},System.String,Google.Apis.Auth.OAuth2.ICredential,System.String,System.String,Google.GenAI.Types.HttpOptions,Google.GenAI.Types.ClientOptions)
-  name: Client(bool?, string?, ICredential?, string?, string?, HttpOptions?, ClientOptions?)
-  href: api/Google.GenAI.Client.html#Google_GenAI_Client__ctor_System_Nullable_System_Boolean__System_String_Google_Apis_Auth_OAuth2_ICredential_System_String_System_String_Google_GenAI_Types_HttpOptions_Google_GenAI_Types_ClientOptions_
-  commentId: M:Google.GenAI.Client.#ctor(System.Nullable{System.Boolean},System.String,Google.Apis.Auth.OAuth2.ICredential,System.String,System.String,Google.GenAI.Types.HttpOptions,Google.GenAI.Types.ClientOptions)
-  name.vb: New(Boolean?, String, ICredential, String, String, HttpOptions, ClientOptions)
-  fullName: Google.GenAI.Client.Client(bool?, string?, Google.Apis.Auth.OAuth2.ICredential?, string?, string?, Google.GenAI.Types.HttpOptions?, Google.GenAI.Types.ClientOptions?)
-  fullName.vb: Google.GenAI.Client.New(Boolean?, String, Google.Apis.Auth.OAuth2.ICredential, String, String, Google.GenAI.Types.HttpOptions, Google.GenAI.Types.ClientOptions)
-  nameWithType: Client.Client(bool?, string?, ICredential?, string?, string?, HttpOptions?, ClientOptions?)
-  nameWithType.vb: Client.New(Boolean?, String, ICredential, String, String, HttpOptions, ClientOptions)
+- uid: Google.GenAI.Client.#ctor(System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.String,Google.Apis.Auth.OAuth2.ICredential,System.String,System.String,Google.GenAI.Types.HttpOptions,Google.GenAI.Types.ClientOptions)
+  name: Client(bool?, bool?, string?, ICredential?, string?, string?, HttpOptions?, ClientOptions?)
+  href: api/Google.GenAI.Client.html#Google_GenAI_Client__ctor_System_Nullable_System_Boolean__System_Nullable_System_Boolean__System_String_Google_Apis_Auth_OAuth2_ICredential_System_String_System_String_Google_GenAI_Types_HttpOptions_Google_GenAI_Types_ClientOptions_
+  commentId: M:Google.GenAI.Client.#ctor(System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.String,Google.Apis.Auth.OAuth2.ICredential,System.String,System.String,Google.GenAI.Types.HttpOptions,Google.GenAI.Types.ClientOptions)
+  name.vb: New(Boolean?, Boolean?, String, ICredential, String, String, HttpOptions, ClientOptions)
+  fullName: Google.GenAI.Client.Client(bool?, bool?, string?, Google.Apis.Auth.OAuth2.ICredential?, string?, string?, Google.GenAI.Types.HttpOptions?, Google.GenAI.Types.ClientOptions?)
+  fullName.vb: Google.GenAI.Client.New(Boolean?, Boolean?, String, Google.Apis.Auth.OAuth2.ICredential, String, String, Google.GenAI.Types.HttpOptions, Google.GenAI.Types.ClientOptions)
+  nameWithType: Client.Client(bool?, bool?, string?, ICredential?, string?, string?, HttpOptions?, ClientOptions?)
+  nameWithType.vb: Client.New(Boolean?, Boolean?, String, ICredential, String, String, HttpOptions, ClientOptions)
 - uid: Google.GenAI.Client.#ctor*
   name: Client
   href: api/Google.GenAI.Client.html#Google_GenAI_Client__ctor_
@@ -1146,15 +1146,15 @@ references:
   commentId: T:Google.GenAI.HttpApiClient
   fullName: Google.GenAI.HttpApiClient
   nameWithType: HttpApiClient
-- uid: Google.GenAI.HttpApiClient.#ctor(System.Nullable{System.Boolean},System.String,System.String,System.String,Google.Apis.Auth.OAuth2.ICredential,Google.GenAI.Types.HttpOptions,Google.GenAI.Types.ClientOptions)
-  name: HttpApiClient(bool?, string?, string?, string?, ICredential?, HttpOptions?, ClientOptions?)
-  href: api/Google.GenAI.HttpApiClient.html#Google_GenAI_HttpApiClient__ctor_System_Nullable_System_Boolean__System_String_System_String_System_String_Google_Apis_Auth_OAuth2_ICredential_Google_GenAI_Types_HttpOptions_Google_GenAI_Types_ClientOptions_
-  commentId: M:Google.GenAI.HttpApiClient.#ctor(System.Nullable{System.Boolean},System.String,System.String,System.String,Google.Apis.Auth.OAuth2.ICredential,Google.GenAI.Types.HttpOptions,Google.GenAI.Types.ClientOptions)
-  name.vb: New(Boolean?, String, String, String, ICredential, HttpOptions, ClientOptions)
-  fullName: Google.GenAI.HttpApiClient.HttpApiClient(bool?, string?, string?, string?, Google.Apis.Auth.OAuth2.ICredential?, Google.GenAI.Types.HttpOptions?, Google.GenAI.Types.ClientOptions?)
-  fullName.vb: Google.GenAI.HttpApiClient.New(Boolean?, String, String, String, Google.Apis.Auth.OAuth2.ICredential, Google.GenAI.Types.HttpOptions, Google.GenAI.Types.ClientOptions)
-  nameWithType: HttpApiClient.HttpApiClient(bool?, string?, string?, string?, ICredential?, HttpOptions?, ClientOptions?)
-  nameWithType.vb: HttpApiClient.New(Boolean?, String, String, String, ICredential, HttpOptions, ClientOptions)
+- uid: Google.GenAI.HttpApiClient.#ctor(System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.String,System.String,System.String,Google.Apis.Auth.OAuth2.ICredential,Google.GenAI.Types.HttpOptions,Google.GenAI.Types.ClientOptions)
+  name: HttpApiClient(bool?, bool?, string?, string?, string?, ICredential?, HttpOptions?, ClientOptions?)
+  href: api/Google.GenAI.HttpApiClient.html#Google_GenAI_HttpApiClient__ctor_System_Nullable_System_Boolean__System_Nullable_System_Boolean__System_String_System_String_System_String_Google_Apis_Auth_OAuth2_ICredential_Google_GenAI_Types_HttpOptions_Google_GenAI_Types_ClientOptions_
+  commentId: M:Google.GenAI.HttpApiClient.#ctor(System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.String,System.String,System.String,Google.Apis.Auth.OAuth2.ICredential,Google.GenAI.Types.HttpOptions,Google.GenAI.Types.ClientOptions)
+  name.vb: New(Boolean?, Boolean?, String, String, String, ICredential, HttpOptions, ClientOptions)
+  fullName: Google.GenAI.HttpApiClient.HttpApiClient(bool?, bool?, string?, string?, string?, Google.Apis.Auth.OAuth2.ICredential?, Google.GenAI.Types.HttpOptions?, Google.GenAI.Types.ClientOptions?)
+  fullName.vb: Google.GenAI.HttpApiClient.New(Boolean?, Boolean?, String, String, String, Google.Apis.Auth.OAuth2.ICredential, Google.GenAI.Types.HttpOptions, Google.GenAI.Types.ClientOptions)
+  nameWithType: HttpApiClient.HttpApiClient(bool?, bool?, string?, string?, string?, ICredential?, HttpOptions?, ClientOptions?)
+  nameWithType.vb: HttpApiClient.New(Boolean?, Boolean?, String, String, String, ICredential, HttpOptions, ClientOptions)
 - uid: Google.GenAI.HttpApiClient.#ctor*
   name: HttpApiClient
   href: api/Google.GenAI.HttpApiClient.html#Google_GenAI_HttpApiClient__ctor_
@@ -4220,6 +4220,19 @@ references:
   isSpec: "True"
   fullName: Google.GenAI.Types.BatchJob.Name
   nameWithType: BatchJob.Name
+- uid: Google.GenAI.Types.BatchJob.OutputInfo
+  name: OutputInfo
+  href: api/Google.GenAI.Types.BatchJob.html#Google_GenAI_Types_BatchJob_OutputInfo
+  commentId: P:Google.GenAI.Types.BatchJob.OutputInfo
+  fullName: Google.GenAI.Types.BatchJob.OutputInfo
+  nameWithType: BatchJob.OutputInfo
+- uid: Google.GenAI.Types.BatchJob.OutputInfo*
+  name: OutputInfo
+  href: api/Google.GenAI.Types.BatchJob.html#Google_GenAI_Types_BatchJob_OutputInfo_
+  commentId: Overload:Google.GenAI.Types.BatchJob.OutputInfo
+  isSpec: "True"
+  fullName: Google.GenAI.Types.BatchJob.OutputInfo
+  nameWithType: BatchJob.OutputInfo
 - uid: Google.GenAI.Types.BatchJob.Src
   name: Src
   href: api/Google.GenAI.Types.BatchJob.html#Google_GenAI_Types_BatchJob_Src
@@ -4372,6 +4385,80 @@ references:
   isSpec: "True"
   fullName: Google.GenAI.Types.BatchJobDestination.InlinedResponses
   nameWithType: BatchJobDestination.InlinedResponses
+- uid: Google.GenAI.Types.BatchJobDestination.VertexDataset
+  name: VertexDataset
+  href: api/Google.GenAI.Types.BatchJobDestination.html#Google_GenAI_Types_BatchJobDestination_VertexDataset
+  commentId: P:Google.GenAI.Types.BatchJobDestination.VertexDataset
+  fullName: Google.GenAI.Types.BatchJobDestination.VertexDataset
+  nameWithType: BatchJobDestination.VertexDataset
+- uid: Google.GenAI.Types.BatchJobDestination.VertexDataset*
+  name: VertexDataset
+  href: api/Google.GenAI.Types.BatchJobDestination.html#Google_GenAI_Types_BatchJobDestination_VertexDataset_
+  commentId: Overload:Google.GenAI.Types.BatchJobDestination.VertexDataset
+  isSpec: "True"
+  fullName: Google.GenAI.Types.BatchJobDestination.VertexDataset
+  nameWithType: BatchJobDestination.VertexDataset
+- uid: Google.GenAI.Types.BatchJobOutputInfo
+  name: BatchJobOutputInfo
+  href: api/Google.GenAI.Types.BatchJobOutputInfo.html
+  commentId: T:Google.GenAI.Types.BatchJobOutputInfo
+  fullName: Google.GenAI.Types.BatchJobOutputInfo
+  nameWithType: BatchJobOutputInfo
+- uid: Google.GenAI.Types.BatchJobOutputInfo.BigqueryOutputTable
+  name: BigqueryOutputTable
+  href: api/Google.GenAI.Types.BatchJobOutputInfo.html#Google_GenAI_Types_BatchJobOutputInfo_BigqueryOutputTable
+  commentId: P:Google.GenAI.Types.BatchJobOutputInfo.BigqueryOutputTable
+  fullName: Google.GenAI.Types.BatchJobOutputInfo.BigqueryOutputTable
+  nameWithType: BatchJobOutputInfo.BigqueryOutputTable
+- uid: Google.GenAI.Types.BatchJobOutputInfo.BigqueryOutputTable*
+  name: BigqueryOutputTable
+  href: api/Google.GenAI.Types.BatchJobOutputInfo.html#Google_GenAI_Types_BatchJobOutputInfo_BigqueryOutputTable_
+  commentId: Overload:Google.GenAI.Types.BatchJobOutputInfo.BigqueryOutputTable
+  isSpec: "True"
+  fullName: Google.GenAI.Types.BatchJobOutputInfo.BigqueryOutputTable
+  nameWithType: BatchJobOutputInfo.BigqueryOutputTable
+- uid: Google.GenAI.Types.BatchJobOutputInfo.FromJson(System.String,System.Text.Json.JsonSerializerOptions)
+  name: FromJson(string, JsonSerializerOptions?)
+  href: api/Google.GenAI.Types.BatchJobOutputInfo.html#Google_GenAI_Types_BatchJobOutputInfo_FromJson_System_String_System_Text_Json_JsonSerializerOptions_
+  commentId: M:Google.GenAI.Types.BatchJobOutputInfo.FromJson(System.String,System.Text.Json.JsonSerializerOptions)
+  name.vb: FromJson(String, JsonSerializerOptions)
+  fullName: Google.GenAI.Types.BatchJobOutputInfo.FromJson(string, System.Text.Json.JsonSerializerOptions?)
+  fullName.vb: Google.GenAI.Types.BatchJobOutputInfo.FromJson(String, System.Text.Json.JsonSerializerOptions)
+  nameWithType: BatchJobOutputInfo.FromJson(string, JsonSerializerOptions?)
+  nameWithType.vb: BatchJobOutputInfo.FromJson(String, JsonSerializerOptions)
+- uid: Google.GenAI.Types.BatchJobOutputInfo.FromJson*
+  name: FromJson
+  href: api/Google.GenAI.Types.BatchJobOutputInfo.html#Google_GenAI_Types_BatchJobOutputInfo_FromJson_
+  commentId: Overload:Google.GenAI.Types.BatchJobOutputInfo.FromJson
+  isSpec: "True"
+  fullName: Google.GenAI.Types.BatchJobOutputInfo.FromJson
+  nameWithType: BatchJobOutputInfo.FromJson
+- uid: Google.GenAI.Types.BatchJobOutputInfo.GcsOutputDirectory
+  name: GcsOutputDirectory
+  href: api/Google.GenAI.Types.BatchJobOutputInfo.html#Google_GenAI_Types_BatchJobOutputInfo_GcsOutputDirectory
+  commentId: P:Google.GenAI.Types.BatchJobOutputInfo.GcsOutputDirectory
+  fullName: Google.GenAI.Types.BatchJobOutputInfo.GcsOutputDirectory
+  nameWithType: BatchJobOutputInfo.GcsOutputDirectory
+- uid: Google.GenAI.Types.BatchJobOutputInfo.GcsOutputDirectory*
+  name: GcsOutputDirectory
+  href: api/Google.GenAI.Types.BatchJobOutputInfo.html#Google_GenAI_Types_BatchJobOutputInfo_GcsOutputDirectory_
+  commentId: Overload:Google.GenAI.Types.BatchJobOutputInfo.GcsOutputDirectory
+  isSpec: "True"
+  fullName: Google.GenAI.Types.BatchJobOutputInfo.GcsOutputDirectory
+  nameWithType: BatchJobOutputInfo.GcsOutputDirectory
+- uid: Google.GenAI.Types.BatchJobOutputInfo.VertexMultimodalDatasetName
+  name: VertexMultimodalDatasetName
+  href: api/Google.GenAI.Types.BatchJobOutputInfo.html#Google_GenAI_Types_BatchJobOutputInfo_VertexMultimodalDatasetName
+  commentId: P:Google.GenAI.Types.BatchJobOutputInfo.VertexMultimodalDatasetName
+  fullName: Google.GenAI.Types.BatchJobOutputInfo.VertexMultimodalDatasetName
+  nameWithType: BatchJobOutputInfo.VertexMultimodalDatasetName
+- uid: Google.GenAI.Types.BatchJobOutputInfo.VertexMultimodalDatasetName*
+  name: VertexMultimodalDatasetName
+  href: api/Google.GenAI.Types.BatchJobOutputInfo.html#Google_GenAI_Types_BatchJobOutputInfo_VertexMultimodalDatasetName_
+  commentId: Overload:Google.GenAI.Types.BatchJobOutputInfo.VertexMultimodalDatasetName
+  isSpec: "True"
+  fullName: Google.GenAI.Types.BatchJobOutputInfo.VertexMultimodalDatasetName
+  nameWithType: BatchJobOutputInfo.VertexMultimodalDatasetName
 - uid: Google.GenAI.Types.BatchJobSource
   name: BatchJobSource
   href: api/Google.GenAI.Types.BatchJobSource.html
@@ -4459,6 +4546,19 @@ references:
   isSpec: "True"
   fullName: Google.GenAI.Types.BatchJobSource.InlinedRequests
   nameWithType: BatchJobSource.InlinedRequests
+- uid: Google.GenAI.Types.BatchJobSource.VertexDatasetName
+  name: VertexDatasetName
+  href: api/Google.GenAI.Types.BatchJobSource.html#Google_GenAI_Types_BatchJobSource_VertexDatasetName
+  commentId: P:Google.GenAI.Types.BatchJobSource.VertexDatasetName
+  fullName: Google.GenAI.Types.BatchJobSource.VertexDatasetName
+  nameWithType: BatchJobSource.VertexDatasetName
+- uid: Google.GenAI.Types.BatchJobSource.VertexDatasetName*
+  name: VertexDatasetName
+  href: api/Google.GenAI.Types.BatchJobSource.html#Google_GenAI_Types_BatchJobSource_VertexDatasetName_
+  commentId: Overload:Google.GenAI.Types.BatchJobSource.VertexDatasetName
+  isSpec: "True"
+  fullName: Google.GenAI.Types.BatchJobSource.VertexDatasetName
+  nameWithType: BatchJobSource.VertexDatasetName
 - uid: Google.GenAI.Types.Behavior
   name: Behavior
   href: api/Google.GenAI.Types.Behavior.html
@@ -14581,6 +14681,19 @@ references:
   isSpec: "True"
   fullName: Google.GenAI.Types.GenerateVideosConfig.ReferenceImages
   nameWithType: GenerateVideosConfig.ReferenceImages
+- uid: Google.GenAI.Types.GenerateVideosConfig.ResizeMode
+  name: ResizeMode
+  href: api/Google.GenAI.Types.GenerateVideosConfig.html#Google_GenAI_Types_GenerateVideosConfig_ResizeMode
+  commentId: P:Google.GenAI.Types.GenerateVideosConfig.ResizeMode
+  fullName: Google.GenAI.Types.GenerateVideosConfig.ResizeMode
+  nameWithType: GenerateVideosConfig.ResizeMode
+- uid: Google.GenAI.Types.GenerateVideosConfig.ResizeMode*
+  name: ResizeMode
+  href: api/Google.GenAI.Types.GenerateVideosConfig.html#Google_GenAI_Types_GenerateVideosConfig_ResizeMode_
+  commentId: Overload:Google.GenAI.Types.GenerateVideosConfig.ResizeMode
+  isSpec: "True"
+  fullName: Google.GenAI.Types.GenerateVideosConfig.ResizeMode
+  nameWithType: GenerateVideosConfig.ResizeMode
 - uid: Google.GenAI.Types.GenerateVideosConfig.Resolution
   name: Resolution
   href: api/Google.GenAI.Types.GenerateVideosConfig.html#Google_GenAI_Types_GenerateVideosConfig_Resolution
@@ -18926,6 +19039,173 @@ references:
   isSpec: "True"
   fullName: Google.GenAI.Types.ImagePromptLanguageConverter.Write
   nameWithType: ImagePromptLanguageConverter.Write
+- uid: Google.GenAI.Types.ImageResizeMode
+  name: ImageResizeMode
+  href: api/Google.GenAI.Types.ImageResizeMode.html
+  commentId: T:Google.GenAI.Types.ImageResizeMode
+  fullName: Google.GenAI.Types.ImageResizeMode
+  nameWithType: ImageResizeMode
+- uid: Google.GenAI.Types.ImageResizeMode.AllValues
+  name: AllValues
+  href: api/Google.GenAI.Types.ImageResizeMode.html#Google_GenAI_Types_ImageResizeMode_AllValues
+  commentId: P:Google.GenAI.Types.ImageResizeMode.AllValues
+  fullName: Google.GenAI.Types.ImageResizeMode.AllValues
+  nameWithType: ImageResizeMode.AllValues
+- uid: Google.GenAI.Types.ImageResizeMode.AllValues*
+  name: AllValues
+  href: api/Google.GenAI.Types.ImageResizeMode.html#Google_GenAI_Types_ImageResizeMode_AllValues_
+  commentId: Overload:Google.GenAI.Types.ImageResizeMode.AllValues
+  isSpec: "True"
+  fullName: Google.GenAI.Types.ImageResizeMode.AllValues
+  nameWithType: ImageResizeMode.AllValues
+- uid: Google.GenAI.Types.ImageResizeMode.Crop
+  name: Crop
+  href: api/Google.GenAI.Types.ImageResizeMode.html#Google_GenAI_Types_ImageResizeMode_Crop
+  commentId: P:Google.GenAI.Types.ImageResizeMode.Crop
+  fullName: Google.GenAI.Types.ImageResizeMode.Crop
+  nameWithType: ImageResizeMode.Crop
+- uid: Google.GenAI.Types.ImageResizeMode.Crop*
+  name: Crop
+  href: api/Google.GenAI.Types.ImageResizeMode.html#Google_GenAI_Types_ImageResizeMode_Crop_
+  commentId: Overload:Google.GenAI.Types.ImageResizeMode.Crop
+  isSpec: "True"
+  fullName: Google.GenAI.Types.ImageResizeMode.Crop
+  nameWithType: ImageResizeMode.Crop
+- uid: Google.GenAI.Types.ImageResizeMode.Equals(Google.GenAI.Types.ImageResizeMode)
+  name: Equals(ImageResizeMode)
+  href: api/Google.GenAI.Types.ImageResizeMode.html#Google_GenAI_Types_ImageResizeMode_Equals_Google_GenAI_Types_ImageResizeMode_
+  commentId: M:Google.GenAI.Types.ImageResizeMode.Equals(Google.GenAI.Types.ImageResizeMode)
+  fullName: Google.GenAI.Types.ImageResizeMode.Equals(Google.GenAI.Types.ImageResizeMode)
+  nameWithType: ImageResizeMode.Equals(ImageResizeMode)
+- uid: Google.GenAI.Types.ImageResizeMode.Equals*
+  name: Equals
+  href: api/Google.GenAI.Types.ImageResizeMode.html#Google_GenAI_Types_ImageResizeMode_Equals_
+  commentId: Overload:Google.GenAI.Types.ImageResizeMode.Equals
+  isSpec: "True"
+  fullName: Google.GenAI.Types.ImageResizeMode.Equals
+  nameWithType: ImageResizeMode.Equals
+- uid: Google.GenAI.Types.ImageResizeMode.FromString(System.String)
+  name: FromString(string)
+  href: api/Google.GenAI.Types.ImageResizeMode.html#Google_GenAI_Types_ImageResizeMode_FromString_System_String_
+  commentId: M:Google.GenAI.Types.ImageResizeMode.FromString(System.String)
+  name.vb: FromString(String)
+  fullName: Google.GenAI.Types.ImageResizeMode.FromString(string)
+  fullName.vb: Google.GenAI.Types.ImageResizeMode.FromString(String)
+  nameWithType: ImageResizeMode.FromString(string)
+  nameWithType.vb: ImageResizeMode.FromString(String)
+- uid: Google.GenAI.Types.ImageResizeMode.FromString*
+  name: FromString
+  href: api/Google.GenAI.Types.ImageResizeMode.html#Google_GenAI_Types_ImageResizeMode_FromString_
+  commentId: Overload:Google.GenAI.Types.ImageResizeMode.FromString
+  isSpec: "True"
+  fullName: Google.GenAI.Types.ImageResizeMode.FromString
+  nameWithType: ImageResizeMode.FromString
+- uid: Google.GenAI.Types.ImageResizeMode.GetHashCode
+  name: GetHashCode()
+  href: api/Google.GenAI.Types.ImageResizeMode.html#Google_GenAI_Types_ImageResizeMode_GetHashCode
+  commentId: M:Google.GenAI.Types.ImageResizeMode.GetHashCode
+  fullName: Google.GenAI.Types.ImageResizeMode.GetHashCode()
+  nameWithType: ImageResizeMode.GetHashCode()
+- uid: Google.GenAI.Types.ImageResizeMode.GetHashCode*
+  name: GetHashCode
+  href: api/Google.GenAI.Types.ImageResizeMode.html#Google_GenAI_Types_ImageResizeMode_GetHashCode_
+  commentId: Overload:Google.GenAI.Types.ImageResizeMode.GetHashCode
+  isSpec: "True"
+  fullName: Google.GenAI.Types.ImageResizeMode.GetHashCode
+  nameWithType: ImageResizeMode.GetHashCode
+- uid: Google.GenAI.Types.ImageResizeMode.Pad
+  name: Pad
+  href: api/Google.GenAI.Types.ImageResizeMode.html#Google_GenAI_Types_ImageResizeMode_Pad
+  commentId: P:Google.GenAI.Types.ImageResizeMode.Pad
+  fullName: Google.GenAI.Types.ImageResizeMode.Pad
+  nameWithType: ImageResizeMode.Pad
+- uid: Google.GenAI.Types.ImageResizeMode.Pad*
+  name: Pad
+  href: api/Google.GenAI.Types.ImageResizeMode.html#Google_GenAI_Types_ImageResizeMode_Pad_
+  commentId: Overload:Google.GenAI.Types.ImageResizeMode.Pad
+  isSpec: "True"
+  fullName: Google.GenAI.Types.ImageResizeMode.Pad
+  nameWithType: ImageResizeMode.Pad
+- uid: Google.GenAI.Types.ImageResizeMode.ToString
+  name: ToString()
+  href: api/Google.GenAI.Types.ImageResizeMode.html#Google_GenAI_Types_ImageResizeMode_ToString
+  commentId: M:Google.GenAI.Types.ImageResizeMode.ToString
+  fullName: Google.GenAI.Types.ImageResizeMode.ToString()
+  nameWithType: ImageResizeMode.ToString()
+- uid: Google.GenAI.Types.ImageResizeMode.ToString*
+  name: ToString
+  href: api/Google.GenAI.Types.ImageResizeMode.html#Google_GenAI_Types_ImageResizeMode_ToString_
+  commentId: Overload:Google.GenAI.Types.ImageResizeMode.ToString
+  isSpec: "True"
+  fullName: Google.GenAI.Types.ImageResizeMode.ToString
+  nameWithType: ImageResizeMode.ToString
+- uid: Google.GenAI.Types.ImageResizeMode.Value
+  name: Value
+  href: api/Google.GenAI.Types.ImageResizeMode.html#Google_GenAI_Types_ImageResizeMode_Value
+  commentId: P:Google.GenAI.Types.ImageResizeMode.Value
+  fullName: Google.GenAI.Types.ImageResizeMode.Value
+  nameWithType: ImageResizeMode.Value
+- uid: Google.GenAI.Types.ImageResizeMode.Value*
+  name: Value
+  href: api/Google.GenAI.Types.ImageResizeMode.html#Google_GenAI_Types_ImageResizeMode_Value_
+  commentId: Overload:Google.GenAI.Types.ImageResizeMode.Value
+  isSpec: "True"
+  fullName: Google.GenAI.Types.ImageResizeMode.Value
+  nameWithType: ImageResizeMode.Value
+- uid: Google.GenAI.Types.ImageResizeMode.op_Implicit(System.String)~Google.GenAI.Types.ImageResizeMode
+  name: implicit operator ImageResizeMode(string)
+  href: api/Google.GenAI.Types.ImageResizeMode.html#Google_GenAI_Types_ImageResizeMode_op_Implicit_System_String__Google_GenAI_Types_ImageResizeMode
+  commentId: M:Google.GenAI.Types.ImageResizeMode.op_Implicit(System.String)~Google.GenAI.Types.ImageResizeMode
+  name.vb: CType(String)
+  fullName: Google.GenAI.Types.ImageResizeMode.implicit operator Google.GenAI.Types.ImageResizeMode(string)
+  fullName.vb: Google.GenAI.Types.ImageResizeMode.CType(String)
+  nameWithType: ImageResizeMode.implicit operator ImageResizeMode(string)
+  nameWithType.vb: ImageResizeMode.CType(String)
+- uid: Google.GenAI.Types.ImageResizeMode.op_Implicit*
+  name: implicit operator
+  href: api/Google.GenAI.Types.ImageResizeMode.html#Google_GenAI_Types_ImageResizeMode_op_Implicit_
+  commentId: Overload:Google.GenAI.Types.ImageResizeMode.op_Implicit
+  isSpec: "True"
+  name.vb: CType
+  fullName: Google.GenAI.Types.ImageResizeMode.implicit operator
+  fullName.vb: Google.GenAI.Types.ImageResizeMode.CType
+  nameWithType: ImageResizeMode.implicit operator
+  nameWithType.vb: ImageResizeMode.CType
+- uid: Google.GenAI.Types.ImageResizeModeConverter
+  name: ImageResizeModeConverter
+  href: api/Google.GenAI.Types.ImageResizeModeConverter.html
+  commentId: T:Google.GenAI.Types.ImageResizeModeConverter
+  fullName: Google.GenAI.Types.ImageResizeModeConverter
+  nameWithType: ImageResizeModeConverter
+- uid: Google.GenAI.Types.ImageResizeModeConverter.Read(System.Text.Json.Utf8JsonReader@,System.Type,System.Text.Json.JsonSerializerOptions)
+  name: Read(ref Utf8JsonReader, Type, JsonSerializerOptions)
+  href: api/Google.GenAI.Types.ImageResizeModeConverter.html#Google_GenAI_Types_ImageResizeModeConverter_Read_System_Text_Json_Utf8JsonReader__System_Type_System_Text_Json_JsonSerializerOptions_
+  commentId: M:Google.GenAI.Types.ImageResizeModeConverter.Read(System.Text.Json.Utf8JsonReader@,System.Type,System.Text.Json.JsonSerializerOptions)
+  name.vb: Read(Utf8JsonReader, Type, JsonSerializerOptions)
+  fullName: Google.GenAI.Types.ImageResizeModeConverter.Read(ref System.Text.Json.Utf8JsonReader, System.Type, System.Text.Json.JsonSerializerOptions)
+  fullName.vb: Google.GenAI.Types.ImageResizeModeConverter.Read(System.Text.Json.Utf8JsonReader, System.Type, System.Text.Json.JsonSerializerOptions)
+  nameWithType: ImageResizeModeConverter.Read(ref Utf8JsonReader, Type, JsonSerializerOptions)
+  nameWithType.vb: ImageResizeModeConverter.Read(Utf8JsonReader, Type, JsonSerializerOptions)
+- uid: Google.GenAI.Types.ImageResizeModeConverter.Read*
+  name: Read
+  href: api/Google.GenAI.Types.ImageResizeModeConverter.html#Google_GenAI_Types_ImageResizeModeConverter_Read_
+  commentId: Overload:Google.GenAI.Types.ImageResizeModeConverter.Read
+  isSpec: "True"
+  fullName: Google.GenAI.Types.ImageResizeModeConverter.Read
+  nameWithType: ImageResizeModeConverter.Read
+- uid: Google.GenAI.Types.ImageResizeModeConverter.Write(System.Text.Json.Utf8JsonWriter,Google.GenAI.Types.ImageResizeMode,System.Text.Json.JsonSerializerOptions)
+  name: Write(Utf8JsonWriter, ImageResizeMode, JsonSerializerOptions)
+  href: api/Google.GenAI.Types.ImageResizeModeConverter.html#Google_GenAI_Types_ImageResizeModeConverter_Write_System_Text_Json_Utf8JsonWriter_Google_GenAI_Types_ImageResizeMode_System_Text_Json_JsonSerializerOptions_
+  commentId: M:Google.GenAI.Types.ImageResizeModeConverter.Write(System.Text.Json.Utf8JsonWriter,Google.GenAI.Types.ImageResizeMode,System.Text.Json.JsonSerializerOptions)
+  fullName: Google.GenAI.Types.ImageResizeModeConverter.Write(System.Text.Json.Utf8JsonWriter, Google.GenAI.Types.ImageResizeMode, System.Text.Json.JsonSerializerOptions)
+  nameWithType: ImageResizeModeConverter.Write(Utf8JsonWriter, ImageResizeMode, JsonSerializerOptions)
+- uid: Google.GenAI.Types.ImageResizeModeConverter.Write*
+  name: Write
+  href: api/Google.GenAI.Types.ImageResizeModeConverter.html#Google_GenAI_Types_ImageResizeModeConverter_Write_
+  commentId: Overload:Google.GenAI.Types.ImageResizeModeConverter.Write
+  isSpec: "True"
+  fullName: Google.GenAI.Types.ImageResizeModeConverter.Write
+  nameWithType: ImageResizeModeConverter.Write
 - uid: Google.GenAI.Types.ImageSearch
   name: ImageSearch
   href: api/Google.GenAI.Types.ImageSearch.html
@@ -36649,6 +36929,54 @@ references:
   isSpec: "True"
   fullName: Google.GenAI.Types.VertexAISearchDataStoreSpec.FromJson
   nameWithType: VertexAISearchDataStoreSpec.FromJson
+- uid: Google.GenAI.Types.VertexMultimodalDatasetDestination
+  name: VertexMultimodalDatasetDestination
+  href: api/Google.GenAI.Types.VertexMultimodalDatasetDestination.html
+  commentId: T:Google.GenAI.Types.VertexMultimodalDatasetDestination
+  fullName: Google.GenAI.Types.VertexMultimodalDatasetDestination
+  nameWithType: VertexMultimodalDatasetDestination
+- uid: Google.GenAI.Types.VertexMultimodalDatasetDestination.BigqueryDestination
+  name: BigqueryDestination
+  href: api/Google.GenAI.Types.VertexMultimodalDatasetDestination.html#Google_GenAI_Types_VertexMultimodalDatasetDestination_BigqueryDestination
+  commentId: P:Google.GenAI.Types.VertexMultimodalDatasetDestination.BigqueryDestination
+  fullName: Google.GenAI.Types.VertexMultimodalDatasetDestination.BigqueryDestination
+  nameWithType: VertexMultimodalDatasetDestination.BigqueryDestination
+- uid: Google.GenAI.Types.VertexMultimodalDatasetDestination.BigqueryDestination*
+  name: BigqueryDestination
+  href: api/Google.GenAI.Types.VertexMultimodalDatasetDestination.html#Google_GenAI_Types_VertexMultimodalDatasetDestination_BigqueryDestination_
+  commentId: Overload:Google.GenAI.Types.VertexMultimodalDatasetDestination.BigqueryDestination
+  isSpec: "True"
+  fullName: Google.GenAI.Types.VertexMultimodalDatasetDestination.BigqueryDestination
+  nameWithType: VertexMultimodalDatasetDestination.BigqueryDestination
+- uid: Google.GenAI.Types.VertexMultimodalDatasetDestination.DisplayName
+  name: DisplayName
+  href: api/Google.GenAI.Types.VertexMultimodalDatasetDestination.html#Google_GenAI_Types_VertexMultimodalDatasetDestination_DisplayName
+  commentId: P:Google.GenAI.Types.VertexMultimodalDatasetDestination.DisplayName
+  fullName: Google.GenAI.Types.VertexMultimodalDatasetDestination.DisplayName
+  nameWithType: VertexMultimodalDatasetDestination.DisplayName
+- uid: Google.GenAI.Types.VertexMultimodalDatasetDestination.DisplayName*
+  name: DisplayName
+  href: api/Google.GenAI.Types.VertexMultimodalDatasetDestination.html#Google_GenAI_Types_VertexMultimodalDatasetDestination_DisplayName_
+  commentId: Overload:Google.GenAI.Types.VertexMultimodalDatasetDestination.DisplayName
+  isSpec: "True"
+  fullName: Google.GenAI.Types.VertexMultimodalDatasetDestination.DisplayName
+  nameWithType: VertexMultimodalDatasetDestination.DisplayName
+- uid: Google.GenAI.Types.VertexMultimodalDatasetDestination.FromJson(System.String,System.Text.Json.JsonSerializerOptions)
+  name: FromJson(string, JsonSerializerOptions?)
+  href: api/Google.GenAI.Types.VertexMultimodalDatasetDestination.html#Google_GenAI_Types_VertexMultimodalDatasetDestination_FromJson_System_String_System_Text_Json_JsonSerializerOptions_
+  commentId: M:Google.GenAI.Types.VertexMultimodalDatasetDestination.FromJson(System.String,System.Text.Json.JsonSerializerOptions)
+  name.vb: FromJson(String, JsonSerializerOptions)
+  fullName: Google.GenAI.Types.VertexMultimodalDatasetDestination.FromJson(string, System.Text.Json.JsonSerializerOptions?)
+  fullName.vb: Google.GenAI.Types.VertexMultimodalDatasetDestination.FromJson(String, System.Text.Json.JsonSerializerOptions)
+  nameWithType: VertexMultimodalDatasetDestination.FromJson(string, JsonSerializerOptions?)
+  nameWithType.vb: VertexMultimodalDatasetDestination.FromJson(String, JsonSerializerOptions)
+- uid: Google.GenAI.Types.VertexMultimodalDatasetDestination.FromJson*
+  name: FromJson
+  href: api/Google.GenAI.Types.VertexMultimodalDatasetDestination.html#Google_GenAI_Types_VertexMultimodalDatasetDestination_FromJson_
+  commentId: Overload:Google.GenAI.Types.VertexMultimodalDatasetDestination.FromJson
+  isSpec: "True"
+  fullName: Google.GenAI.Types.VertexMultimodalDatasetDestination.FromJson
+  nameWithType: VertexMultimodalDatasetDestination.FromJson
 - uid: Google.GenAI.Types.VertexRagStore
   name: VertexRagStore
   href: api/Google.GenAI.Types.VertexRagStore.html
