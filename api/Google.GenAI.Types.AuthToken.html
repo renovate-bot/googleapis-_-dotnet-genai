@@ -2,11 +2,11 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title>Class BehaviorConverter | Google GenAI .NET SDK </title>
+      <title>Class AuthToken | Google GenAI .NET SDK </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Class BehaviorConverter | Google GenAI .NET SDK ">
+      <meta name="title" content="Class AuthToken | Google GenAI .NET SDK ">
       
-      
+      <meta name="description" content="Config for auth_tokens.create parameters.">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -16,7 +16,7 @@
       
       
       
-      <meta name="docfx:docurl" content="https://github.com/renovate-bot/googleapis-_-dotnet-genai/new/main/apiSpec/new?filename=Google_GenAI_Types_BehaviorConverter.md&amp;value=---%0Auid%3A%20Google.GenAI.Types.BehaviorConverter%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="docfx:docurl" content="https://github.com/renovate-bot/googleapis-_-dotnet-genai/new/main/apiSpec/new?filename=Google_GenAI_Types_AuthToken.md&amp;value=---%0Auid%3A%20Google.GenAI.Types.AuthToken%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
       <meta name="loc:inThisArticle" content="In this article">
       <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
       <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
@@ -80,12 +80,12 @@
           <nav id="breadcrumb"></nav>
         </div>
 
-        <article data-uid="Google.GenAI.Types.BehaviorConverter">
+        <article data-uid="Google.GenAI.Types.AuthToken">
 
 
 
-  <h1 id="Google_GenAI_Types_BehaviorConverter" data-uid="Google.GenAI.Types.BehaviorConverter" class="text-break">
-Class BehaviorConverter  <a class="header-action link-secondary" title="View source" href="https://github.com/renovate-bot/googleapis-_-dotnet-genai/blob/main/Google.GenAI/types/Behavior.cs/#L83"><i class="bi bi-code-slash"></i></a>
+  <h1 id="Google_GenAI_Types_AuthToken" data-uid="Google.GenAI.Types.AuthToken" class="text-break">
+Class AuthToken  <a class="header-action link-secondary" title="View source" href="https://github.com/renovate-bot/googleapis-_-dotnet-genai/blob/main/Google.GenAI/types/AuthToken.cs/#L29"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -93,11 +93,12 @@ Class BehaviorConverter  <a class="header-action link-secondary" title="View sou
   <dl><dt>Assembly</dt><dd>Google.GenAI.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"></div>
+  <div class="markdown summary"><p>Config for auth_tokens.create parameters.</p>
+</div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class BehaviorConverter : JsonConverter&lt;Behavior&gt;</code></pre>
+    <pre><code class="lang-csharp hljs">public record AuthToken : IEquatable&lt;AuthToken&gt;</code></pre>
   </div>
 
 
@@ -107,32 +108,21 @@ Class BehaviorConverter  <a class="header-action link-secondary" title="View sou
     <dt>Inheritance</dt>
     <dd>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
-      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.json.serialization.jsonconverter">JsonConverter</a></div>
-      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.json.serialization.jsonconverter-1">JsonConverter</a>&lt;<a class="xref" href="Google.GenAI.Types.Behavior.html">Behavior</a>&gt;</div>
-      <div><span class="xref">BehaviorConverter</span></div>
+      <div><span class="xref">AuthToken</span></div>
     </dd>
   </dl>
 
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable</a>&lt;<a class="xref" href="Google.GenAI.Types.AuthToken.html">AuthToken</a>&gt;</div>
+    </dd>
+  </dl>
 
 
   <dl class="typelist inheritedMembers">
     <dt>Inherited Members</dt>
     <dd>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.json.serialization.jsonconverter-1.canconvert">JsonConverter&lt;Behavior&gt;.CanConvert(Type)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.json.serialization.jsonconverter-1.readaspropertyname">JsonConverter&lt;Behavior&gt;.ReadAsPropertyName(ref Utf8JsonReader, Type, JsonSerializerOptions)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.json.serialization.jsonconverter-1.writeaspropertyname">JsonConverter&lt;Behavior&gt;.WriteAsPropertyName(Utf8JsonWriter, Behavior, JsonSerializerOptions)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.json.serialization.jsonconverter-1.handlenull">JsonConverter&lt;Behavior&gt;.HandleNull</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.json.serialization.jsonconverter-1.type">JsonConverter&lt;Behavior&gt;.Type</a>
-    </div>
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
     </div>
@@ -161,83 +151,79 @@ Class BehaviorConverter  <a class="header-action link-secondary" title="View sou
 
 
 
-  <h2 class="section" id="methods">Methods
+  <h2 class="section" id="properties">Properties
 </h2>
 
 
-  <a id="Google_GenAI_Types_BehaviorConverter_Read_" data-uid="Google.GenAI.Types.BehaviorConverter.Read*"></a>
+  <a id="Google_GenAI_Types_AuthToken_Name_" data-uid="Google.GenAI.Types.AuthToken.Name*"></a>
 
-  <h3 id="Google_GenAI_Types_BehaviorConverter_Read_System_Text_Json_Utf8JsonReader__System_Type_System_Text_Json_JsonSerializerOptions_" data-uid="Google.GenAI.Types.BehaviorConverter.Read(System.Text.Json.Utf8JsonReader@,System.Type,System.Text.Json.JsonSerializerOptions)">
-  Read(ref Utf8JsonReader, Type, JsonSerializerOptions)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/renovate-bot/googleapis-_-dotnet-genai/blob/main/Google.GenAI/types/Behavior.cs/#L84"><i class="bi bi-code-slash"></i></a>
+  <h3 id="Google_GenAI_Types_AuthToken_Name" data-uid="Google.GenAI.Types.AuthToken.Name">
+  Name
+  <a class="header-action link-secondary" title="View source" href="https://github.com/renovate-bot/googleapis-_-dotnet-genai/blob/main/Google.GenAI/types/AuthToken.cs/#L33"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Reads and converts the JSON to type <a class="xref" href="Google.GenAI.Types.Behavior.html">Behavior</a>.</p>
+  <div class="markdown level1 summary"><p>The name of the auth token.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public override Behavior Read(ref Utf8JsonReader reader, Type typeToConvert, JsonSerializerOptions options)</code></pre>
+    <pre><code class="lang-csharp hljs">[JsonPropertyName(&quot;name&quot;)]
+[JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]
+public string? Name { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Google_GenAI_Types_AuthToken_FromJson_" data-uid="Google.GenAI.Types.AuthToken.FromJson*"></a>
+
+  <h3 id="Google_GenAI_Types_AuthToken_FromJson_System_String_System_Text_Json_JsonSerializerOptions_" data-uid="Google.GenAI.Types.AuthToken.FromJson(System.String,System.Text.Json.JsonSerializerOptions)">
+  FromJson(string, JsonSerializerOptions?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/renovate-bot/googleapis-_-dotnet-genai/blob/main/Google.GenAI/types/AuthToken.cs/#L43"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Deserializes a JSON string to a AuthToken object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static AuthToken? FromJson(string jsonString, JsonSerializerOptions? options = null)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>reader</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.json.utf8jsonreader">Utf8JsonReader</a></dt>
-    <dd><p>The reader.</p>
-</dd>
-    <dt><code>typeToConvert</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Type</a></dt>
-    <dd><p>The type to convert.</p>
+    <dt><code>jsonString</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The JSON string to deserialize.</p>
 </dd>
     <dt><code>options</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.json.jsonserializeroptions">JsonSerializerOptions</a></dt>
-    <dd><p>An object that specifies serialization options to use.</p>
+    <dd><p>Optional JsonSerializerOptions.</p>
 </dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="Google.GenAI.Types.Behavior.html">Behavior</a></dt>
-    <dd><p>The converted value.</p>
+    <dt><a class="xref" href="Google.GenAI.Types.AuthToken.html">AuthToken</a></dt>
+    <dd><p>The deserialized AuthToken object, or null if deserialization fails.</p>
 </dd>
   </dl>
-
-
-
-
-
-
-
-
-
-
-
-  <a id="Google_GenAI_Types_BehaviorConverter_Write_" data-uid="Google.GenAI.Types.BehaviorConverter.Write*"></a>
-
-  <h3 id="Google_GenAI_Types_BehaviorConverter_Write_System_Text_Json_Utf8JsonWriter_Google_GenAI_Types_Behavior_System_Text_Json_JsonSerializerOptions_" data-uid="Google.GenAI.Types.BehaviorConverter.Write(System.Text.Json.Utf8JsonWriter,Google.GenAI.Types.Behavior,System.Text.Json.JsonSerializerOptions)">
-  Write(Utf8JsonWriter, Behavior, JsonSerializerOptions)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/renovate-bot/googleapis-_-dotnet-genai/blob/main/Google.GenAI/types/Behavior.cs/#L90"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"><p>Writes a specified value as JSON.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public override void Write(Utf8JsonWriter writer, Behavior value, JsonSerializerOptions options)</code></pre>
-  </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>writer</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.json.utf8jsonwriter">Utf8JsonWriter</a></dt>
-    <dd><p>The writer to write to.</p>
-</dd>
-    <dt><code>value</code> <a class="xref" href="Google.GenAI.Types.Behavior.html">Behavior</a></dt>
-    <dd><p>The value to convert to JSON.</p>
-</dd>
-    <dt><code>options</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.json.jsonserializeroptions">JsonSerializerOptions</a></dt>
-    <dd><p>An object that specifies serialization options to use.</p>
-</dd>
-  </dl>
-
 
 
 
@@ -253,7 +239,7 @@ Class BehaviorConverter  <a class="header-action link-secondary" title="View sou
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/renovate-bot/googleapis-_-dotnet-genai/blob/main/Google.GenAI/types/Behavior.cs/#L83" class="edit-link">Edit this page</a>
+          <a href="https://github.com/renovate-bot/googleapis-_-dotnet-genai/blob/main/Google.GenAI/types/AuthToken.cs/#L29" class="edit-link">Edit this page</a>
         </div>
 
 

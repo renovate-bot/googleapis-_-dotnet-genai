@@ -178,6 +178,11 @@ API.</p>
 </dd>
     </dl>
     <dl class="jumplist">
+      <dt><a class="xref" href="Google.GenAI.Types.AuthToken.html">AuthToken</a></dt>
+      <dd><p>Config for auth_tokens.create parameters.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
       <dt><a class="xref" href="Google.GenAI.Types.AuthTypeConverter.html">AuthTypeConverter</a></dt>
       <dd></dd>
     </dl>
@@ -366,6 +371,11 @@ for the model to fill in based on the prompt.</p>
     <dl class="jumplist">
       <dt><a class="xref" href="Google.GenAI.Types.CountTokensResponse.html">CountTokensResponse</a></dt>
       <dd><p>Response for counting tokens.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Google.GenAI.Types.CreateAuthTokenConfig.html">CreateAuthTokenConfig</a></dt>
+      <dd><p>Optional parameters.</p>
 </dd>
     </dl>
     <dl class="jumplist">
@@ -1195,6 +1205,11 @@ calling happens over this dedicated set of messages.</p>
 </dd>
     </dl>
     <dl class="jumplist">
+      <dt><a class="xref" href="Google.GenAI.Types.LiveConnectConstraints.html">LiveConnectConstraints</a></dt>
+      <dd><p>Config for LiveConnectConstraints for Auth Token creation.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
       <dt><a class="xref" href="Google.GenAI.Types.LiveConnectParameters.html">LiveConnectParameters</a></dt>
       <dd><p>Parameters for connecting to the live API.</p>
 </dd>
@@ -1693,6 +1708,11 @@ they will always stay at the beginning of context window.</p>
       <dd></dd>
     </dl>
     <dl class="jumplist">
+      <dt><a class="xref" href="Google.GenAI.Types.StreamTranslationConfig.html">StreamTranslationConfig</a></dt>
+      <dd><p>Config for stream translation.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
       <dt><a class="xref" href="Google.GenAI.Types.StreamableHttpTransport.html">StreamableHttpTransport</a></dt>
       <dd><p>A transport that can stream HTTP requests and responses. Next ID: 6. This data type is not
 supported in Vertex AI.</p>
@@ -2102,8 +2122,9 @@ Structs
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Google.GenAI.Types.Behavior.html">Behavior</a></dt>
-      <dd><p>Specifies the function Behavior. Currently only supported by the BidiGenerateContent method.
-This enum is not supported in Vertex AI.</p>
+      <dd><p>Specifies the function Behavior. Currently only non-blocking functions are supported. If not
+specified, the system keeps the current function call behavior. This field is currently only
+supported by the BidiGenerateContent method.</p>
 </dd>
     </dl>
     <dl class="jumplist">
