@@ -178,8 +178,8 @@ public readonly record struct Outcome : IEquatable&lt;Outcome&gt;</code></pre>
   <a class="header-action link-secondary" title="View source" href="https://github.com/renovate-bot/googleapis-_-dotnet-genai/blob/main/Google.GenAI/types/Outcome.cs/#L55"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Code execution ran for too long, and was cancelled. There may or may not be a partial output
-present.</p>
+  <div class="markdown level1 summary"><p>Code execution ran for too long, and was cancelled. There may or may not be a partial
+<code>output</code> present.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -211,7 +211,7 @@ present.</p>
   <a class="header-action link-secondary" title="View source" href="https://github.com/renovate-bot/googleapis-_-dotnet-genai/blob/main/Google.GenAI/types/Outcome.cs/#L49"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Code execution finished but with a failure. <code>stderr</code> should contain the reason.</p>
+  <div class="markdown level1 summary"><p>Code execution failed. <code>output</code> contains the stderr and stdout, if any.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -243,7 +243,7 @@ present.</p>
   <a class="header-action link-secondary" title="View source" href="https://github.com/renovate-bot/googleapis-_-dotnet-genai/blob/main/Google.GenAI/types/Outcome.cs/#L44"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Code execution completed successfully.</p>
+  <div class="markdown level1 summary"><p>Code execution completed successfully. <code>output</code> contains the stdout, if any.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
