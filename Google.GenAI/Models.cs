@@ -5847,6 +5847,9 @@ namespace Google.GenAI {
                  "Failed to deserialize Task<GenerateVideosOperation>.");
     }
 
+    private static int _loggedGenerateImagesWarning = 0;
+    private static int _loggedEditImageWarning = 0;
+
     /// <summary>
     /// Generates content given a GenAI model and a list of content.
     /// </summary>
@@ -5970,6 +5973,10 @@ namespace Google.GenAI {
     public async Task<GenerateImagesResponse> GenerateImagesAsync(
         string model, string prompt, GenerateImagesConfig? config = null,
         CancellationToken cancellationToken = default) {
+      if (Interlocked.CompareExchange(ref _loggedGenerateImagesWarning, 1, 0) == 0) {
+        Console.WriteLine(
+            "The GenerateImagesAsync method is deprecated and will be removed in the next major release (not before Jan. 1 2027). Please use the GenerateContentAsync method with image models instead. See https://ai.google.dev/gemini-api/docs/deprecations#imagen-models and https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/capabilities/image-generation#generate-images");
+      }
       GenerateImagesResponse apiResponse =
           await PrivateGenerateImagesAsync(model, prompt, config, cancellationToken);
       SafetyAttributes? positivePromptSafetyAttributes = null;
@@ -5997,6 +6004,11 @@ namespace Google.GenAI {
     public async Task<EditImageResponse> EditImageAsync(
         String model, String prompt, List<IReferenceImage> referenceImages,
         EditImageConfig? config = null, CancellationToken cancellationToken = default) {
+      if (Interlocked.CompareExchange(ref _loggedEditImageWarning, 1, 0) == 0) {
+        Console.WriteLine(
+            "The EditImageAsync method is deprecated and will be removed in the next major release (not before Jan. 1 2027). Please use the GenerateContentAsync method with image models instead. See https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/capabilities/gemini-edit-images#edit-an-image");
+      }
+
       List<ReferenceImageAPI> referenceImagesAPI =
           referenceImages.Select(i => ((IReferenceImageInternal)i).ToReferenceImageAPI()).ToList();
 
