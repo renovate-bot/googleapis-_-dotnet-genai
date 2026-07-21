@@ -75,7 +75,7 @@ namespace Google.GenAI
       }
     }
 
-    private async Task SetRequestHeadersAsync(ClientWebSocket clientWebSocket, CancellationToken cancellationToken = default)
+    internal async Task SetRequestHeadersAsync(ClientWebSocket clientWebSocket, CancellationToken cancellationToken = default)
     {
       if (_apiClient.VertexAI)
       {
@@ -109,7 +109,15 @@ namespace Google.GenAI
 
       foreach (var header in _apiClient?.HttpOptions?.Headers ?? new Dictionary<string, string>())
       {
-        clientWebSocket.Options.SetRequestHeader(header.Key, header.Value);
+        try
+        {
+          clientWebSocket.Options.SetRequestHeader(header.Key, header.Value);
+        }
+        catch (ArgumentException)
+        {
+          // In older versions of .NET Framework, setting restricted headers like "Content-Type"
+          // and "User-Agent" on ClientWebSocketOptions throws an ArgumentException.
+        }
       }
     }
 
