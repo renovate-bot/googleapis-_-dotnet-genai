@@ -104,7 +104,7 @@ client = new Client(
 <p>You can create a client by configuring the necessary environment variables.
 Configuration setup instructions depends on whether you're using the Gemini
 Developer API or the Gemini Enterprise Agent Platform.</p>
-<p><strong>Gemini Developer API:</strong> Set the <code>GOOGLE_API_KEY</code>. It will automatically be
+<p><strong>Gemini Developer API:</strong> Set the <code>GEMINI_API_KEY</code>. It will automatically be
 picked up by the client.</p>
 <pre><code class="lang-bash">export GEMINI_API_KEY='your-api-key'
 </code></pre>
@@ -216,7 +216,7 @@ class GenerateContentWithSafetySettings {
   }
 }
 </code></pre>
-<h4 id="json-response-scehema">Json response scehema</h4>
+<h4 id="json-response-schema">Json response schema</h4>
 <p>However you define your schema, don't duplicate it in your input prompt,
 including by giving examples of expected JSON output. If you do, the generated
 output might be lower in quality.</p>
@@ -308,12 +308,16 @@ IChatClient chatClient = new Client().AsIChatClient(&quot;gemini-2.0-flash&quot;
 
 ChatOptions options = new()
 {
-    Tools = [AIFunctionFactory.Create(([Description(&quot;The name of the person whose age is to be retrieved&quot;)] string personName) =&gt; personName switch
-    {
-        &quot;Alice&quot; =&gt; 30,
-        &quot;Bob&quot; =&gt; 25,
-        _ =&gt; 35
-    }, &quot;get_person_age&quot;, &quot;Gets the age of the specified person&quot;);
+    Tools = [AIFunctionFactory.Create(
+        method: ([Description(&quot;The name of the person whose age is to be retrieved&quot;)] string personName) =&gt; personName switch
+        {
+            &quot;Alice&quot; =&gt; 30,
+            &quot;Bob&quot; =&gt; 25,
+            _ =&gt; 35
+        },
+        name: &quot;get_person_age&quot;,
+        description: &quot;Gets the age of the specified person&quot;)
+    ]
 };
 
 await foreach (var update in chatClient.GetStreamingResponseAsync(&quot;How much older is Alice than Bob?&quot;, options))
