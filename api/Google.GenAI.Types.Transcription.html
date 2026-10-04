@@ -89,7 +89,7 @@ Class Transcription  <a class="header-action link-secondary" title="View source"
   </h1>
 
   <div class="facts text-secondary">
-    <dl><dt>Namespace</dt><dd><a class="xref" href="Google.html">Google</a>.<a class="xref" href="Google.GenAI.html">GenAI</a>.<a class="xref" href="Google.GenAI.Types.html">Types</a></dd></dl>
+    <dl><dt>Namespace</dt><dd><span class="xref">Google</span>.<a class="xref" href="Google.GenAI.html">GenAI</a>.<a class="xref" href="Google.GenAI.Types.html">Types</a></dd></dl>
   <dl><dt>Assembly</dt><dd>Google.GenAI.dll</dd></dl>
   </div>
 
@@ -223,6 +223,40 @@ public string? LanguageCode { get; set; }</code></pre>
 
 
 
+  <a id="Google_GenAI_Types_Transcription_SpeakerLabel_" data-uid="Google.GenAI.Types.Transcription.SpeakerLabel*"></a>
+
+  <h3 id="Google_GenAI_Types_Transcription_SpeakerLabel" data-uid="Google.GenAI.Types.Transcription.SpeakerLabel">
+  SpeakerLabel
+  <a class="header-action link-secondary" title="View source" href="https://github.com/renovate-bot/googleapis-_-dotnet-genai/blob/main/Google.GenAI/types/Transcription.cs/#L60"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>A label identifying the speaker of this audio segment (e.g. &quot;spk_1&quot;, &quot;spk_2&quot;).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonPropertyName(&quot;speakerLabel&quot;)]
+[JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]
+public string? SpeakerLabel { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
   <a id="Google_GenAI_Types_Transcription_Text_" data-uid="Google.GenAI.Types.Transcription.Text*"></a>
 
   <h3 id="Google_GenAI_Types_Transcription_Text" data-uid="Google.GenAI.Types.Transcription.Text">
@@ -257,6 +291,40 @@ public string? Text { get; set; }</code></pre>
 
 
 
+  <a id="Google_GenAI_Types_Transcription_Words_" data-uid="Google.GenAI.Types.Transcription.Words*"></a>
+
+  <h3 id="Google_GenAI_Types_Transcription_Words" data-uid="Google.GenAI.Types.Transcription.Words">
+  Words
+  <a class="header-action link-secondary" title="View source" href="https://github.com/renovate-bot/googleapis-_-dotnet-genai/blob/main/Google.GenAI/types/Transcription.cs/#L70"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Detailed word-level transcriptions and timing details.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonPropertyName(&quot;words&quot;)]
+[JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]
+public List&lt;WordInfo&gt;? Words { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="Google.GenAI.Types.WordInfo.html">WordInfo</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
   <h2 class="section" id="methods">Methods
 </h2>
 
@@ -265,7 +333,7 @@ public string? Text { get; set; }</code></pre>
 
   <h3 id="Google_GenAI_Types_Transcription_FromJson_System_String_System_Text_Json_JsonSerializerOptions_" data-uid="Google.GenAI.Types.Transcription.FromJson(System.String,System.Text.Json.JsonSerializerOptions)">
   FromJson(string, JsonSerializerOptions?)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/renovate-bot/googleapis-_-dotnet-genai/blob/main/Google.GenAI/types/Transcription.cs/#L63"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/renovate-bot/googleapis-_-dotnet-genai/blob/main/Google.GenAI/types/Transcription.cs/#L83"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Deserializes a JSON string to a Transcription object.</p>

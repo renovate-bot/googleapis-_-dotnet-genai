@@ -89,7 +89,7 @@ Class GenerateContentConfig  <a class="header-action link-secondary" title="View
   </h1>
 
   <div class="facts text-secondary">
-    <dl><dt>Namespace</dt><dd><a class="xref" href="Google.html">Google</a>.<a class="xref" href="Google.GenAI.html">GenAI</a>.<a class="xref" href="Google.GenAI.Types.html">Types</a></dd></dl>
+    <dl><dt>Namespace</dt><dd><span class="xref">Google</span>.<a class="xref" href="Google.GenAI.html">GenAI</a>.<a class="xref" href="Google.GenAI.Types.html">Types</a></dd></dl>
   <dl><dt>Assembly</dt><dd>Google.GenAI.dll</dd></dl>
   </div>
 
@@ -191,6 +191,40 @@ public bool? AudioTimestamp { get; set; }</code></pre>
 
 
 
+  <a id="Google_GenAI_Types_GenerateContentConfig_AudioTranscriptionConfig_" data-uid="Google.GenAI.Types.GenerateContentConfig.AudioTranscriptionConfig*"></a>
+
+  <h3 id="Google_GenAI_Types_GenerateContentConfig_AudioTranscriptionConfig" data-uid="Google.GenAI.Types.GenerateContentConfig.AudioTranscriptionConfig">
+  AudioTranscriptionConfig
+  <a class="header-action link-secondary" title="View source" href="https://github.com/renovate-bot/googleapis-_-dotnet-genai/blob/main/Google.GenAI/types/GenerateContentConfig.cs/#L388"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Optional. Configuration for audio transcription (speech recognition).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonPropertyName(&quot;audioTranscriptionConfig&quot;)]
+[JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]
+public AudioTranscriptionConfig? AudioTranscriptionConfig { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Google.GenAI.Types.AudioTranscriptionConfig.html">AudioTranscriptionConfig</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
   <a id="Google_GenAI_Types_GenerateContentConfig_CachedContent_" data-uid="Google.GenAI.Types.GenerateContentConfig.CachedContent*"></a>
 
   <h3 id="Google_GenAI_Types_GenerateContentConfig_CachedContent" data-uid="Google.GenAI.Types.GenerateContentConfig.CachedContent">
@@ -249,6 +283,41 @@ public int? CandidateCount { get; set; }</code></pre>
   <h4 class="section">Property Value</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Google_GenAI_Types_GenerateContentConfig_ContinuationToken_" data-uid="Google.GenAI.Types.GenerateContentConfig.ContinuationToken*"></a>
+
+  <h3 id="Google_GenAI_Types_GenerateContentConfig_ContinuationToken" data-uid="Google.GenAI.Types.GenerateContentConfig.ContinuationToken">
+  ContinuationToken
+  <a class="header-action link-secondary" title="View source" href="https://github.com/renovate-bot/googleapis-_-dotnet-genai/blob/main/Google.GenAI/types/GenerateContentConfig.cs/#L399"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>An opaque continuation token used to resume generation from a previous response that stopped
+with <code>finish_reason</code> set to <code>CONTINUATION</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonPropertyName(&quot;continuationToken&quot;)]
+[JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]
+public byte[]? ContinuationToken { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</dt>
     <dd></dd>
   </dl>
 
@@ -404,7 +473,7 @@ public ImageConfig? ImageConfig { get; set; }</code></pre>
   <a class="header-action link-secondary" title="View source" href="https://github.com/renovate-bot/googleapis-_-dotnet-genai/blob/main/Google.GenAI/types/GenerateContentConfig.cs/#L275"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Labels with user-defined metadata to break down billed charges.</p>
+  <div class="markdown level1 summary"><p>Labels with user-defined metadata for the request.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -1289,7 +1358,7 @@ public double? TopP { get; set; }</code></pre>
 
   <h3 id="Google_GenAI_Types_GenerateContentConfig_FromJson_System_String_System_Text_Json_JsonSerializerOptions_" data-uid="Google.GenAI.Types.GenerateContentConfig.FromJson(System.String,System.Text.Json.JsonSerializerOptions)">
   FromJson(string, JsonSerializerOptions?)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/renovate-bot/googleapis-_-dotnet-genai/blob/main/Google.GenAI/types/GenerateContentConfig.cs/#L392"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/renovate-bot/googleapis-_-dotnet-genai/blob/main/Google.GenAI/types/GenerateContentConfig.cs/#L413"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Deserializes a JSON string to a GenerateContentConfig object.</p>

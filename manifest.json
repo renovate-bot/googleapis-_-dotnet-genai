@@ -1,4 +1,5 @@
 {
+  "docfx_version": "2.81.0+ba844df625370a6bd7c1ecab0d0ec4d1d9128ac4",
   "source_base_path": "/home/runner/work/googleapis-_-dotnet-genai/googleapis-_-dotnet-genai",
   "xrefmap": "xrefmap.yml",
   "files": [
@@ -25,6 +26,20 @@
       "IsMRef": true,
       "Title": "Google.GenAI.ApiClient",
       "Summary": "<p sourcefile=\"api/Google.GenAI.ApiClient.yml\" sourcestartlinenumber=\"1\">Abstract base class for an API client which issues HTTP requests to the GenAI APIs.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Google.GenAI.ApiException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Google.GenAI.ApiException.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Google.GenAI.ApiException",
+      "Summary": "<p sourcefile=\"api/Google.GenAI.ApiException.yml\" sourcestartlinenumber=\"1\">Base exception for API errors. Root of the unified error hierarchy: both the\nnative <xref href=\"Google.GenAI.ClientError\" data-throw-if-not-resolved=\"false\"></xref>/<xref href=\"Google.GenAI.ServerError\" data-throw-if-not-resolved=\"false\"></xref> tree (model calls)\nand the embedded gaos error tree derive from it, so a single\n<code>catch (ApiException)</code> covers every API error.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -557,6 +572,34 @@
       "IsMRef": true,
       "Title": "Google.GenAI.Types.AudioTranscriptionConfig",
       "Summary": "<p sourcefile=\"api/Google.GenAI.Types.AudioTranscriptionConfig.yml\" sourcestartlinenumber=\"1\">The audio transcription configuration in Setup.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Google.GenAI.Types.AudioTranscriptionConfigMode.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Google.GenAI.Types.AudioTranscriptionConfigMode.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Google.GenAI.Types.AudioTranscriptionConfigMode",
+      "Summary": "<p sourcefile=\"api/Google.GenAI.Types.AudioTranscriptionConfigMode.yml\" sourcestartlinenumber=\"1\">Transcription mode.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Google.GenAI.Types.AudioTranscriptionConfigModeConverter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Google.GenAI.Types.AudioTranscriptionConfigModeConverter.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Google.GenAI.Types.AudioTranscriptionConfigModeConverter",
+      "Summary": null
     },
     {
       "type": "ManagedReference",
@@ -2814,6 +2857,48 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Google.GenAI.Types.GoogleMapsGroundingTypes.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Google.GenAI.Types.GoogleMapsGroundingTypes.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Google.GenAI.Types.GoogleMapsGroundingTypes",
+      "Summary": "<p sourcefile=\"api/Google.GenAI.Types.GoogleMapsGroundingTypes.yml\" sourcestartlinenumber=\"1\">Defines the types of Google Maps grounding that can be enabled and their configurations. This\ndata type is not supported in Gemini API.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Google.GenAI.Types.GoogleMapsPlaces.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Google.GenAI.Types.GoogleMapsPlaces.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Google.GenAI.Types.GoogleMapsPlaces",
+      "Summary": "<p sourcefile=\"api/Google.GenAI.Types.GoogleMapsPlaces.yml\" sourcestartlinenumber=\"1\">Grounding with Google Maps Places data (e.g. QueryPlaces). This is the default Google Maps\ngrounding type when no other type is specified. This data type is not supported in Gemini API.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Google.GenAI.Types.GoogleMapsRouting.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Google.GenAI.Types.GoogleMapsRouting.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Google.GenAI.Types.GoogleMapsRouting",
+      "Summary": "<p sourcefile=\"api/Google.GenAI.Types.GoogleMapsRouting.yml\" sourcestartlinenumber=\"1\">Grounding with Google Maps Routing APIs (ComputeRoutes and SearchAlongRoute). This data type\nis not supported in Gemini API.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Google.GenAI.Types.GoogleRpcStatus.yml",
       "output": {
         ".html": {
@@ -3276,6 +3361,20 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Google.GenAI.Types.HttpRetryOptions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Google.GenAI.Types.HttpRetryOptions.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Google.GenAI.Types.HttpRetryOptions",
+      "Summary": "<p sourcefile=\"api/Google.GenAI.Types.HttpRetryOptions.yml\" sourcestartlinenumber=\"1\">HTTP retry options to be used in each of the requests.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Google.GenAI.Types.IReferenceImage.yml",
       "output": {
         ".html": {
@@ -3514,6 +3613,34 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Google.GenAI.Types.InteractionStatus.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Google.GenAI.Types.InteractionStatus.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Google.GenAI.Types.InteractionStatus",
+      "Summary": "<p sourcefile=\"api/Google.GenAI.Types.InteractionStatus.yml\" sourcestartlinenumber=\"1\">The different activity states of the live session.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Google.GenAI.Types.InteractionStatusConverter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Google.GenAI.Types.InteractionStatusConverter.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Google.GenAI.Types.InteractionStatusConverter",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Google.GenAI.Types.Interval.yml",
       "output": {
         ".html": {
@@ -3594,7 +3721,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Google.GenAI.Types.LanguageAuto",
-      "Summary": "<p sourcefile=\"api/Google.GenAI.Types.LanguageAuto.yml\" sourcestartlinenumber=\"1\">Indicates the language of the audio should be automatically detected.</p>\n"
+      "Summary": "<p sourcefile=\"api/Google.GenAI.Types.LanguageAuto.yml\" sourcestartlinenumber=\"1\">Deprecated: Language auto-detection is now the default when language_codes is omitted.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -3622,7 +3749,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Google.GenAI.Types.LanguageHints",
-      "Summary": "<p sourcefile=\"api/Google.GenAI.Types.LanguageHints.yml\" sourcestartlinenumber=\"1\">Provides hints to the model about possible languages present in the audio.</p>\n"
+      "Summary": "<p sourcefile=\"api/Google.GenAI.Types.LanguageHints.yml\" sourcestartlinenumber=\"1\">Deprecated: Use AudioTranscriptionConfig.language_codes instead.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -4168,7 +4295,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Google.GenAI.Types.McpServer",
-      "Summary": "<p sourcefile=\"api/Google.GenAI.Types.McpServer.yml\" sourcestartlinenumber=\"1\">A MCPServer is a server that can be called by the model to perform actions. It is a server\nthat implements the MCP protocol. Next ID: 6. This data type is not supported in Vertex AI.</p>\n"
+      "Summary": "<p sourcefile=\"api/Google.GenAI.Types.McpServer.yml\" sourcestartlinenumber=\"1\">A MCPServer is a server that can be called by the model to perform actions. It is a server\nthat implements the MCP protocol. Next ID: 7. This data type is not supported in Vertex AI.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -4196,6 +4323,34 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Google.GenAI.Types.MediaModalityConverter",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Google.GenAI.Types.MediaProcessing.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Google.GenAI.Types.MediaProcessing.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Google.GenAI.Types.MediaProcessing",
+      "Summary": "<p sourcefile=\"api/Google.GenAI.Types.MediaProcessing.yml\" sourcestartlinenumber=\"1\">How the model processes input media for understanding.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Google.GenAI.Types.MediaProcessingConverter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Google.GenAI.Types.MediaProcessingConverter.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Google.GenAI.Types.MediaProcessingConverter",
       "Summary": null
     },
     {
@@ -5740,6 +5895,20 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Google.GenAI.Types.SpeechMetadata.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Google.GenAI.Types.SpeechMetadata.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Google.GenAI.Types.SpeechMetadata",
+      "Summary": "<p sourcefile=\"api/Google.GenAI.Types.SpeechMetadata.yml\" sourcestartlinenumber=\"1\">Extra metadata associated with the part for speech synthesis.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Google.GenAI.Types.StartSensitivity.yml",
       "output": {
         ".html": {
@@ -7221,6 +7390,20 @@
       "IsMRef": true,
       "Title": "Google.GenAI.Types.WebhookConfig",
       "Summary": "<p sourcefile=\"api/Google.GenAI.Types.WebhookConfig.yml\" sourcestartlinenumber=\"1\">Configuration for webhook notifications.  Used to configure webhook endpoints that will\nreceive notifications when long-running operations (e.g., batch jobs, video generation)\ncomplete.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Google.GenAI.Types.WordInfo.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Google.GenAI.Types.WordInfo.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Google.GenAI.Types.WordInfo",
+      "Summary": "<p sourcefile=\"api/Google.GenAI.Types.WordInfo.yml\" sourcestartlinenumber=\"1\">Information about a single recognized word.</p>\n"
     },
     {
       "type": "ManagedReference",

@@ -89,7 +89,7 @@ Class Part  <a class="header-action link-secondary" title="View source" href="ht
   </h1>
 
   <div class="facts text-secondary">
-    <dl><dt>Namespace</dt><dd><a class="xref" href="Google.html">Google</a>.<a class="xref" href="Google.GenAI.html">GenAI</a>.<a class="xref" href="Google.GenAI.Types.html">Types</a></dd></dl>
+    <dl><dt>Namespace</dt><dd><span class="xref">Google</span>.<a class="xref" href="Google.GenAI.html">GenAI</a>.<a class="xref" href="Google.GenAI.Types.html">Types</a></dd></dl>
   <dl><dt>Assembly</dt><dd>Google.GenAI.dll</dd></dl>
   </div>
 
@@ -155,6 +155,40 @@ same <code>Part</code> instance is considered invalid.</p>
 
   <h2 class="section" id="properties">Properties
 </h2>
+
+
+  <a id="Google_GenAI_Types_Part_AudioTranscription_" data-uid="Google.GenAI.Types.Part.AudioTranscription*"></a>
+
+  <h3 id="Google_GenAI_Types_Part_AudioTranscription" data-uid="Google.GenAI.Types.Part.AudioTranscription">
+  AudioTranscription
+  <a class="header-action link-secondary" title="View source" href="https://github.com/renovate-bot/googleapis-_-dotnet-genai/blob/main/Google.GenAI/types/Part.cs/#L185"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Output only. The transcription of the audio part.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonPropertyName(&quot;audioTranscription&quot;)]
+[JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]
+public Transcription? AudioTranscription { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Google.GenAI.Types.Transcription.html">Transcription</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
 
 
   <a id="Google_GenAI_Types_Part_CodeExecutionResult_" data-uid="Google.GenAI.Types.Part.CodeExecutionResult*"></a>
@@ -365,6 +399,40 @@ public Blob? InlineData { get; set; }</code></pre>
 
 
 
+  <a id="Google_GenAI_Types_Part_MediaProcessing_" data-uid="Google.GenAI.Types.Part.MediaProcessing*"></a>
+
+  <h3 id="Google_GenAI_Types_Part_MediaProcessing" data-uid="Google.GenAI.Types.Part.MediaProcessing">
+  MediaProcessing
+  <a class="header-action link-secondary" title="View source" href="https://github.com/renovate-bot/googleapis-_-dotnet-genai/blob/main/Google.GenAI/types/Part.cs/#L195"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>How the model processes this part's media for understanding.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonPropertyName(&quot;mediaProcessing&quot;)]
+[JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]
+public MediaProcessing? MediaProcessing { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Google.GenAI.Types.MediaProcessing.html">MediaProcessing</a>?</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
   <a id="Google_GenAI_Types_Part_MediaResolution_" data-uid="Google.GenAI.Types.Part.MediaResolution*"></a>
 
   <h3 id="Google_GenAI_Types_Part_MediaResolution" data-uid="Google.GenAI.Types.Part.MediaResolution">
@@ -426,6 +494,41 @@ public Dictionary&lt;string, object&gt;? PartMetadata { get; set; }</code></pre>
   <h4 class="section">Property Value</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Google_GenAI_Types_Part_SpeechMetadata_" data-uid="Google.GenAI.Types.Part.SpeechMetadata*"></a>
+
+  <h3 id="Google_GenAI_Types_Part_SpeechMetadata" data-uid="Google.GenAI.Types.Part.SpeechMetadata">
+  SpeechMetadata
+  <a class="header-action link-secondary" title="View source" href="https://github.com/renovate-bot/googleapis-_-dotnet-genai/blob/main/Google.GenAI/types/Part.cs/#L206"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Extra metadata associated with the part for speech synthesis, such as speaker and style.
+Only valid when <code>Part.data</code> is set to <code>text</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonPropertyName(&quot;speechMetadata&quot;)]
+[JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]
+public SpeechMetadata? SpeechMetadata { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Google.GenAI.Types.SpeechMetadata.html">SpeechMetadata</a></dt>
     <dd></dd>
   </dl>
 
@@ -654,7 +757,7 @@ public VideoMetadata? VideoMetadata { get; set; }</code></pre>
 
   <h3 id="Google_GenAI_Types_Part_FromBytes_System_Byte___System_String_Google_GenAI_Types_PartMediaResolution_" data-uid="Google.GenAI.Types.Part.FromBytes(System.Byte[],System.String,Google.GenAI.Types.PartMediaResolution)">
   FromBytes(byte[], string, PartMediaResolution?)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/renovate-bot/googleapis-_-dotnet-genai/blob/main/Google.GenAI/types/Part.cs/#L218"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/renovate-bot/googleapis-_-dotnet-genai/blob/main/Google.GenAI/types/Part.cs/#L249"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Creates a Part with inline binary data. <code class="paramref">mimeType</code> must be a valid
@@ -696,7 +799,7 @@ IANA MIME type string (e.g. &quot;image/jpeg&quot;).</p>
 
   <h3 id="Google_GenAI_Types_Part_FromCodeExecutionResult_Google_GenAI_Types_Outcome_System_String_" data-uid="Google.GenAI.Types.Part.FromCodeExecutionResult(Google.GenAI.Types.Outcome,System.String)">
   FromCodeExecutionResult(Outcome, string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/renovate-bot/googleapis-_-dotnet-genai/blob/main/Google.GenAI/types/Part.cs/#L239"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/renovate-bot/googleapis-_-dotnet-genai/blob/main/Google.GenAI/types/Part.cs/#L270"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Creates a Part containing a code execution result.</p>
@@ -735,7 +838,7 @@ IANA MIME type string (e.g. &quot;image/jpeg&quot;).</p>
 
   <h3 id="Google_GenAI_Types_Part_FromExecutableCode_System_String_Google_GenAI_Types_Language_" data-uid="Google.GenAI.Types.Part.FromExecutableCode(System.String,Google.GenAI.Types.Language)">
   FromExecutableCode(string, Language)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/renovate-bot/googleapis-_-dotnet-genai/blob/main/Google.GenAI/types/Part.cs/#L235"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/renovate-bot/googleapis-_-dotnet-genai/blob/main/Google.GenAI/types/Part.cs/#L266"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Creates a Part containing executable code.</p>
@@ -774,7 +877,7 @@ IANA MIME type string (e.g. &quot;image/jpeg&quot;).</p>
 
   <h3 id="Google_GenAI_Types_Part_FromFunctionCall_System_String_System_Collections_Generic_Dictionary_System_String_System_Object__" data-uid="Google.GenAI.Types.Part.FromFunctionCall(System.String,System.Collections.Generic.Dictionary{System.String,System.Object})">
   FromFunctionCall(string, Dictionary&lt;string, object&gt;?)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/renovate-bot/googleapis-_-dotnet-genai/blob/main/Google.GenAI/types/Part.cs/#L224"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/renovate-bot/googleapis-_-dotnet-genai/blob/main/Google.GenAI/types/Part.cs/#L255"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Creates a Part containing a model-issued function call.</p>
@@ -813,7 +916,7 @@ IANA MIME type string (e.g. &quot;image/jpeg&quot;).</p>
 
   <h3 id="Google_GenAI_Types_Part_FromFunctionResponse_System_String_System_Collections_Generic_Dictionary_System_String_System_Object__System_Collections_Generic_List_Google_GenAI_Types_FunctionResponsePart__" data-uid="Google.GenAI.Types.Part.FromFunctionResponse(System.String,System.Collections.Generic.Dictionary{System.String,System.Object},System.Collections.Generic.List{Google.GenAI.Types.FunctionResponsePart})">
   FromFunctionResponse(string, Dictionary&lt;string, object&gt;?, List&lt;FunctionResponsePart&gt;?)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/renovate-bot/googleapis-_-dotnet-genai/blob/main/Google.GenAI/types/Part.cs/#L228"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/renovate-bot/googleapis-_-dotnet-genai/blob/main/Google.GenAI/types/Part.cs/#L259"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Creates a Part containing the result of a function call.</p>
@@ -854,7 +957,7 @@ IANA MIME type string (e.g. &quot;image/jpeg&quot;).</p>
 
   <h3 id="Google_GenAI_Types_Part_FromJson_System_String_System_Text_Json_JsonSerializerOptions_" data-uid="Google.GenAI.Types.Part.FromJson(System.String,System.Text.Json.JsonSerializerOptions)">
   FromJson(string, JsonSerializerOptions?)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/renovate-bot/googleapis-_-dotnet-genai/blob/main/Google.GenAI/types/Part.cs/#L188"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/renovate-bot/googleapis-_-dotnet-genai/blob/main/Google.GenAI/types/Part.cs/#L219"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Deserializes a JSON string to a Part object.</p>
@@ -896,7 +999,7 @@ IANA MIME type string (e.g. &quot;image/jpeg&quot;).</p>
 
   <h3 id="Google_GenAI_Types_Part_FromText_System_String_" data-uid="Google.GenAI.Types.Part.FromText(System.String)">
   FromText(string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/renovate-bot/googleapis-_-dotnet-genai/blob/main/Google.GenAI/types/Part.cs/#L212"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/renovate-bot/googleapis-_-dotnet-genai/blob/main/Google.GenAI/types/Part.cs/#L243"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Creates a Part with text content.</p>
@@ -933,7 +1036,7 @@ IANA MIME type string (e.g. &quot;image/jpeg&quot;).</p>
 
   <h3 id="Google_GenAI_Types_Part_FromUri_System_String_System_String_Google_GenAI_Types_PartMediaResolution_" data-uid="Google.GenAI.Types.Part.FromUri(System.String,System.String,Google.GenAI.Types.PartMediaResolution)">
   FromUri(string, string?, PartMediaResolution?)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/renovate-bot/googleapis-_-dotnet-genai/blob/main/Google.GenAI/types/Part.cs/#L202"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/renovate-bot/googleapis-_-dotnet-genai/blob/main/Google.GenAI/types/Part.cs/#L233"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Creates a Part from a file URI. If <code class="paramref">mimeType</code> is not provided it is
