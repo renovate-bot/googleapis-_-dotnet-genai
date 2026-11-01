@@ -219,15 +219,15 @@ references:
   isSpec: "True"
   fullName: Google.GenAI.ApiClient.RequestStreamAsync
   nameWithType: ApiClient.RequestStreamAsync
-- uid: Google.GenAI.ApiClient.SendWithRetryAsync(System.Func{System.Threading.Tasks.Task{System.Net.Http.HttpRequestMessage}},System.Net.Http.HttpCompletionOption,Google.GenAI.Types.HttpRetryOptions,System.Threading.CancellationToken)
-  name: SendWithRetryAsync(Func<Task<HttpRequestMessage>>, HttpCompletionOption, HttpRetryOptions?, CancellationToken)
-  href: api/Google.GenAI.ApiClient.html#Google_GenAI_ApiClient_SendWithRetryAsync_System_Func_System_Threading_Tasks_Task_System_Net_Http_HttpRequestMessage___System_Net_Http_HttpCompletionOption_Google_GenAI_Types_HttpRetryOptions_System_Threading_CancellationToken_
-  commentId: M:Google.GenAI.ApiClient.SendWithRetryAsync(System.Func{System.Threading.Tasks.Task{System.Net.Http.HttpRequestMessage}},System.Net.Http.HttpCompletionOption,Google.GenAI.Types.HttpRetryOptions,System.Threading.CancellationToken)
-  name.vb: SendWithRetryAsync(Func(Of Task(Of HttpRequestMessage)), HttpCompletionOption, HttpRetryOptions, CancellationToken)
-  fullName: Google.GenAI.ApiClient.SendWithRetryAsync(System.Func<System.Threading.Tasks.Task<System.Net.Http.HttpRequestMessage>>, System.Net.Http.HttpCompletionOption, Google.GenAI.Types.HttpRetryOptions?, System.Threading.CancellationToken)
-  fullName.vb: Google.GenAI.ApiClient.SendWithRetryAsync(System.Func(Of System.Threading.Tasks.Task(Of System.Net.Http.HttpRequestMessage)), System.Net.Http.HttpCompletionOption, Google.GenAI.Types.HttpRetryOptions, System.Threading.CancellationToken)
-  nameWithType: ApiClient.SendWithRetryAsync(Func<Task<HttpRequestMessage>>, HttpCompletionOption, HttpRetryOptions?, CancellationToken)
-  nameWithType.vb: ApiClient.SendWithRetryAsync(Func(Of Task(Of HttpRequestMessage)), HttpCompletionOption, HttpRetryOptions, CancellationToken)
+- uid: Google.GenAI.ApiClient.SendWithRetryAsync(System.Func{System.Threading.Tasks.Task{System.Net.Http.HttpRequestMessage}},System.Net.Http.HttpCompletionOption,Google.GenAI.Types.HttpRetryOptions,System.Nullable{System.TimeSpan},System.Threading.CancellationToken)
+  name: SendWithRetryAsync(Func<Task<HttpRequestMessage>>, HttpCompletionOption, HttpRetryOptions?, TimeSpan?, CancellationToken)
+  href: api/Google.GenAI.ApiClient.html#Google_GenAI_ApiClient_SendWithRetryAsync_System_Func_System_Threading_Tasks_Task_System_Net_Http_HttpRequestMessage___System_Net_Http_HttpCompletionOption_Google_GenAI_Types_HttpRetryOptions_System_Nullable_System_TimeSpan__System_Threading_CancellationToken_
+  commentId: M:Google.GenAI.ApiClient.SendWithRetryAsync(System.Func{System.Threading.Tasks.Task{System.Net.Http.HttpRequestMessage}},System.Net.Http.HttpCompletionOption,Google.GenAI.Types.HttpRetryOptions,System.Nullable{System.TimeSpan},System.Threading.CancellationToken)
+  name.vb: SendWithRetryAsync(Func(Of Task(Of HttpRequestMessage)), HttpCompletionOption, HttpRetryOptions, TimeSpan?, CancellationToken)
+  fullName: Google.GenAI.ApiClient.SendWithRetryAsync(System.Func<System.Threading.Tasks.Task<System.Net.Http.HttpRequestMessage>>, System.Net.Http.HttpCompletionOption, Google.GenAI.Types.HttpRetryOptions?, System.TimeSpan?, System.Threading.CancellationToken)
+  fullName.vb: Google.GenAI.ApiClient.SendWithRetryAsync(System.Func(Of System.Threading.Tasks.Task(Of System.Net.Http.HttpRequestMessage)), System.Net.Http.HttpCompletionOption, Google.GenAI.Types.HttpRetryOptions, System.TimeSpan?, System.Threading.CancellationToken)
+  nameWithType: ApiClient.SendWithRetryAsync(Func<Task<HttpRequestMessage>>, HttpCompletionOption, HttpRetryOptions?, TimeSpan?, CancellationToken)
+  nameWithType.vb: ApiClient.SendWithRetryAsync(Func(Of Task(Of HttpRequestMessage)), HttpCompletionOption, HttpRetryOptions, TimeSpan?, CancellationToken)
 - uid: Google.GenAI.ApiClient.SendWithRetryAsync*
   name: SendWithRetryAsync
   href: api/Google.GenAI.ApiClient.html#Google_GenAI_ApiClient_SendWithRetryAsync_
@@ -465,6 +465,19 @@ references:
   isSpec: "True"
   fullName: Google.GenAI.AsyncSession.SendClientContentAsync
   nameWithType: AsyncSession.SendClientContentAsync
+- uid: Google.GenAI.AsyncSession.SendContextUpdateAsync(Google.GenAI.Types.LiveClientContextUpdate,System.Threading.CancellationToken)
+  name: SendContextUpdateAsync(LiveClientContextUpdate, CancellationToken)
+  href: api/Google.GenAI.AsyncSession.html#Google_GenAI_AsyncSession_SendContextUpdateAsync_Google_GenAI_Types_LiveClientContextUpdate_System_Threading_CancellationToken_
+  commentId: M:Google.GenAI.AsyncSession.SendContextUpdateAsync(Google.GenAI.Types.LiveClientContextUpdate,System.Threading.CancellationToken)
+  fullName: Google.GenAI.AsyncSession.SendContextUpdateAsync(Google.GenAI.Types.LiveClientContextUpdate, System.Threading.CancellationToken)
+  nameWithType: AsyncSession.SendContextUpdateAsync(LiveClientContextUpdate, CancellationToken)
+- uid: Google.GenAI.AsyncSession.SendContextUpdateAsync*
+  name: SendContextUpdateAsync
+  href: api/Google.GenAI.AsyncSession.html#Google_GenAI_AsyncSession_SendContextUpdateAsync_
+  commentId: Overload:Google.GenAI.AsyncSession.SendContextUpdateAsync
+  isSpec: "True"
+  fullName: Google.GenAI.AsyncSession.SendContextUpdateAsync
+  nameWithType: AsyncSession.SendContextUpdateAsync
 - uid: Google.GenAI.AsyncSession.SendRealtimeInputAsync(Google.GenAI.Types.LiveSendRealtimeInputParameters,System.Threading.CancellationToken)
   name: SendRealtimeInputAsync(LiveSendRealtimeInputParameters, CancellationToken)
   href: api/Google.GenAI.AsyncSession.html#Google_GenAI_AsyncSession_SendRealtimeInputAsync_Google_GenAI_Types_LiveSendRealtimeInputParameters_System_Threading_CancellationToken_
@@ -14485,6 +14498,19 @@ references:
   isSpec: "True"
   fullName: Google.GenAI.Types.FunctionResponsePart.InlineData
   nameWithType: FunctionResponsePart.InlineData
+- uid: Google.GenAI.Types.FunctionResponsePart.MediaProcessing
+  name: MediaProcessing
+  href: api/Google.GenAI.Types.FunctionResponsePart.html#Google_GenAI_Types_FunctionResponsePart_MediaProcessing
+  commentId: P:Google.GenAI.Types.FunctionResponsePart.MediaProcessing
+  fullName: Google.GenAI.Types.FunctionResponsePart.MediaProcessing
+  nameWithType: FunctionResponsePart.MediaProcessing
+- uid: Google.GenAI.Types.FunctionResponsePart.MediaProcessing*
+  name: MediaProcessing
+  href: api/Google.GenAI.Types.FunctionResponsePart.html#Google_GenAI_Types_FunctionResponsePart_MediaProcessing_
+  commentId: Overload:Google.GenAI.Types.FunctionResponsePart.MediaProcessing
+  isSpec: "True"
+  fullName: Google.GenAI.Types.FunctionResponsePart.MediaProcessing
+  nameWithType: FunctionResponsePart.MediaProcessing
 - uid: Google.GenAI.Types.FunctionResponseScheduling
   name: FunctionResponseScheduling
   href: api/Google.GenAI.Types.FunctionResponseScheduling.html
@@ -14841,6 +14867,19 @@ references:
   isSpec: "True"
   fullName: Google.GenAI.Types.GenerateContentConfig.AudioTranscriptionConfig
   nameWithType: GenerateContentConfig.AudioTranscriptionConfig
+- uid: Google.GenAI.Types.GenerateContentConfig.AutomaticContinuation
+  name: AutomaticContinuation
+  href: api/Google.GenAI.Types.GenerateContentConfig.html#Google_GenAI_Types_GenerateContentConfig_AutomaticContinuation
+  commentId: P:Google.GenAI.Types.GenerateContentConfig.AutomaticContinuation
+  fullName: Google.GenAI.Types.GenerateContentConfig.AutomaticContinuation
+  nameWithType: GenerateContentConfig.AutomaticContinuation
+- uid: Google.GenAI.Types.GenerateContentConfig.AutomaticContinuation*
+  name: AutomaticContinuation
+  href: api/Google.GenAI.Types.GenerateContentConfig.html#Google_GenAI_Types_GenerateContentConfig_AutomaticContinuation_
+  commentId: Overload:Google.GenAI.Types.GenerateContentConfig.AutomaticContinuation
+  isSpec: "True"
+  fullName: Google.GenAI.Types.GenerateContentConfig.AutomaticContinuation
+  nameWithType: GenerateContentConfig.AutomaticContinuation
 - uid: Google.GenAI.Types.GenerateContentConfig.CachedContent
   name: CachedContent
   href: api/Google.GenAI.Types.GenerateContentConfig.html#Google_GenAI_Types_GenerateContentConfig_CachedContent
@@ -14922,6 +14961,19 @@ references:
   isSpec: "True"
   fullName: Google.GenAI.Types.GenerateContentConfig.FromJson
   nameWithType: GenerateContentConfig.FromJson
+- uid: Google.GenAI.Types.GenerateContentConfig.GenerationOutputConfig
+  name: GenerationOutputConfig
+  href: api/Google.GenAI.Types.GenerateContentConfig.html#Google_GenAI_Types_GenerateContentConfig_GenerationOutputConfig
+  commentId: P:Google.GenAI.Types.GenerateContentConfig.GenerationOutputConfig
+  fullName: Google.GenAI.Types.GenerateContentConfig.GenerationOutputConfig
+  nameWithType: GenerateContentConfig.GenerationOutputConfig
+- uid: Google.GenAI.Types.GenerateContentConfig.GenerationOutputConfig*
+  name: GenerationOutputConfig
+  href: api/Google.GenAI.Types.GenerateContentConfig.html#Google_GenAI_Types_GenerateContentConfig_GenerationOutputConfig_
+  commentId: Overload:Google.GenAI.Types.GenerateContentConfig.GenerationOutputConfig
+  isSpec: "True"
+  fullName: Google.GenAI.Types.GenerateContentConfig.GenerationOutputConfig
+  nameWithType: GenerateContentConfig.GenerationOutputConfig
 - uid: Google.GenAI.Types.GenerateContentConfig.HttpOptions
   name: HttpOptions
   href: api/Google.GenAI.Types.GenerateContentConfig.html#Google_GenAI_Types_GenerateContentConfig_HttpOptions
@@ -15182,6 +15234,19 @@ references:
   isSpec: "True"
   fullName: Google.GenAI.Types.GenerateContentConfig.StopSequences
   nameWithType: GenerateContentConfig.StopSequences
+- uid: Google.GenAI.Types.GenerateContentConfig.Store
+  name: Store
+  href: api/Google.GenAI.Types.GenerateContentConfig.html#Google_GenAI_Types_GenerateContentConfig_Store
+  commentId: P:Google.GenAI.Types.GenerateContentConfig.Store
+  fullName: Google.GenAI.Types.GenerateContentConfig.Store
+  nameWithType: GenerateContentConfig.Store
+- uid: Google.GenAI.Types.GenerateContentConfig.Store*
+  name: Store
+  href: api/Google.GenAI.Types.GenerateContentConfig.html#Google_GenAI_Types_GenerateContentConfig_Store_
+  commentId: Overload:Google.GenAI.Types.GenerateContentConfig.Store
+  isSpec: "True"
+  fullName: Google.GenAI.Types.GenerateContentConfig.Store
+  nameWithType: GenerateContentConfig.Store
 - uid: Google.GenAI.Types.GenerateContentConfig.SystemInstruction
   name: SystemInstruction
   href: api/Google.GenAI.Types.GenerateContentConfig.html#Google_GenAI_Types_GenerateContentConfig_SystemInstruction
@@ -15360,6 +15425,19 @@ references:
   isSpec: "True"
   fullName: Google.GenAI.Types.GenerateContentResponse.FunctionCalls
   nameWithType: GenerateContentResponse.FunctionCalls
+- uid: Google.GenAI.Types.GenerateContentResponse.InitialPromptTokenCount
+  name: InitialPromptTokenCount
+  href: api/Google.GenAI.Types.GenerateContentResponse.html#Google_GenAI_Types_GenerateContentResponse_InitialPromptTokenCount
+  commentId: P:Google.GenAI.Types.GenerateContentResponse.InitialPromptTokenCount
+  fullName: Google.GenAI.Types.GenerateContentResponse.InitialPromptTokenCount
+  nameWithType: GenerateContentResponse.InitialPromptTokenCount
+- uid: Google.GenAI.Types.GenerateContentResponse.InitialPromptTokenCount*
+  name: InitialPromptTokenCount
+  href: api/Google.GenAI.Types.GenerateContentResponse.html#Google_GenAI_Types_GenerateContentResponse_InitialPromptTokenCount_
+  commentId: Overload:Google.GenAI.Types.GenerateContentResponse.InitialPromptTokenCount
+  isSpec: "True"
+  fullName: Google.GenAI.Types.GenerateContentResponse.InitialPromptTokenCount
+  nameWithType: GenerateContentResponse.InitialPromptTokenCount
 - uid: Google.GenAI.Types.GenerateContentResponse.ModelStatus
   name: ModelStatus
   href: api/Google.GenAI.Types.GenerateContentResponse.html#Google_GenAI_Types_GenerateContentResponse_ModelStatus
@@ -15599,6 +15677,19 @@ references:
   isSpec: "True"
   fullName: Google.GenAI.Types.GenerateContentResponseUsageMetadata.FromJson
   nameWithType: GenerateContentResponseUsageMetadata.FromJson
+- uid: Google.GenAI.Types.GenerateContentResponseUsageMetadata.InitialPromptTokenCount
+  name: InitialPromptTokenCount
+  href: api/Google.GenAI.Types.GenerateContentResponseUsageMetadata.html#Google_GenAI_Types_GenerateContentResponseUsageMetadata_InitialPromptTokenCount
+  commentId: P:Google.GenAI.Types.GenerateContentResponseUsageMetadata.InitialPromptTokenCount
+  fullName: Google.GenAI.Types.GenerateContentResponseUsageMetadata.InitialPromptTokenCount
+  nameWithType: GenerateContentResponseUsageMetadata.InitialPromptTokenCount
+- uid: Google.GenAI.Types.GenerateContentResponseUsageMetadata.InitialPromptTokenCount*
+  name: InitialPromptTokenCount
+  href: api/Google.GenAI.Types.GenerateContentResponseUsageMetadata.html#Google_GenAI_Types_GenerateContentResponseUsageMetadata_InitialPromptTokenCount_
+  commentId: Overload:Google.GenAI.Types.GenerateContentResponseUsageMetadata.InitialPromptTokenCount
+  isSpec: "True"
+  fullName: Google.GenAI.Types.GenerateContentResponseUsageMetadata.InitialPromptTokenCount
+  nameWithType: GenerateContentResponseUsageMetadata.InitialPromptTokenCount
 - uid: Google.GenAI.Types.GenerateContentResponseUsageMetadata.PromptTokenCount
   name: PromptTokenCount
   href: api/Google.GenAI.Types.GenerateContentResponseUsageMetadata.html#Google_GenAI_Types_GenerateContentResponseUsageMetadata_PromptTokenCount
@@ -17119,6 +17210,41 @@ references:
   isSpec: "True"
   fullName: Google.GenAI.Types.GenerationConfigThinkingConfig.FromJson
   nameWithType: GenerationConfigThinkingConfig.FromJson
+- uid: Google.GenAI.Types.GenerationOutputConfig
+  name: GenerationOutputConfig
+  href: api/Google.GenAI.Types.GenerationOutputConfig.html
+  commentId: T:Google.GenAI.Types.GenerationOutputConfig
+  fullName: Google.GenAI.Types.GenerationOutputConfig
+  nameWithType: GenerationOutputConfig
+- uid: Google.GenAI.Types.GenerationOutputConfig.FromJson(System.String,System.Text.Json.JsonSerializerOptions)
+  name: FromJson(string, JsonSerializerOptions?)
+  href: api/Google.GenAI.Types.GenerationOutputConfig.html#Google_GenAI_Types_GenerationOutputConfig_FromJson_System_String_System_Text_Json_JsonSerializerOptions_
+  commentId: M:Google.GenAI.Types.GenerationOutputConfig.FromJson(System.String,System.Text.Json.JsonSerializerOptions)
+  name.vb: FromJson(String, JsonSerializerOptions)
+  fullName: Google.GenAI.Types.GenerationOutputConfig.FromJson(string, System.Text.Json.JsonSerializerOptions?)
+  fullName.vb: Google.GenAI.Types.GenerationOutputConfig.FromJson(String, System.Text.Json.JsonSerializerOptions)
+  nameWithType: GenerationOutputConfig.FromJson(string, JsonSerializerOptions?)
+  nameWithType.vb: GenerationOutputConfig.FromJson(String, JsonSerializerOptions)
+- uid: Google.GenAI.Types.GenerationOutputConfig.FromJson*
+  name: FromJson
+  href: api/Google.GenAI.Types.GenerationOutputConfig.html#Google_GenAI_Types_GenerationOutputConfig_FromJson_
+  commentId: Overload:Google.GenAI.Types.GenerationOutputConfig.FromJson
+  isSpec: "True"
+  fullName: Google.GenAI.Types.GenerationOutputConfig.FromJson
+  nameWithType: GenerationOutputConfig.FromJson
+- uid: Google.GenAI.Types.GenerationOutputConfig.OutputUriPrefix
+  name: OutputUriPrefix
+  href: api/Google.GenAI.Types.GenerationOutputConfig.html#Google_GenAI_Types_GenerationOutputConfig_OutputUriPrefix
+  commentId: P:Google.GenAI.Types.GenerationOutputConfig.OutputUriPrefix
+  fullName: Google.GenAI.Types.GenerationOutputConfig.OutputUriPrefix
+  nameWithType: GenerationOutputConfig.OutputUriPrefix
+- uid: Google.GenAI.Types.GenerationOutputConfig.OutputUriPrefix*
+  name: OutputUriPrefix
+  href: api/Google.GenAI.Types.GenerationOutputConfig.html#Google_GenAI_Types_GenerationOutputConfig_OutputUriPrefix_
+  commentId: Overload:Google.GenAI.Types.GenerationOutputConfig.OutputUriPrefix
+  isSpec: "True"
+  fullName: Google.GenAI.Types.GenerationOutputConfig.OutputUriPrefix
+  nameWithType: GenerationOutputConfig.OutputUriPrefix
 - uid: Google.GenAI.Types.GetBatchJobConfig
   name: GetBatchJobConfig
   href: api/Google.GenAI.Types.GetBatchJobConfig.html
@@ -23307,6 +23433,89 @@ references:
   isSpec: "True"
   fullName: Google.GenAI.Types.LiveClientContent.Turns
   nameWithType: LiveClientContent.Turns
+- uid: Google.GenAI.Types.LiveClientContextUpdate
+  name: LiveClientContextUpdate
+  href: api/Google.GenAI.Types.LiveClientContextUpdate.html
+  commentId: T:Google.GenAI.Types.LiveClientContextUpdate
+  fullName: Google.GenAI.Types.LiveClientContextUpdate
+  nameWithType: LiveClientContextUpdate
+- uid: Google.GenAI.Types.LiveClientContextUpdate.FromJson(System.String,System.Text.Json.JsonSerializerOptions)
+  name: FromJson(string, JsonSerializerOptions?)
+  href: api/Google.GenAI.Types.LiveClientContextUpdate.html#Google_GenAI_Types_LiveClientContextUpdate_FromJson_System_String_System_Text_Json_JsonSerializerOptions_
+  commentId: M:Google.GenAI.Types.LiveClientContextUpdate.FromJson(System.String,System.Text.Json.JsonSerializerOptions)
+  name.vb: FromJson(String, JsonSerializerOptions)
+  fullName: Google.GenAI.Types.LiveClientContextUpdate.FromJson(string, System.Text.Json.JsonSerializerOptions?)
+  fullName.vb: Google.GenAI.Types.LiveClientContextUpdate.FromJson(String, System.Text.Json.JsonSerializerOptions)
+  nameWithType: LiveClientContextUpdate.FromJson(string, JsonSerializerOptions?)
+  nameWithType.vb: LiveClientContextUpdate.FromJson(String, JsonSerializerOptions)
+- uid: Google.GenAI.Types.LiveClientContextUpdate.FromJson*
+  name: FromJson
+  href: api/Google.GenAI.Types.LiveClientContextUpdate.html#Google_GenAI_Types_LiveClientContextUpdate_FromJson_
+  commentId: Overload:Google.GenAI.Types.LiveClientContextUpdate.FromJson
+  isSpec: "True"
+  fullName: Google.GenAI.Types.LiveClientContextUpdate.FromJson
+  nameWithType: LiveClientContextUpdate.FromJson
+- uid: Google.GenAI.Types.LiveClientContextUpdate.SystemInstruction
+  name: SystemInstruction
+  href: api/Google.GenAI.Types.LiveClientContextUpdate.html#Google_GenAI_Types_LiveClientContextUpdate_SystemInstruction
+  commentId: P:Google.GenAI.Types.LiveClientContextUpdate.SystemInstruction
+  fullName: Google.GenAI.Types.LiveClientContextUpdate.SystemInstruction
+  nameWithType: LiveClientContextUpdate.SystemInstruction
+- uid: Google.GenAI.Types.LiveClientContextUpdate.SystemInstruction*
+  name: SystemInstruction
+  href: api/Google.GenAI.Types.LiveClientContextUpdate.html#Google_GenAI_Types_LiveClientContextUpdate_SystemInstruction_
+  commentId: Overload:Google.GenAI.Types.LiveClientContextUpdate.SystemInstruction
+  isSpec: "True"
+  fullName: Google.GenAI.Types.LiveClientContextUpdate.SystemInstruction
+  nameWithType: LiveClientContextUpdate.SystemInstruction
+- uid: Google.GenAI.Types.LiveClientContextUpdate.Tools
+  name: Tools
+  href: api/Google.GenAI.Types.LiveClientContextUpdate.html#Google_GenAI_Types_LiveClientContextUpdate_Tools
+  commentId: P:Google.GenAI.Types.LiveClientContextUpdate.Tools
+  fullName: Google.GenAI.Types.LiveClientContextUpdate.Tools
+  nameWithType: LiveClientContextUpdate.Tools
+- uid: Google.GenAI.Types.LiveClientContextUpdate.Tools*
+  name: Tools
+  href: api/Google.GenAI.Types.LiveClientContextUpdate.html#Google_GenAI_Types_LiveClientContextUpdate_Tools_
+  commentId: Overload:Google.GenAI.Types.LiveClientContextUpdate.Tools
+  isSpec: "True"
+  fullName: Google.GenAI.Types.LiveClientContextUpdate.Tools
+  nameWithType: LiveClientContextUpdate.Tools
+- uid: Google.GenAI.Types.LiveClientContextUpdateTools
+  name: LiveClientContextUpdateTools
+  href: api/Google.GenAI.Types.LiveClientContextUpdateTools.html
+  commentId: T:Google.GenAI.Types.LiveClientContextUpdateTools
+  fullName: Google.GenAI.Types.LiveClientContextUpdateTools
+  nameWithType: LiveClientContextUpdateTools
+- uid: Google.GenAI.Types.LiveClientContextUpdateTools.FromJson(System.String,System.Text.Json.JsonSerializerOptions)
+  name: FromJson(string, JsonSerializerOptions?)
+  href: api/Google.GenAI.Types.LiveClientContextUpdateTools.html#Google_GenAI_Types_LiveClientContextUpdateTools_FromJson_System_String_System_Text_Json_JsonSerializerOptions_
+  commentId: M:Google.GenAI.Types.LiveClientContextUpdateTools.FromJson(System.String,System.Text.Json.JsonSerializerOptions)
+  name.vb: FromJson(String, JsonSerializerOptions)
+  fullName: Google.GenAI.Types.LiveClientContextUpdateTools.FromJson(string, System.Text.Json.JsonSerializerOptions?)
+  fullName.vb: Google.GenAI.Types.LiveClientContextUpdateTools.FromJson(String, System.Text.Json.JsonSerializerOptions)
+  nameWithType: LiveClientContextUpdateTools.FromJson(string, JsonSerializerOptions?)
+  nameWithType.vb: LiveClientContextUpdateTools.FromJson(String, JsonSerializerOptions)
+- uid: Google.GenAI.Types.LiveClientContextUpdateTools.FromJson*
+  name: FromJson
+  href: api/Google.GenAI.Types.LiveClientContextUpdateTools.html#Google_GenAI_Types_LiveClientContextUpdateTools_FromJson_
+  commentId: Overload:Google.GenAI.Types.LiveClientContextUpdateTools.FromJson
+  isSpec: "True"
+  fullName: Google.GenAI.Types.LiveClientContextUpdateTools.FromJson
+  nameWithType: LiveClientContextUpdateTools.FromJson
+- uid: Google.GenAI.Types.LiveClientContextUpdateTools.Tools
+  name: Tools
+  href: api/Google.GenAI.Types.LiveClientContextUpdateTools.html#Google_GenAI_Types_LiveClientContextUpdateTools_Tools
+  commentId: P:Google.GenAI.Types.LiveClientContextUpdateTools.Tools
+  fullName: Google.GenAI.Types.LiveClientContextUpdateTools.Tools
+  nameWithType: LiveClientContextUpdateTools.Tools
+- uid: Google.GenAI.Types.LiveClientContextUpdateTools.Tools*
+  name: Tools
+  href: api/Google.GenAI.Types.LiveClientContextUpdateTools.html#Google_GenAI_Types_LiveClientContextUpdateTools_Tools_
+  commentId: Overload:Google.GenAI.Types.LiveClientContextUpdateTools.Tools
+  isSpec: "True"
+  fullName: Google.GenAI.Types.LiveClientContextUpdateTools.Tools
+  nameWithType: LiveClientContextUpdateTools.Tools
 - uid: Google.GenAI.Types.LiveClientMessage
   name: LiveClientMessage
   href: api/Google.GenAI.Types.LiveClientMessage.html
@@ -23326,6 +23535,19 @@ references:
   isSpec: "True"
   fullName: Google.GenAI.Types.LiveClientMessage.ClientContent
   nameWithType: LiveClientMessage.ClientContent
+- uid: Google.GenAI.Types.LiveClientMessage.ContextUpdate
+  name: ContextUpdate
+  href: api/Google.GenAI.Types.LiveClientMessage.html#Google_GenAI_Types_LiveClientMessage_ContextUpdate
+  commentId: P:Google.GenAI.Types.LiveClientMessage.ContextUpdate
+  fullName: Google.GenAI.Types.LiveClientMessage.ContextUpdate
+  nameWithType: LiveClientMessage.ContextUpdate
+- uid: Google.GenAI.Types.LiveClientMessage.ContextUpdate*
+  name: ContextUpdate
+  href: api/Google.GenAI.Types.LiveClientMessage.html#Google_GenAI_Types_LiveClientMessage_ContextUpdate_
+  commentId: Overload:Google.GenAI.Types.LiveClientMessage.ContextUpdate
+  isSpec: "True"
+  fullName: Google.GenAI.Types.LiveClientMessage.ContextUpdate
+  nameWithType: LiveClientMessage.ContextUpdate
 - uid: Google.GenAI.Types.LiveClientMessage.FromJson(System.String,System.Text.Json.JsonSerializerOptions)
   name: FromJson(string, JsonSerializerOptions?)
   href: api/Google.GenAI.Types.LiveClientMessage.html#Google_GenAI_Types_LiveClientMessage_FromJson_System_String_System_Text_Json_JsonSerializerOptions_
@@ -23872,6 +24094,19 @@ references:
   isSpec: "True"
   fullName: Google.GenAI.Types.LiveConnectConfig.InputAudioTranscription
   nameWithType: LiveConnectConfig.InputAudioTranscription
+- uid: Google.GenAI.Types.LiveConnectConfig.Labels
+  name: Labels
+  href: api/Google.GenAI.Types.LiveConnectConfig.html#Google_GenAI_Types_LiveConnectConfig_Labels
+  commentId: P:Google.GenAI.Types.LiveConnectConfig.Labels
+  fullName: Google.GenAI.Types.LiveConnectConfig.Labels
+  nameWithType: LiveConnectConfig.Labels
+- uid: Google.GenAI.Types.LiveConnectConfig.Labels*
+  name: Labels
+  href: api/Google.GenAI.Types.LiveConnectConfig.html#Google_GenAI_Types_LiveConnectConfig_Labels_
+  commentId: Overload:Google.GenAI.Types.LiveConnectConfig.Labels
+  isSpec: "True"
+  fullName: Google.GenAI.Types.LiveConnectConfig.Labels
+  nameWithType: LiveConnectConfig.Labels
 - uid: Google.GenAI.Types.LiveConnectConfig.MaxOutputTokens
   name: MaxOutputTokens
   href: api/Google.GenAI.Types.LiveConnectConfig.html#Google_GenAI_Types_LiveConnectConfig_MaxOutputTokens
@@ -30201,6 +30436,19 @@ references:
   isSpec: "True"
   fullName: Google.GenAI.Types.RealtimeInputConfig.FromJson
   nameWithType: RealtimeInputConfig.FromJson
+- uid: Google.GenAI.Types.RealtimeInputConfig.InterimTranscriptTimestampEnabled
+  name: InterimTranscriptTimestampEnabled
+  href: api/Google.GenAI.Types.RealtimeInputConfig.html#Google_GenAI_Types_RealtimeInputConfig_InterimTranscriptTimestampEnabled
+  commentId: P:Google.GenAI.Types.RealtimeInputConfig.InterimTranscriptTimestampEnabled
+  fullName: Google.GenAI.Types.RealtimeInputConfig.InterimTranscriptTimestampEnabled
+  nameWithType: RealtimeInputConfig.InterimTranscriptTimestampEnabled
+- uid: Google.GenAI.Types.RealtimeInputConfig.InterimTranscriptTimestampEnabled*
+  name: InterimTranscriptTimestampEnabled
+  href: api/Google.GenAI.Types.RealtimeInputConfig.html#Google_GenAI_Types_RealtimeInputConfig_InterimTranscriptTimestampEnabled_
+  commentId: Overload:Google.GenAI.Types.RealtimeInputConfig.InterimTranscriptTimestampEnabled
+  isSpec: "True"
+  fullName: Google.GenAI.Types.RealtimeInputConfig.InterimTranscriptTimestampEnabled
+  nameWithType: RealtimeInputConfig.InterimTranscriptTimestampEnabled
 - uid: Google.GenAI.Types.RealtimeInputConfig.TurnCoverage
   name: TurnCoverage
   href: api/Google.GenAI.Types.RealtimeInputConfig.html#Google_GenAI_Types_RealtimeInputConfig_TurnCoverage
@@ -37577,6 +37825,19 @@ references:
   commentId: T:Google.GenAI.Types.Transcription
   fullName: Google.GenAI.Types.Transcription
   nameWithType: Transcription
+- uid: Google.GenAI.Types.Transcription.EndOffset
+  name: EndOffset
+  href: api/Google.GenAI.Types.Transcription.html#Google_GenAI_Types_Transcription_EndOffset
+  commentId: P:Google.GenAI.Types.Transcription.EndOffset
+  fullName: Google.GenAI.Types.Transcription.EndOffset
+  nameWithType: Transcription.EndOffset
+- uid: Google.GenAI.Types.Transcription.EndOffset*
+  name: EndOffset
+  href: api/Google.GenAI.Types.Transcription.html#Google_GenAI_Types_Transcription_EndOffset_
+  commentId: Overload:Google.GenAI.Types.Transcription.EndOffset
+  isSpec: "True"
+  fullName: Google.GenAI.Types.Transcription.EndOffset
+  nameWithType: Transcription.EndOffset
 - uid: Google.GenAI.Types.Transcription.Finished
   name: Finished
   href: api/Google.GenAI.Types.Transcription.html#Google_GenAI_Types_Transcription_Finished
@@ -37632,6 +37893,19 @@ references:
   isSpec: "True"
   fullName: Google.GenAI.Types.Transcription.SpeakerLabel
   nameWithType: Transcription.SpeakerLabel
+- uid: Google.GenAI.Types.Transcription.StartOffset
+  name: StartOffset
+  href: api/Google.GenAI.Types.Transcription.html#Google_GenAI_Types_Transcription_StartOffset
+  commentId: P:Google.GenAI.Types.Transcription.StartOffset
+  fullName: Google.GenAI.Types.Transcription.StartOffset
+  nameWithType: Transcription.StartOffset
+- uid: Google.GenAI.Types.Transcription.StartOffset*
+  name: StartOffset
+  href: api/Google.GenAI.Types.Transcription.html#Google_GenAI_Types_Transcription_StartOffset_
+  commentId: Overload:Google.GenAI.Types.Transcription.StartOffset
+  isSpec: "True"
+  fullName: Google.GenAI.Types.Transcription.StartOffset
+  nameWithType: Transcription.StartOffset
 - uid: Google.GenAI.Types.Transcription.Text
   name: Text
   href: api/Google.GenAI.Types.Transcription.html#Google_GenAI_Types_Transcription_Text
